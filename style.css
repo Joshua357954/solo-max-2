@@ -91,7 +91,7 @@ body{ ;
     transition: background-color .6s ease-in-out;
 }
 
-/*header::before{
+header::before{
 	content: "";
 	z-index: -10;
 	position: absolute;
@@ -99,7 +99,7 @@ body{ ;
 	height: 500px;
 	background-color: rgba(0,0,0,.8);
 }
-*/
+
 .navbar_box{
 	width: 100%;
 	height: 100%;
@@ -202,6 +202,7 @@ li a:focus{
 
 .middle_text h1{
 	font-size: 3rem;
+	text-transform: uppercase;
 }
 .middle_text p{
 	font-size: 1.1rem;
