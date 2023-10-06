@@ -79,6 +79,11 @@ body{ ;
 	width: 100%;
 	height: 100px;
 	display: flex;
+	position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: top 0.5s ease-in-out;
+    transition: background-color .6s ease-in-out;
 }
 
 .navbar_box{
@@ -118,7 +123,7 @@ body{ ;
 	padding: 10px 2px 5px 2px ;
 	font: bolder;
 	/*background-color: red;*/
-	border-bottom: 2px solid transparent;
+	border-bottom: 2px solid none;
 	transition: border-bottom-color .5s ease-in-out;
 	transition: font-weight .5s ease-in-out;  
 }
@@ -167,9 +172,18 @@ li a:focus{
 	position: absolute;
 	top:55%;
 	width:70%;
+	z-index: -1;
 	left:50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
+}
+
+.dark{
+
+}
+
+.navbar.dark-nav{
+	color: black !important; 
 }
 
 .middle_text h1{
