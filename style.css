@@ -40,6 +40,7 @@
 	} 
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
 	padding: 0;
@@ -159,7 +160,9 @@ header::before{
 	font-size: 16px;
 	letter-spacing: .8px;
 	font-weight: bolder;
-} 
+}
+
+
 
 li a:hover{
 	font-weight: 800;
@@ -232,6 +235,7 @@ h2,h3{
 p{
 	line-height: 26px;
 	letter-spacing: 1.5px;
+	font-family:'Montserrat';
 }
 
 /* First Section */
@@ -348,7 +352,7 @@ h2{
 
 
 
-@media (max-width: 670px){
+@media (max-width: 650px){
 	.header{
 		height: 400px;
 	}
@@ -359,7 +363,7 @@ h2{
 }
 
 
-@media (max-width: 770px){
+@media (max-width: 670px){
 
 	body{
 		overflow-x: none;
