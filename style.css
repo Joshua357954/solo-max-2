@@ -27,6 +27,11 @@
 		font-weight: 400; 
 	} 
 
+	@font-face { 
+		font-family: 'SoDoSans'; 
+	    src:url("./assets/fonts/SoDoSans-SemiBold.ttf"); 
+		font-weight: 600; 
+	} 
 
 	@font-face { 
 		font-family: 'SoDoSans'; 
