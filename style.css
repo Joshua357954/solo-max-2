@@ -1,37 +1,36 @@
 
-	@import url('C:/Users/Josh/Downloads/sodo-sans-font/stylesheet.css')
 
 	@font-face { 
 		font-family: 'SoDoSans'; 
-	    src:url("C:/Users/Josh/Downloads/sodo-sans-font/SoDoSans-Black.ttf"); 
+	    src:url("./assets/fonts/SoDoSans-Black.ttf"); 
 		font-weight: 900; 
 	} 
 
 
 	@font-face { 
 		font-family: 'SoDoSans'; 
-	    src:url("C:/Users/Josh/Downloads/sodo-sans-font/SoDoSans-Bold.ttf"); 
+	    src:url("./assets/fonts/SoDoSans-Bold.ttf"); 
 		font-weight: 700; 
 	} 
 
 
 	@font-face { 
 		font-family: 'SoDoSans'; 
-	    src:url("C:/Users/Josh/Downloads/sodo-sans-font/SoDoSans-Light.ttf"); 
+	    src:url("./assets/fonts/SoDoSans-Light.ttf"); 
 		font-weight: 300; 
 	} 
 
 
 	@font-face { 
 		font-family: 'SoDoSans'; 
-	    src:url("C:/Users/Josh/Downloads/sodo-sans-font/SoDoSans-Regular.ttf"); 
+	    src:url("./assets/fonts/SoDoSans-Regular.ttf"); 
 		font-weight: 400; 
 	} 
 
 
 	@font-face { 
 		font-family: 'SoDoSans'; 
-	    src:url("C:/Users/Josh/Downloads/sodo-sans-font/SoDoSans-Thin.ttf"); 
+	    src:url("./assets/fonts/SoDoSans-Thin.ttf"); 
 		font-weight: 100; 
 	} 
 
