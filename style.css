@@ -199,9 +199,9 @@ header::before{
 	padding: 10px 2px 5px 2px ;
 	font: bolder;
 	/*background-color: red;*/
-	border-bottom: 2px solid none;
+	border-bottom: 2px solid rgba(0,0,0,0);
 	transition: border-bottom-color .5s ease-in-out;
-	transition: font-weight .5s ease-in-out;  
+	transition: font-weight 0s ease-in-out;  
 }
 
 .navlinks_box li{
@@ -226,13 +226,13 @@ header::before{
 
 
 li a:hover{
-	font-weight: 800;
+	font-weight: 600;
 	border-bottom-color:#f9f9f9;
 }
 
 li a:focus{
 	outline: none;
-	font-weight: 800;
+	font-weight: 600;
 	border-bottom-color:#f9f9f9;
 }
 
