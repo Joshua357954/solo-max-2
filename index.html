@@ -15,7 +15,7 @@
 			<div class="navbar_box">
 
 				<div class="nav_img_box">
-					<img src="assets/images/solomax.png">
+					<img class='logo' src="assets/images/solo-pix.png">
 				</div>
 
 				<ul class="navlinks_box">
@@ -124,17 +124,23 @@
 	    const currentScrollPos = window.pageYOffset;
 	    const navbar = document.querySelector(".navbar");
 	    const li = document.querySelectorAll(".li");
+	    const logo = document.querySelector(".logo")
 
 	    if (prevScrollPos > currentScrollPos) {
 	        // Scrolling up
 	        navbar.style.top = "0";
 	        navbar.classList.add('bg-white')
+
+	        logo.src = "./assets/images/solomax.png"
+
 	        li.forEach(el => {
 				el.style.color = 'black'
 	        })
 
 	        if (currentScrollPos  < 10){
 	        	navbar.classList.remove('bg-white')
+	        	logo.src = "./assets/images/solo-pix.png"
+
 	        	  li.forEach(el => {
 					el.style.color = 'white'
 		        })
