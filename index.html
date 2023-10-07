@@ -17,15 +17,21 @@
 				<div class="nav_img_box">
 					<img class='logo' src="assets/images/solomax-light.png">
 				</div>
+				
+				<div class="flex">
+					<img class="navmenu-icon" src="./assets/images/nav-menu (5).svg">
+					
+					<ul class="navlinks_box">
+						<li class="li_active"><a class="li" 
+							href="#">Home</a></li>
+						<li><a class="li" href="#">Services</a></li>
+						<li><a class="li" href="#">Portfolio</a></li>
+						<li><a class="li" href="#">Blog</a></li>
+						<li><a class="li" href="#">About</a></li>
+						<li class="last_link">Contact</li>
+					</ul>
+				</div>
 
-				<ul class="navlinks_box">
-					<li class="li_active"><a class="li" href="#">Home</a></li>
-					<li><a class="li" href="#">Services</a></li>
-					<li><a class="li" href="#">Portfolio</a></li>
-					<li><a class="li" href="#">Blog</a></li>
-					<li><a class="li" href="#">About Us</a></li>
-					<li class="last_link">Contact</li>
-				</ul>
 			</div>
 		</nav>
 		
@@ -118,6 +124,18 @@
 </body>
 
 <script>
+	const nav_icon = document.querySelector('.navmenu-icon') 
+	const mobile_nav = document.querySelector('.navlinks_box')
+
+	nav_icon.addEventListener('click',() => {
+		// alert("Joshua")
+		const state = mobile_nav.style.display
+		if (state === 'flex')
+			mobile_nav.style.display = 'none'
+		else 
+			mobile_nav.style.display = 'flex'
+	} )
+
 	let prevScrollPos = window.pageYOffset;
 
 	window.onscroll = function() {

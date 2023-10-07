@@ -160,6 +160,12 @@ header::before{
 	background-color: rgba(0,0,0,.6);
 }
 
+.navmenu-icon{
+	width: 60px;
+	height: 60px;
+	display: none;
+}
+
 .navbar_box{
 	width: 100%;
 	height: 100%;
@@ -415,40 +421,80 @@ h2{
 
 
 
-@media (max-width: 650px){
+/*@media (max-width: 650px){
 	.header{
 		height: 400px;
 	}
 
 	.navlinks_box{
-		/*display: block;*/
+		display: block;
 	}
 }
 
-
-@media (max-width: 670px){
+*/
+@media (max-width: 720px){
 
 	body{
 		overflow-x: none;
 	}
-	
+
+	.navmenu-icon{
+		z-index: 444;
+		display: flex;
+	}
+
 	.navbar{
-		/*background-color: red;*/
+
+	}
+
+	h2,h3{
+		font-size: 1.1rem;
+		line-height: 25px;
+		letter-spacing: 1.2px;
+	}
+
+	.section p {
+		font-size: .8rem;
+		line-height: 20px;
+		letter-spacing: 1.3px;
+	}
+
+	.section h2 {
+		font-size: 1.4rem;
+	}
+
+	.cut-text{
+		padding: 0 15px;
+	}
+
+	.middle_text h1{
+		font-size: 2.3rem;
+	}
+
+	.middle_text p{
+		font-size: .8rem;
+	}
+
+	.middle_text small{
+		color: #DCDCDC;
+		margin-top: 10px;
+		font-weight: 400;
+		font-size: .7rem;
 	}
 
 	.navlinks_box {
-		/*height: calc(100vh - 100px);*/
-		position: absolute;
+		padding-top: 50px;
+		position: fixed;
 		top:0;
 		left:0;
 		bottom:0;
 		width:100vw;
 		height:100vh;
 		background-color: black;
-		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
-		z-index: 99;
+		z-index: 309;
+		display: none;
 	}
 
 	.navlinks_box li{
