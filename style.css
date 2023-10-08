@@ -467,6 +467,11 @@ h2{
 
 	.cut-text{
 		padding: 0 15px;
+	
+	}
+
+	.middle_text{
+		width: 80%;
 	}
 
 	.middle_text h1{

@@ -132,9 +132,12 @@
 		// alert("Joshua")
 		const state = mobile_nav.style.display
 		if (state === 'flex')
+			// nav_icon.style.top = '0px'
 			mobile_nav.style.display = 'none'
-		else 
+		else {
+			// nav_icon.style.top = '20px'
 			mobile_nav.style.display = 'flex'
+		}
 	} )
 
 	let prevScrollPos = window.pageYOffset;
