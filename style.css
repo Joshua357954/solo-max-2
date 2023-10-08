@@ -195,6 +195,7 @@ header::before{
 	text-decoration:none;
 	align-items: center;
 	padding-right: 10px;
+	transition: all 1s linear,
 }
 
 .navlinks_box li a {
@@ -416,22 +417,19 @@ h2{
 
 
 
-
-
-
-
-
-/*@media (max-width: 650px){
-	.header{
-		height: 400px;
+@media (min-width: 720px){
+	.nvb{
+		display: flex;
+		z-index: 888;
 	}
-
 	.navlinks_box{
-		display: block;
+		display: flex;
+		z-index: 888;
 	}
 }
 
-*/
+
+
 @media (max-width: 720px){
 
 	body{
@@ -439,8 +437,12 @@ h2{
 	}
 
 	.navmenu-icon{
-		z-index: 444;
+		z-index: 744;
 		display: flex;
+		position: fixed;
+		top:20px;
+		right: 30px;
+		
 	}
 
 	.navbar{
@@ -482,7 +484,16 @@ h2{
 		font-size: .7rem;
 	}
 
-	.navlinks_box {
+	.navlinks_box li a {
+		color:white !important ;
+	}
+
+	/*.navbar {
+		d !important;
+		display: none;
+	}
+*/
+	.nvb {
 		padding-top: 50px;
 		position: fixed;
 		top:0;
