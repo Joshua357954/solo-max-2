@@ -454,11 +454,12 @@ h2{
 		font-size: 1.1rem;
 		line-height: 25px;
 		letter-spacing: 1.2px;
+		word-spacing: 1px;
 	}
 
 	.section p {
 		font-size: .9rem;
-		line-height: 20px;
+		line-height: 27px;
 		letter-spacing: 1.3px;
 	}
 
