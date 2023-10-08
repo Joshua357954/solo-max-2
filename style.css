@@ -481,13 +481,13 @@ h2{
 	}
 
 	.middle_text p{
-		font-size: .9rem;
+		font-size: .93rem;
 	}
 
 	.middle_text small{
 		color: #DCDCDC;
 		margin-top: 10px;
-		font-weight: 400;
+		font-weight: 600;
 		font-size: .8rem;
 	}
 
