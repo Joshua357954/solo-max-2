@@ -190,7 +190,7 @@ header::before{
 	object-fit: cover;
 }
 
-.navlinks_box{
+.nvb{
 	display: flex;
 	text-decoration:none;
 	align-items: center;
