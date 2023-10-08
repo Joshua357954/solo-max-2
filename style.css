@@ -449,6 +449,10 @@ h2{
 
 	}
 
+	.reverse{
+		flex-direction: row;
+	}
+
 	h2,h3{
 		font-size: 1.1rem;
 		line-height: 25px;
