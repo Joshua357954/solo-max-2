@@ -407,7 +407,7 @@ h2{
 	background-color: black !important;
 }
 .reverse {
-	flex-direction: row-reverse;
+	flex-direction: row ;
 }
 
 .section_two{
@@ -449,9 +449,6 @@ h2{
 
 	}
 
-	.reverse{
-		flex-direction: row;
-	}
 
 	h2,h3{
 		font-size: 1.1rem;
@@ -501,6 +498,11 @@ h2{
 	.section{
 		flex-direction: column !important;
 	}
+
+	.show_two{
+		flex-direction: column-reverse !important;
+	}
+
 
 	.section_one .one {
 		width:100%;
