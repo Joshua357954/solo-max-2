@@ -467,11 +467,11 @@ h2{
 
 	.section h2 {
 		font-size: 1.7rem;
-		line-height: 33px;
+		line-height: 33px !important;
 	}
 
 	.cut-text{
-		padding: 0 15px;
+		padding: 0 17px;
 	
 	}
 
