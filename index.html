@@ -10,7 +10,7 @@
 
 <body>
 	
-	<header class="header">
+	<header class="header"  >
 		<nav class="navbar">
 			<div class="navbar_box">
 
@@ -19,11 +19,11 @@
 				</div>
 
 				<ul class="navlinks_box">
-					<li class="li_active"><a href="#">Home</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">About Us</a></li>
+					<li class="li_active"><a class="li" href="#">Home</a></li>
+					<li><a class="li" href="#">Services</a></li>
+					<li><a class="li" href="#">Portfolio</a></li>
+					<li><a class="li" href="#">Blog</a></li>
+					<li><a class="li" href="#">About Us</a></li>
 					<li class="last_link">Contact</li>
 				</ul>
 			</div>
@@ -117,4 +117,34 @@
 
 </body>
 
+<script>
+	let prevScrollPos = window.pageYOffset;
+
+	window.onscroll = function() {
+	    const currentScrollPos = window.pageYOffset;
+	    const navbar = document.querySelector(".navbar");
+	    const li = document.querySelectorAll(".li");
+
+	    if (prevScrollPos > currentScrollPos) {
+	        // Scrolling up
+	        navbar.style.top = "0";
+	        navbar.classList.add('bg-white')
+	        li.forEach(el => {
+				el.style.color = 'black'
+	        })
+
+	        if (currentScrollPos  < 10){
+	        	navbar.classList.remove('bg-white')
+	        	  li.forEach(el => {
+					el.style.color = 'white'
+		        })
+			}
+	    } else {
+	        // Scrolling down
+	        navbar.style.top = "-100px"; // Slide up the navbar
+	    }
+
+	    prevScrollPos = currentScrollPos;
+	};
+</script>
 </html>
