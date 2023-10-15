@@ -19,6 +19,7 @@
 				</div>
 				
 				<div class="navlinks_box">
+					
 					<img class="navmenu-icon" src="./assets/images/nav-menu (5).svg">
 					
 					<ul class="nvb">
@@ -37,7 +38,7 @@
 		
 		<div class="middle_text">
 			<h1>Cutting-Edge Product Visuals</h1>
-			<p>photorealistic 3D animation, exploded views, liquid simulations, visual effects</p>
+			<p>Photorealistic 3D animation, exploded views, liquid simulations, visual effects</p>
 			<small>Based in Nigeria</small>
 		</div>
 	
@@ -51,8 +52,7 @@
 
 		<div class="two dark justify-center flex-col cut-text">
 			<h2>Satechi Props Set , With Awesome Lighting</h2>
-			<p class="" style="margin-top: 15px">Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and most of us are somewhere in between
-			.</p>
+			<p class="" style="margin-top: 15px">Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds.  </p>
 		</div>
 	</section> 
 
@@ -73,7 +73,7 @@
 	<section class="section1 py5 bg-white">
 		<h2 class="text-center">Our Services</h2>
 		
-		<div class="complex-grid">
+		<div class="complex-grid ">
 			<div class="cg_one">
 				
 				<div class="flex full">
@@ -81,9 +81,7 @@
 					<div class="full justify-center" style="background-color: lightgray;">2</div>
 				</div>
 
-				<div class="flex full
-
-				">
+				<div class="flex full ">
 					<div class="full justify-center"  style="background-color: lightgray;">3</div>
 					<div class="full justify-center"  style="background-color: black;">4</div>
 				</div>
@@ -134,19 +132,25 @@
 		if (state === 'flex')
 			// nav_icon.style.top = '0px'
 			mobile_nav.style.display = 'none'
+			
 		else {
 			// nav_icon.style.top = '20px'
 			mobile_nav.style.display = 'flex'
+			mobile_nav.classList.add('.active')
 		}
 	} )
 
 	let prevScrollPos = window.pageYOffset;
+	const windowWidth = window.innerWidth
+
 
 	window.onscroll = function() {
 	    const currentScrollPos = window.pageYOffset;
 	    const navbar = document.querySelector(".navbar");
 	    const li = document.querySelectorAll(".li");
 	    const logo = document.querySelector(".logo")
+
+	    
 
 	    if (prevScrollPos > currentScrollPos) {
 	        // Scrolling up
@@ -167,8 +171,20 @@
 					el.style.color = 'white'
 		        })
 			}
+
+			if (!mobile_nav.classList.contains('active')){
+				// nav_icon.style.display = 'flex'
+				// alert("does not")
+			}
+
 	    } else {
 	        // Scrolling down
+
+	        if (!mobile_nav.classList.contains('active')){
+	        	 // nav_icon.style.display = 'none'
+	        	 // alert("does not")
+	        }
+		        
 	        navbar.style.top = "-100px"; // Slide up the navbar
 	    }
 
