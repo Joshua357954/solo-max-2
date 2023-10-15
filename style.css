@@ -466,6 +466,7 @@ h2{
 	/* Middle text */
 	.middle_text{
 		width: 80%;
+		top:45%;
 	}
 	.middle_text h1{
 		font-size: 2.3rem;
@@ -539,7 +540,7 @@ h2{
 		width: 2em;
 		border: 0.3em solid #ffffff;
 		margin: auto;
-		top:90%;
+		top:80%;
 		z-index: 10;
 		left:50%;
 		transform: translate(-50%,-50%);
