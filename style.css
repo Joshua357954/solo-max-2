@@ -646,8 +646,12 @@ h2{
 	}
 
 	.inner_one h2 {
-	font-size: 7.5vmin;
+	font-size: 2.3rem;
 }
+.inner_one p {
+	padding: 0 10px;
+}
+
 
 	.founder_inner {
 		width:90%;
