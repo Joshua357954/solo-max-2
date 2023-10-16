@@ -623,7 +623,7 @@ h2{
 	  display: block;
 	  width: 12em;
 	  text-align: center;
-	  left: -4.2em;
+	  left: -5em;
 	  bottom: -2.5em;
 	  font-size: .6em;
 	  color: #ffffff;
@@ -648,7 +648,7 @@ h2{
 	.inner_one h2 {
 		font-size: 2rem;
 	}
-	
+
 	.inner_one p {
 		padding: 0 10px;
 		font-size: .9rem;
