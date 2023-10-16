@@ -403,6 +403,53 @@ h2{
 
 
 
+/* Contact Us*/
+.contact h2 {
+	color:black; 
+}
+
+.contact {
+	height:400px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	gap:28px;
+	background-color: white;
+	padding-top: 30px;
+}
+
+
+.contact_inner {
+	display: flex;
+	width:70%;
+
+	flex-direction: column;
+}
+
+.contact_inner input {
+	gap: 10px;
+	font-size: 1.1rem;
+	margin-bottom: 10px;
+	padding: 12px 10px;
+	border-radius: .1rem;
+	border:1px solid gray;
+}
+
+.contact_inner textarea {
+	resize: none;
+	padding: 5px;
+	font-size: 1.1rem;
+	border-radius: .1rem;
+	border:1px solid gray;
+}
+
+.contact_btn{
+	padding: 17px 50px;
+	font-size: 1.2rem;
+}
+
+
 
 
 /* Founder */
@@ -424,6 +471,11 @@ h2{
 	flex-direction: column;
 
 }
+
+.inner_one{
+	gap:13px;
+}
+
 .inner_one h2 {
 	font-size: 6.5vmin;
 }
@@ -449,12 +501,16 @@ h2{
 	justify-content: center;
 	align-items: center;
 	height: 50px;
+	background-color:white;
+	color: black; 
 	text-align: center;
 }
 
 
 
-
+/* smooth scroll animation */
+/* Jump to "section" */
+/* Animate on scroll  */
 
 
 @media (max-width: 720px){
