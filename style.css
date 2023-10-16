@@ -736,6 +736,7 @@ h2{
 
 	.inner_one h2 {
 		font-size: 2rem;
+		line-height: 38px;
 	}
 
 	.inner_one p {
