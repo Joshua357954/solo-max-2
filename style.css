@@ -481,7 +481,6 @@ h2{
 .contact_inner {
 	display: flex;
 	width:70%;
-
 	flex-direction: column;
 }
 
@@ -719,6 +718,17 @@ h2{
 	a#scroll-btn:after {
 	  content: "SCROLL DOWN";
 	}
+
+	/* Contact */
+	.contact {
+		height: 480px;
+	}
+	.contact_inner {
+		display: flex;
+		width:80%;
+		flex-direction: column;
+	}
+
 	/* Founder */
 
 	.founder {
