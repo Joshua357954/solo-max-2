@@ -646,12 +646,13 @@ h2{
 	}
 
 	.inner_one h2 {
-	font-size: 2rem;
-}
-.inner_one p {
-	padding: 0 10px;
-	font-size: .9rem;
-}
+		font-size: 2rem;
+	}
+	
+	.inner_one p {
+		padding: 0 10px;
+		font-size: .9rem;
+	}
 
 
 	.founder_inner {
