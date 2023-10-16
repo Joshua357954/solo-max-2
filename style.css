@@ -558,7 +558,8 @@ h2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 50px;
+	height: 80px;
+	font-size: 1.1rem;
 	background-color:white;
 	color: black; 
 	text-align: center;
