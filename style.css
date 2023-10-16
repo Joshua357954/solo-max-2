@@ -218,7 +218,7 @@ header::before{
 
 .last_link {
 	padding: 10px 15px !important ;
-	border-radius: .2rem;
+	/*border-radius: .2rem;*/
 	background-color:#467fbc;
 	color:white;
 	margin-left: 35px;
@@ -402,7 +402,41 @@ h2{
 }
 
 
-/*.active*/
+/* Founder */
+
+.founder {
+	height:250px;
+	width: 100%;
+	background-color: darkblue;
+	color:white;
+	display: flex; 
+}
+
+.founder_inner {
+	width: 50%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+	flex-direction: column;
+}
+.inner_one h2 {
+	font-size: 6.5vmin;
+}
+
+.inner_one p {
+	padding: 0 20px;
+}
+
+.inner_two {
+	row-gap: 30px;
+	/*flex-direction: row;
+    justify-content: flex-start;*/
+}
+.inner_two h2 {
+	font-size: 7rem;
+}
 
 
 
@@ -435,17 +469,27 @@ h2{
 		padding-top: 50px;
 		position: fixed;
 		top:0;
-		left:0;
+		left:-100;
 		bottom:0;
 		width:100vw;
 		height:100vh;
 		background-color: black;
 		flex-direction: column;
 		align-items: center;
-		z-index: 309;
-		display: none;
+		z-index: 100;
+
 	}
+	.nvb.active {
+		left:0;
+	}
+
+	.nvb.active li {
+		color: black;
+	}	
+
+
 		/* Nav Links */
+	
 	.navlinks_box li a {
 		color:white !important ;
 	}
@@ -572,7 +616,7 @@ h2{
 	  }
 	}
 
-/*	a#scroll-btn:after {
+	a#scroll-btn:after {
 	  position: absolute;
 	  content: "SCROLL DOWN";
 	  width: 12em;
@@ -581,11 +625,29 @@ h2{
 	  text-align: center;
 	  left: -4.2em;
 	  bottom: -2.5em;
-	  font-size: 1.6em;
+	  font-size: .6em;
 	  color: #ffffff;
 	  letter-spacing: 3px;
 	  font-weight: 600;
-	}*/
+	}
+
+	/* Founder */
+
+	.founder {
+		flex-direction: column;
+		width: 100%;
+		height: 400px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.inner_one {
+
+	}
+
+	.founder_inner {
+		width:80%;
+	}
 
 
 }

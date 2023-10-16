@@ -41,9 +41,9 @@
 			<p>Photorealistic 3D animation, exploded views, liquid simulations, visual effects</p>
 			<small>Based in Nigeria</small>
 		</div>
-		
+
 		<section id="section-1">
-	      <a id="scroll-btn" href="#section-2"></a>
+	      <a id="scroll-btn" href="#section-1"></a>
 	    </section>
 	
 	</header>
@@ -53,7 +53,7 @@
 		<div class="one justify-center" style='background-image:url("https://uploads-ssl.webflow.com/61703fd2dacddf5a197cf6bf/61703fd2dacddf42227cf702_MuutoCover.jpg"); background-position: center; object-fit: cover; background-repeat: no-repeat; background-size: cover;'>
 			<!-- <img class="full" src="./assets/images/pix (5).jpg"> -->
 		</div>
-
+		<div id='section-1'></div>
 		<div class="two dark justify-center flex-col cut-text">
 			<h2>Satechi Props Set , With Awesome Lighting</h2>
 			<p class="" style="margin-top: 15px">Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds.  </p>
@@ -123,6 +123,25 @@
 
 	</section>
 
+	<!--  Founder Section  -->
+
+	<section class="founder">
+		<div class="founder_inner inner_one">
+			<h2> Founded by an Awarding - Winning 3D Artist</h2>
+			<p>Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills, and coached on applying these in their daily work.  </p>
+		</div>
+
+
+		<div class="founder_inner inner_two">
+			<h2>100<sup>+</sup></h2>
+			<div>
+				<p> Projects Completed </p>
+				<small> For satisfied clients all over the world </small> 
+			</div>
+
+		</div>
+	</section>
+
 </body>
 
 <script>
@@ -130,18 +149,8 @@
 	const mobile_nav1 = document.querySelector('.navlinks_box')
 	const mobile_nav = document.querySelector('.nvb')
 
-	nav_icon.addEventListener('click',() => {
-		// alert("Joshua")
-		const state = mobile_nav.style.display
-		if (state === 'flex')
-			// nav_icon.style.top = '0px'
-			mobile_nav.style.display = 'none'
-			
-		else {
-			// nav_icon.style.top = '20px'
-			mobile_nav.style.display = 'flex'
-			mobile_nav.classList.add('.active')
-		}
+	nav_icon.addEventListener('click',() => {	
+		mobile_nav.classList.toggle('active')
 	} )
 
 	let prevScrollPos = window.pageYOffset;
@@ -163,6 +172,7 @@
 
 	        logo.src = "./assets/images/solomax.png"
 
+	        // change text color while scrolling up
 	        li.forEach(el => {
 				el.style.color = 'black'
 	        })
