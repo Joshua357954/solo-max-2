@@ -274,6 +274,63 @@ li a:focus{
 	font-size: 1rem;
 }
 
+/* Scroll Simulator*/
+	#section-1 {
+	  background-color: #2d8df8;
+	}
+
+	a#scroll-btn {
+		position: absolute;
+		height: 4em;
+		width: 2em;
+		border: 0.3em solid #ffffff;
+		margin: auto;
+		top:80%;
+		z-index: 10;
+		left:50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		border-radius: 3em;
+	}
+
+	a#scroll-btn:before {
+	  position: absolute;
+	  content: "";
+	  margin: auto;
+	  left: 0;
+	  right: 0;
+	  top: .9em;
+	  height: 1em;
+	  width: 1em;
+	  background-color: #ffffff;
+	  border-radius: 50%;
+	  animation: move-down 2s infinite;
+	}
+
+	@keyframes move-down {
+	  80% {
+	    opacity: 0.5;
+	  }
+	  100% {
+	    transform: translateY(1.75em);
+	    opacity: 0;
+	  }
+	}
+
+	a#scroll-btn:after {
+	  position: absolute;
+	  content: "SCROLL DOWN";
+	  width: 12em;
+	  display: block;
+	  width: 12em;
+	  text-align: center;
+	  left: -5em;
+	  bottom: -2.5em;
+	  font-size: .6em;
+	  color: #ffffff;
+	  letter-spacing: 3px;
+	  font-weight: 600;
+}
 
 /* Global Styles */
 a{
@@ -479,11 +536,12 @@ h2{
 
 .inner_one h2 {
 	font-size: 6.5vmin;
+	line-height: 50px;
 }
 
 .inner_one p {
 	font-size: .95rem;
-	padding: 0 20px;
+	padding: 0 30px;
 }
 
 .inner_two {
@@ -642,62 +700,6 @@ h2{
 		width: 100%;
 	}
 
-	#section-1 {
-	  background-color: #2d8df8;
-	}
-
-	a#scroll-btn {
-		position: absolute;
-		height: 4em;
-		width: 2em;
-		border: 0.3em solid #ffffff;
-		margin: auto;
-		top:80%;
-		z-index: 10;
-		left:50%;
-		transform: translate(-50%,-50%);
-		text-align: center;
-		border-radius: 3em;
-	}
-
-	a#scroll-btn:before {
-	  position: absolute;
-	  content: "";
-	  margin: auto;
-	  left: 0;
-	  right: 0;
-	  top: .9em;
-	  height: 1em;
-	  width: 1em;
-	  background-color: #ffffff;
-	  border-radius: 50%;
-	  animation: move-down 2s infinite;
-	}
-
-	@keyframes move-down {
-	  80% {
-	    opacity: 0.5;
-	  }
-	  100% {
-	    transform: translateY(1.75em);
-	    opacity: 0;
-	  }
-	}
-
-	a#scroll-btn:after {
-	  position: absolute;
-	  content: "SCROLL DOWN";
-	  width: 12em;
-	  display: block;
-	  width: 12em;
-	  text-align: center;
-	  left: -5em;
-	  bottom: -2.5em;
-	  font-size: .6em;
-	  color: #ffffff;
-	  letter-spacing: 3px;
-	  font-weight: 600;
-	}
 
 	/* Founder */
 
