@@ -136,6 +136,40 @@
 
 	</section>
 
+	<!--  Testimonies -->
+	
+	 <section class="review-container">
+
+	 	<h2 class="text-center review-text">Testimonials</h2>
+
+	 	<div class="testimonies-container">
+		 	<div class="testimony">
+	            <p class="review">"We where amazed by the quality of their 3D animations. The attention to detail is outstanding!"</p>
+	            <p class="name">John Doe</p>
+	            <p class="company">Eaxum Studios</p>
+	            <p class="rank">CEO , CCO</p>
+	        </div>
+
+	        <div class="testimony">
+	            <p class="review">"I was amazed by the quality of their 3D animations. The attention to detail is outstanding!"</p>
+	            <p class="name">John Doe</p>
+	            <p class="company">XYZ Studios</p>
+	            <p class="rank">3D Artist</p>
+	        </div>
+	        <div class="testimony">
+	            <p class="review">"The 3D models created by this studio are simply fantastic. They bring our ideas to life."</p>
+	            <p class="name">Jane Smith</p>
+	            <p class="company">ABC Productions</p>
+	            <p class="rank">Creative Director</p>
+	        </div>
+	        <div class="testimony">
+	            <p class="review">"Working with this studio was a game-changer for our projects. Highly recommended!"</p>
+	            <p class="name">David Johnson</p>
+	            <p class="company">Tech Innovators</p>
+	            <p class="rank">CEO</p>
+	        </div>
+		</div>    
+    </section>
 
 	<!-- Contact Us  -->
 	<section id="contact" class="contact">
@@ -144,8 +178,8 @@
 		 <div class="contact_inner">
 		 	<input type="name" name="name" placeholder="Name">
 		 	<input type="email" name="email" placeholder="Email">
-		 	<input type="" name="" placeholder="Tell us a bit about you Project">
-		 	<textarea placeholder="Enter your message ..."></textarea>
+		 	<!-- <input type="" name="" placeholder="Tell us a bit about you Project"> -->
+		 	<textarea placeholder="Tell us a bit about you Project"></textarea>
 		 </div>
 
 		 <button class="contact_btn">
@@ -242,5 +276,75 @@
 
 	    prevScrollPos = currentScrollPos;
 	};
+
+
+	const testimoniesContainer = document.querySelector('.testimonies-container');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+
+let currentIndex = 0;
+const testimonies = document.querySelectorAll('.testimony');
+
+prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        scrollTestimonies();
+    }
+});
+
+nextButton.addEventListener('click', () => {
+    if (currentIndex < testimonies.length - 1) {
+        currentIndex++;
+        scrollTestimonies();
+    }
+});
+
+function scrollTestimonies() {
+    testimoniesContainer.scrollLeft = currentIndex * testimonies[0].offsetWidth;
+}
+
+// Optionally, you can add touch event support for mobile devices.
+
+testimoniesContainer.addEventListener('touchstart', handleTouchStart, false);
+testimoniesContainer.addEventListener('touchmove', handleTouchMove, false);
+
+let xDown = null;
+let yDown = null;
+
+function handleTouchStart(event) {
+    const firstTouch = event.touches[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+}
+
+function handleTouchMove(event) {
+    if (!xDown || !yDown) {
+        return;
+    }
+
+    const xUp = event.touches[0].clientX;
+    const yUp = event.touches[0].clientY;
+
+    const xDiff = xDown - xUp;
+    const yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+        if (xDiff > 0) {
+            if (currentIndex < testimonies.length - 1) {
+                currentIndex++;
+                scrollTestimonies();
+            }
+        } else {
+            if (currentIndex > 0) {
+                currentIndex--;
+                scrollTestimonies();
+            }
+        }
+    }
+
+    xDown = null;
+    yDown = null;
+}
+
 </script>
 </html>
