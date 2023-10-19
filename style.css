@@ -348,6 +348,21 @@ h2{
 	text-align: center;
 }
 
+.sb-bgImg{
+
+}
+
+.service-box{
+	min-height: 250px;
+	max-width:50%; 
+	background-color: #Fafafa !important;
+	display: flex;
+	flex-direction: column;
+	padding:5px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 
 /* Utility Classes */
 .cut-text{
