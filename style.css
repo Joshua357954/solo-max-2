@@ -913,6 +913,12 @@ h2{
 	}
 
 	.inner_one {
+		height: 60%;
+	}
+	.inner_two {
+		height: 40%;
+		/*background-color: 
+		red*/
 
 	}
 
