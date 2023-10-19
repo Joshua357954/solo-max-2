@@ -410,7 +410,7 @@ h2{
 	background-color: white;
 	height:350px;
 	width:100%;
-	border-bottom: 3px dashed gray;
+	border-bottom: 3px solid lightgray;
 	box-shadow: 1px 11px 25px 23px rgba(0,0,0,1);
 	-webkit-box-shadow: 1px 11px 25px 23px rgba(212,207,207,0.75);
 	-moz-box-shadow: 1px 11px 25px 23px rgba(212,207,207,0.75);
@@ -439,7 +439,7 @@ h2{
 /* Testimonies */
 .review-container{
 	background-color: white;
-	height:450px;
+	height:370px;
 	width:100%;
 	display: flex ;
 	flex-direction: column;
@@ -461,7 +461,7 @@ h2{
     flex-wrap: nowrap;
     overflow-x: auto;
     color:black;
-    height: 65%;
+    height: 75%;
     width:100%;
     align-items: center;
     /*margin: 20px 0 ;*/
@@ -810,23 +810,6 @@ h2{
 		width: 100%;
 	}
 
-	/* Scroll simulator */
-
-
-	a#scroll-btn {
-		position: absolute;
-		height: 4em;
-		width: 2em;
-		border: 0.3em solid #ffffff;
-		margin: auto;
-		top:70%;
-		z-index: 10;
-		left:50%;
-		transform: translate(-50%,-50%);
-		text-align: center;
-		border-radius: 3em;
-	}
-
 
 	/* Scroll Simulator*/
 	#section-1 {
@@ -839,7 +822,7 @@ h2{
 		width: 2em;
 		border: 0.3em solid #ffffff;
 		margin: auto;
-		top:90%;
+		top:75%;
 		z-index: 10;
 		left:50%;
 		transform: translate(-50%,-50%);
