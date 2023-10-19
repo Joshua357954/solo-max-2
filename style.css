@@ -635,7 +635,7 @@ label{
     appearance: none;
     width: 16px;
     height: 16px;
-    border: 2px solid #007BFF;
+    border: 2px solid #074D85;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
@@ -930,7 +930,7 @@ label{
 
 	/* Contact */
 	.contact {
-		height: 520px;
+		height: 740px;
 	}
 	.contact_inner {
 		display: flex;
