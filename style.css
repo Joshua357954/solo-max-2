@@ -542,7 +542,7 @@ h2{
 /* Contact Us*/
 .contact {
 	font-family: 'Montserrat';
-	height:500px;
+	height:730px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -565,6 +565,24 @@ h2{
 	flex-direction: column;
 }
 
+label{
+	color:black;
+	display: flex;
+	font-size: 1.2rem;
+	flex-direction: column;
+}
+
+.cad-main {
+	margin: 10px -0;
+}
+
+.cad {
+	display: flex;
+/*	background-color: red*/
+	gap:50px;
+}
+
+
 .contact_inner input {
 	gap: 10px;
 	font-size: 1.2rem;
@@ -575,7 +593,7 @@ h2{
 	background-color: #f9f9f9;
 }
 .contact_inner input::placeholder{
-	color:black;
+	color:gray;
 }
 
 
@@ -592,6 +610,40 @@ h2{
 .contact_inner input:focus {
 	outline:white;
 	border:white
+}
+
+/* Style for the radio button container */
+.radio-container {
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Style for the radio button input */
+.radio-container input {
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+/* Style for the radio button indicator (dot) */
+.radio-container input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Style for the radio button indicator when selected */
+.radio-container input:checked[type="radio"] {
+    background-color: #000;
 }
 
 .contact_btn{
