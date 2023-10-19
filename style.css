@@ -137,6 +137,13 @@ body{ ;
 	flex-direction: column;
 	position: relative;
 }
+/*.header {
+  --mask:
+    radial-gradient(176.65px at 50% calc(100% - 237.00px),#000 99%,#0000 101%) calc(50% - 158px) 0/316px 100%,
+    radial-gradient(176.65px at 50% calc(100% + 158.00px),#0000 99%,#000 101%) 50% calc(100% - 79px)/316px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}*/
 
 header::before{
 	content: "";
@@ -327,25 +334,40 @@ h2{
 	background-color: white;
 }
 
+
+/* Our Services */
+
 .complex-grid {
 	width:100%;
 	margin-top:30px;
-	height: 500px;
-	display: flex;
-}
-
-.cg_one{
-	width: 50%;
-	height:100%;
-	background-color: pink;
+	height: 800px;
 	display: flex;
 	flex-direction: column;
 }
 
+.cg_one{
+	width: 100%; 
+	background-color: yellow;
+	display: flex;
+	flex-direction: column;
+}
+
+.sb-container{
+	width: 100%;
+	background-color: purple;
+}
+
+.sb-one {
+	width:100%;
+	max-height: 100%;
+	background-color: blue;
+}
+
 .cg_two{
-	width: 50%;
-	height:100%;
+	width: 100%;
+	height:50%;
 	text-align: center;
+	display: none;
 }
 
 .sb-bgImg{
@@ -354,7 +376,7 @@ h2{
 
 .service-box{
 	min-height: 250px;
-	max-width:50%; 
+	max-width:100%; 
 	background-color: #Fafafa !important;
 	display: flex;
 	flex-direction: column;
@@ -468,7 +490,7 @@ h2{
 	text-align: center;
 	color:black;
 	font-weight: 600;
-	color:seagreen;
+	/*color:seagreen;*/
 	background-color: white;
 }
 
@@ -858,6 +880,12 @@ label{
 		height: 400px;
 	}
 
+	/* Services */
+	.sb-container {
+		height: 700px;
+		width: 100%;
+		flex-direction: column;
+	}
 
 	/* Utility Classes */
 	.cut-text{
@@ -868,15 +896,23 @@ label{
 	.complex-grid {
 		width:100%;
 		flex-direction: column-reverse;
-		height: 600px;
+		/*height: 600px;*/
+	}
+
+	.service-box{
+		width:100%;
 	}
 
 	.cg_one{
 		width: 100%;
+		display: flex;
+		height: 100%;
+		flex-direction: column;
 	}
 
 	.cg_two{
 		width: 100%;
+		flex-direction: column;
 	}
 
 
