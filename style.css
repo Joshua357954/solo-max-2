@@ -410,7 +410,7 @@ h2{
 	background-color: white;
 	height:350px;
 	width:100%;
-	border-bottom: 3px solid rgba(0,0,0,.1);
+	border-bottom: 3px solid rgba(0,0,0,.03);
 	box-shadow: 1px 11px 25px 23px rgba(0,0,0,1);
 	-webkit-box-shadow: 1px 11px 25px 23px rgba(212,207,207,0.75);
 	-moz-box-shadow: 1px 11px 25px 23px rgba(212,207,207,0.75);
