@@ -274,64 +274,6 @@ li a:focus{
 	font-size: 1rem;
 }
 
-/* Scroll Simulator*/
-	#section-1 {
-	  background-color: #2d8df8;
-	}
-
-	a#scroll-btn {
-		position: absolute;
-		height: 4em;
-		width: 2em;
-		border: 0.3em solid #ffffff;
-		margin: auto;
-		top:90%;
-		z-index: 10;
-		left:50%;
-		transform: translate(-50%,-50%);
-		text-align: center;
-		border-radius: 3em;
-	}
-
-	a#scroll-btn:before {
-	  position: absolute;
-	  content: "";
-	  margin: auto;
-	  left: 0;
-	  right: 0;
-	  top: .9em;
-	  height: 1em;
-	  width: 1em;
-	  background-color: #ffffff;
-	  border-radius: 50%;
-	  animation: move-down 2s infinite;
-	}
-
-	@keyframes move-down {
-	  80% {
-	    opacity: 0.5;
-	  }
-	  100% {
-	    transform: translateY(1.75em);
-	    opacity: 0;
-	  }
-	}
-
-	a#scroll-btn:after {
-	  position: absolute;
-	  content: "";
-	  width: 12em;
-	  display: block;
-	  width: 12em;
-	  text-align: center;
-	  left: -5em;
-	  bottom: -2.5em;
-	  font-size: .6em;
-	  color: #ffffff;
-	  letter-spacing: 3px;
-	  font-weight: 600;
-}
-
 /* Global Styles */
 a{
 	text-align: center;
@@ -458,6 +400,7 @@ h2{
 	display: none;
 }
 
+
 /* Trusted By */
 .trusted_by{
 	color:black;
@@ -467,8 +410,8 @@ h2{
 	background-color: white;
 	height:350px;
 	width:100%;
-	/*border-bottom: 1px solid gray;*/
-	box-shadow: 1px 11px 25px 23px rgba(212,207,207,0.75);
+	border-bottom: 3px dashed gray;
+	box-shadow: 1px 11px 25px 23px rgba(0,0,0,1);
 	-webkit-box-shadow: 1px 11px 25px 23px rgba(212,207,207,0.75);
 	-moz-box-shadow: 1px 11px 25px 23px rgba(212,207,207,0.75);
 	}
@@ -491,17 +434,40 @@ h2{
 	height: 120px;
 }
 
+
+
 /* Testimonies */
+.review-container{
+	background-color: white;
+	height:450px;
+	width:100%;
+	display: flex ;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+
+}
+
+.text-center{
+	text-align: center;
+	color:black;
+	font-weight: 600;
+	color:green;
+	background-color: white;
+}
 
 .testimonies-container {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     color:black;
+    height: 80%;
+    width:100%;
+    align-items: center;
     /*margin: 20px 0 ;*/
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
-    background-color: lightgray;
+    background-color: white;
     /*background-image: url('background.jpg'); /* Add your background image URL */*/
     background-size: cover;
     background-position: center;
@@ -509,23 +475,10 @@ h2{
     border-radius: 5px;
 }
 
-.text-center{
-	text-align: center;
-	color:black;
-	padding: 10px 0;
-	background-color: white;
-}
-
-.review-container{
-	background-color: white;
-}
-
-.review-text{
-	/*margin: 10px 0;*/
-}
 
 .testimony {
     min-width: 300px;
+    height: 230px;
     padding: 20px;
     margin: 10px;
     background-color: #fff;
@@ -591,6 +544,7 @@ h2{
 	height:500px;
 	width: 100%;
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	align-items:center;
 	gap:28px;
@@ -599,7 +553,10 @@ h2{
 }
 
 .contact h2 {
-	color:black; 
+	color:black;
+	font-weight: bolder;
+	font-size: 2.2rem;
+	font-family: "comic sans ms" 
 }
 .contact_inner {
 	display: flex;
@@ -609,20 +566,31 @@ h2{
 
 .contact_inner input {
 	gap: 10px;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	margin-bottom: 10px;
-	padding: 12px 10px;
-	border-radius: .1rem;
-	border:1px solid gray;
+	padding: 15px 12px;
+	border-radius: .3rem;
+	border:1px solid darkgray;
+	background-color: #f9f9f9;
 }
+.contact_inner input::placeholder{
+	color:black;
+}
+
 
 .contact_inner textarea {
 	resize: none;
-	padding: 5px;
-	font-size: 1.1rem;
+	padding: 10px 8px ;
+	font-size: 1.2rem;
 	border-radius: .1rem;
 	height: 100px;
 	border:1px solid gray;
+}
+
+
+.contact_inner input:focus {
+	outline:white;
+	border:white
 }
 
 .contact_btn{
@@ -694,6 +662,18 @@ h2{
 	color: black; 
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -832,6 +812,7 @@ h2{
 
 	/* Scroll simulator */
 
+
 	a#scroll-btn {
 		position: absolute;
 		height: 4em;
@@ -846,9 +827,69 @@ h2{
 		border-radius: 3em;
 	}
 
-	a#scroll-btn:after {
-	  content: "SCROLL DOWN";
+
+	/* Scroll Simulator*/
+	#section-1 {
+	  background-color: #2d8df8;
 	}
+
+	a#scroll-btn {
+		position: absolute;
+		height: 4em;
+		width: 2em;
+		border: 0.3em solid #ffffff;
+		margin: auto;
+		top:90%;
+		z-index: 10;
+		left:50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		border-radius: 3em;
+	}
+
+	a#scroll-btn:before {
+	  position: absolute;
+	  content: "";
+	  margin: auto;
+	  left: 0;
+	  right: 0;
+	  top: .9em;
+	  height: 1em;
+	  width: 1em;
+	  background-color: #ffffff;
+	  border-radius: 50%;
+	  animation: move-down 2s infinite;
+	}
+
+	@keyframes move-down {
+	  80% {
+	    opacity: 0.5;
+	  }
+	  100% {
+	    transform: translateY(1.75em);
+	    opacity: 0;
+	  }
+	}
+
+	a#scroll-btn:after {
+	  position: absolute;
+	  content: "SCROLL DOWN";
+	  width: 12em;
+	  display: block;
+	  width: 12em;
+	  text-align: center;
+	  left: -5em;
+	  bottom: -2.5em;
+	  font-size: .6em;
+	  color: #ffffff;
+	  letter-spacing: 3px;
+	  font-weight: 600;
+}
+
+
+	/*a#scroll-btn:after {
+	  content: "SCROLL DOWN";
+	}*/
 
 	/* Contact */
 	.contact {
