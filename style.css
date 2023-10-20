@@ -288,6 +288,7 @@ a{
 
 h2,h3{
 	line-height: 40px;
+	text-align: center;
 	letter-spacing: 1.3px;
 }
 
@@ -306,38 +307,141 @@ h2{
 /* First Section */
 .section{
 	width:100%;
-	min-height:400px;
+	background-color: brown;
+	height:400px;
+	display: flex;
 }
 
-.section p {
+.section p{
+	font-family:'Montserrat' !important;
+}
+
+.section-1-inner-1{
+	width:50%;
+	display: flex;
+	background-color: black;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 0 35px;
+}
+
+.section-1-inner-2{
+	width:50%;
+	background-color: white;
+	display: flex;
+	color: black;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 0 35px;
+}
+
+
+/*.section p {
 	font-family:'Montserrat' !important;
 }
 
 .section1{
 	width:100%;
 	border-bottom: 2px solid lightgray;
+	padding-top: 50px;
+	
 }
-
-.section_one{
+*/
+/*.section_one{
 	color:black;
 	background-color: white;
 	display:flex;
-}
 
-.section_one .one {
+}*/
+
+/*.section_one .one {
 	background-color: white;
 	width:50%;
 }
-
-.section_one .two {
+*/
+/*.section_one .two {
 	width:50%;
 	background-color: white;
 }
-
+*/
 
 /* Our Services */
 
-.complex-grid {
+.section-2{
+	color:black;
+	background-color: white;
+	display:flex;
+	width:100%;
+	flex-direction: column;
+	/*padding: 50px 0;*/
+}
+
+.service-text{
+	margin: 60px 0 30px 0;
+}
+
+.service-container{
+	display: flex;
+	height:450px;
+	margin-top: 20px;
+	background-color: yellow;
+	width:100%;
+}
+
+.service-inner {
+	display: flex;
+	width:50%;
+	height: 100%;
+}
+
+.service-box{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	height:100%;
+	background-color:purple; 
+}
+
+.service-box-inner{
+	width:100%;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+	padding:5px;
+	background-color: #Fafafa !important;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.service-inner-2{
+	width: 50% ;
+	height: 100% ;
+	background-color: blue;
+}
+
+
+/* Classes */
+.bg-img{
+	object-fit: cover; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center center;
+}
+
+.bg-white{
+	background-color: white !important;
+}
+
+.dark{
+	background-color: black!important;
+	color:white!important;
+}
+
+/*.complex-grid {
 	width:100%;
 	margin-top:30px;
 	height: 800px;
@@ -352,16 +456,16 @@ h2{
 	flex-direction: column;
 }
 
+.sbo{
+	width:100%;
+	height: 250px;
+	background-color: purple;
+}
 .sb-container{
 	width: 100%;
 	background-color: purple;
 }
 
-.sb-one {
-	width:100%;
-	max-height: 100%;
-	background-color: blue;
-}
 
 .cg_two{
 	width: 100%;
@@ -372,9 +476,10 @@ h2{
 
 .sb-bgImg{
 
-}
+}*/
 
-.service-box{
+/*.service-box{
+	height: 250px;
 	min-height: 250px;
 	max-width:100%; 
 	background-color: #Fafafa !important;
@@ -385,9 +490,9 @@ h2{
 	align-items: center;
 	text-align: center;
 }
-
+*/
 /* Utility Classes */
-.cut-text{
+/*.cut-text{
 	text-align: center;
 	padding: 0 35px;
 }
@@ -427,10 +532,10 @@ h2{
 .dark {
 	color:#f9f9f9 !important;
 	background-color: black !important;
-}
-.reverse {
+}*/
+/*.reverse {
 	flex-direction: row ;
-}
+}*/
 
 
 .closemenu-icon{
@@ -610,7 +715,10 @@ label{
 }
 
 .cad-main {
-	margin: 10px -0;
+	margin: 13px -0;
+	display: flex;
+	gap: 7px;
+	flex-direction: column;
 }
 
 .cad {
@@ -866,53 +974,67 @@ label{
 		line-height: 33px !important;
 	}
 		
-		/* inner section*/
-	.show_two{
-		flex-direction: column-reverse !important;
-	}
-	.section_one .one {
+	/* inner section*/
+
+	.section{
 		width:100%;
-		height: 400px;
+		height: 600px;
+		background-color: yellow
+	}
+	.section-1-inner-1{
+		width:100%;
+		height:100%;
+		/*flex-direction: flex-column-reverse;*/
+	}
+	.section-1-inner-2{
+		width:100%;
+		height:100%;
 	}
 
-	.section_one .two {
-		width:100%;
-		height: 400px;
-	}
+
 
 	/* Services */
-	.sb-container {
-		height: 700px;
+	.service-container{
+		flex-direction: column;
 		width: 100%;
+		min-height:1100px;
+	}
+	
+	.service-inner {
+		width: 100%;
+		height: 100%;
 		flex-direction: column;
 	}
+
+	/*.reverse{
+		flex-direction: column-reverse;
+	}*/
+
+	.service-box {
+		flex-direction: row;
+		width: 100%;
+		background-color: red;
+		flex-direction: column;
+	}
+
+	.reverse{
+		flex-direction: column-reverse;
+	}
+	.service-box-inner{
+		width: 100%;
+		height: 100%;
+	}
+
+	.service-inner-2{
+		width: 100% ;
+		height: 40%;
+	}
+
 
 	/* Utility Classes */
 	.cut-text{
 		padding: 0 17px;
 	
-	}
-
-	.complex-grid {
-		width:100%;
-		flex-direction: column-reverse;
-		/*height: 600px;*/
-	}
-
-	.service-box{
-		width:100%;
-	}
-
-	.cg_one{
-		width: 100%;
-		display: flex;
-		height: 100%;
-		flex-direction: column;
-	}
-
-	.cg_two{
-		width: 100%;
-		flex-direction: column;
 	}
 
 
