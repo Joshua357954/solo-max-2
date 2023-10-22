@@ -183,10 +183,11 @@ header::before{
 }
 
 .nav_img_box{
-	width: 200px ;
+	width: 250px ;
 	min-width: 200px;
-	height: 80px;
+	height: 90px;
 	display: flex;
+	margin-top: 10px;
 	border-radius: .2rem;
 	justify-content: center;
 	align-items: center;
