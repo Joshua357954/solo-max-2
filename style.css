@@ -1074,7 +1074,7 @@ label{
 	  margin: auto;
 	  left: 0;
 	  right: 0;
-	  top: .9em;
+	  top: 2.2em;
 	  height: 1em;
 	  width: 1em;
 	  background-color: #ffffff;
@@ -1083,11 +1083,14 @@ label{
 	}
 
 	@keyframes move-down {
+	  0% {
+	    transform: translateY(0);
+	  }
 	  80% {
 	    opacity: 0.5;
 	  }
 	  100% {
-	    transform: translateY(1.75em);
+	    transform: translateY(-1.75em);
 	    opacity: 0;
 	  }
 	}
@@ -1097,7 +1100,6 @@ label{
 	  content: "SCROLL UP";
 	  width: 12em;
 	  display: block;
-	  width: 12em;
 	  text-align: center;
 	  left: -5em;
 	  bottom: -2.5em;
@@ -1105,7 +1107,7 @@ label{
 	  color: #ffffff;
 	  letter-spacing: 3px;
 	  font-weight: 600;
-}
+	}
 
 
 	/*a#scroll-btn:after {
