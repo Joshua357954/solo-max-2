@@ -188,14 +188,15 @@ header::before{
 }
 
 .nav_img_box{
-	width: 250px ;
+	width: 210px ;
 	min-width: 200px;
-	height: 90px;
+	height: 80px;
 	display: flex;
 	margin-top: 10px;
 	border-radius: .2rem;
 	justify-content: center;
 	align-items: center;
+	transition: all .5s ease-in-out;
 }
 
 
