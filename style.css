@@ -325,19 +325,19 @@ h2{
 .section-1-inner-1{
 	width:50%;
 	display: flex;
-	background-color: black;
+	background-color: white;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	color:white;
+	color:black;
 	padding: 0 30px;
 }
 
 .section-1-inner-2{
 	width:50%;
-	background-color: white;
+	background-color: black;
 	display: flex;
-	color: black;
+	color: white;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
@@ -748,6 +748,7 @@ label{
 }
 .contact_inner input::placeholder{
 	color:gray;
+
 }
 
 
@@ -1119,6 +1120,11 @@ label{
 		width:80%;
 		flex-direction: column;
 	}
+	.contact_inner input::placeholder{
+		font-size: 1rem;
+	}
+
+
 
 	/* Founder */
 
