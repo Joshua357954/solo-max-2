@@ -188,8 +188,8 @@ header::before{
 }
 
 .nav_img_box{
-	width: 210px ;
-	min-width: 200px;
+	width: 190px ;
+	/*min-width: 200px;*/
 	height: 80px;
 	display: flex;
 	margin-top: 10px;
