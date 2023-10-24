@@ -1120,8 +1120,8 @@ label{
 		width:80%;
 		flex-direction: column;
 	}
-	.contact_inner input::placeholder{
-		font-size: 1rem;
+	.contact_inner input::placeholder, .contact_inner textarea {
+		font-size: 1.1rem;
 	}
 
 
