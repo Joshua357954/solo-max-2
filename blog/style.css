@@ -178,6 +178,7 @@ header {
 header h1 {
 	font-weight: 900;
 	font-size: 3.5rem;
+	text-align: center;
 	/*font-family: 'Montserrat'*/
 }
 
@@ -206,7 +207,7 @@ header li {
 
 .nav2{
 	padding: 0 20px;
-	margin-bottom: 30px;
+	margin: 30px 0 ;
 }
 
 main {
@@ -249,6 +250,15 @@ main {
 
 
 
+
+
+
+@media (max-width: 720px){
+	header h1 {
+		font-size: 2rem;
+	}
+
+}
 
 
 
