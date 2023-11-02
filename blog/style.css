@@ -125,7 +125,17 @@ body{
 	justify-content: space-between;
 	padding: 0px 50px 0px 0px;
 	align-items: center;
+	position: relative;
 	/*background-color: red;*/
+}
+
+.nav-icon{
+	position: absolute;
+	top:20%;
+	right:-50px;
+	width:50px;
+	height: 50px;
+	display:none;
 }
 
 .blog-nav img{
@@ -388,6 +398,7 @@ footer {
     .footer-content {
         flex-direction: column;
         align-items: center;
+        gap:20px;
     }
 
     .footer-info,
@@ -398,6 +409,15 @@ footer {
 		font-size: 2.5rem;
 	}
 
+	.blog-nav-items{
+		display: none;
+		transition: all .5s ease-in-out;
+	}
+
+
+	.nav-icon{
+		display: flex;
+	}
 }
 
 
