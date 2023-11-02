@@ -297,7 +297,7 @@ form {
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -305,9 +305,9 @@ input {
 }
 
 button {
-    background-color: black;
+    background-color: #467fbc;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 22px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
