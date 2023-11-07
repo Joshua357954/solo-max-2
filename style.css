@@ -1119,6 +1119,10 @@ label{
 	.contact {
 		height: 740px;
 	}
+
+	.contact h2{
+		font-size: 1.7rem;
+	}
 	.contact_inner {
 		display: flex;
 		width:80%;
