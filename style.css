@@ -251,7 +251,7 @@ li a:hover{
 li a:focus{
 	outline: none;
 	font-weight: 600;
-	border-bottom-color:#f9f9f9;
+	/* border-bottom-color:#f9f9f9; */
 }
 
 .last_link:hover{
