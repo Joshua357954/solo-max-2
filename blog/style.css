@@ -103,12 +103,17 @@
 	} 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+
+
+
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	border: none;
-	font-family: 'SoDoSans',"Helvetica Neue", Helvetica, Arial,sans-serif;
+	font-family: 'Rubik', sans-serif;
+	/* font-family: 'SoDoSans',"Helvetica Neue", Helvetica, Arial,sans-serif; */
 }
 
 
