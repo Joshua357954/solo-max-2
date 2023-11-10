@@ -328,6 +328,7 @@ h2{
 	background-color: brown;
 	height:400px;
 	display: flex;
+	border-bottom: 10px solid #f9f9f9;
 }
 
 .section p{
@@ -343,6 +344,7 @@ h2{
 	text-align: center;
 	color:black;
 	padding: 0 18px;
+	/* border-left: 10px solid #f9f9f9; */
 }
 
 .section-1-inner-2{
@@ -395,6 +397,7 @@ h2{
 	/* width:100%; */
 	flex-direction: column;
 	/*padding: 50px 0;*/
+	border-bottom: 4px solid #f9f9f9;
 }
 
 
