@@ -313,7 +313,7 @@ h2,h3{
 
 p{
 	line-height: 26px;
-	letter-spacing: 1.3px;
+	/* letter-spacing: 1.3px; */
 }
 img{
 	object-fit: cover !important;
