@@ -287,10 +287,11 @@ li a:focus{
 
 .middle_text h1{
 	font-size: 3rem;
+	font-weight: 900;
 	text-transform: uppercase;
 }
 .middle_text p{
-	font-size: 1.1rem;
+	font-size: 1.03em;
 }
 .middle_text small{
 	color: #DCDCDC;
