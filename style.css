@@ -407,7 +407,7 @@ h2{
 	/* width:100%; */
 	flex-direction: column;
 	/*padding: 50px 0;*/
-	border-bottom: 7px solid rgba(0,0,0,0.3);
+	border-bottom: 7px solid #f9f9f9;
 }
 
 
@@ -586,7 +586,7 @@ h2{
 	background-color: white;
 	height:350px;
 	width:100%;
-	border-bottom: 3px solid rgba(0,0,0,.03);
+	border-bottom: 7px solid #f9f9f9;
 	box-shadow: 1px 11px 25px 23px rgba(0,0,0,1);
 	-webkit-box-shadow: 1px 11px 25px 23px rgba(212,207,207,0.75);
 	-moz-box-shadow: 1px 11px 25px 23px rgba(212,207,207,0.75);
