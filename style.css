@@ -1015,7 +1015,7 @@ footer {
 		top:0;
 		left:-100;
 		bottom:0;
-		width:100vw;
+		width:50vw;
 		height:100vh;
 		background-color: black;
 		flex-direction: column;
