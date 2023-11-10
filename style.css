@@ -112,10 +112,10 @@
 	margin: 0;
 	box-sizing: border-box;
 	border: none;
-	/* font-family: 'Rubik',sans-serif;
-	font-family: 'Lato', sans-serif;?
+	font-family: 'Rubik',sans-serif;
+	/* font-family: 'Lato', sans-serif;
 	font-family: 'Quicksand', sans-serif; */
-	font-family: 'SoDoSans',"Helvetica Neue", Helvetica, Arial,sans-serif;
+	/* font-family: 'SoDoSans',"Helvetica Neue", Helvetica, Arial,sans-serif; */
 }
 
 :root{
@@ -328,7 +328,7 @@ h2{
 .section{
 	width:100%;
 	background-color: brown;
-	height:400px;
+	height:500px;
 	display: flex;
 	border-bottom: 3px solid #f9f9f9;
 }
