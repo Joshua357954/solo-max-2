@@ -319,6 +319,7 @@ img{
 }
 h2{
 	font-size: 2rem;
+	font-weight: 900 !important;
 }
 
 
@@ -406,17 +407,13 @@ h2{
 	/* width:100%; */
 	flex-direction: column;
 	/*padding: 50px 0;*/
-	border-bottom: 7px solid #f9f9f9;
+	border-bottom: 7px solid rgba(0,0,0,0.3);
 }
 
 
 .service-text{
-	/* border-bottom: 4px solid rgba(0,0,0,0.5); */
 	margin: 60px auto 20px auto;
-		font-weight: 900;
-	/* display: flex; */
-	/* width: 30%;
-	justify-self: center; */
+	font-weight: 900;
 }
 
 .service-container{
@@ -625,6 +622,7 @@ h2{
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-end;
+	border-bottom: 7px solid #f9f9f9;
 
 }
 
@@ -737,7 +735,7 @@ h2{
 	font-weight: 900;
 	/*text-decoration: underline;*/
 	/* border-bottom: 4px solid rgba(0,0,0,0.7); */
-	border-bottom: 4px solid rgba(0,0,0,0.5);
+	/* border-bottom: 4px solid rgba(0,0,0,0.5); */
 
 	font-size: 2.2rem;
 	/*font-family: 'Snell Roundhand', 'URW Chancery L', cursive; */
