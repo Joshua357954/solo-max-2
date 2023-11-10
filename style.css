@@ -184,8 +184,8 @@ header::before{
 }
 
 .navmenu-icon{
-	width: 60px;
-	height: 60px;
+	width: 45px;
+	height: 45px;
 	display: none;
 }
 
@@ -242,7 +242,7 @@ header::before{
 
 .last_link {
 	padding: 10px 15px !important ;
-	/*border-radius: .2rem;*/
+	border-radius: .4rem;
 	background-color:#467fbc;
 	color:white;
 	margin-left: 35px;
@@ -392,7 +392,7 @@ h2{
 	color:black;
 	background-color: white;
 	display:flex;
-	width:100%;
+	/* width:100%; */
 	flex-direction: column;
 	/*padding: 50px 0;*/
 }
@@ -401,7 +401,9 @@ h2{
 .service-text{
 	border-bottom: 4px solid rgba(0,0,0,0.5);
 	margin: 60px 0 30px 0;
-	display: flex;
+	/* display: flex; */
+	width: 30%;
+	justify-self: center;
 }
 
 .service-container{
