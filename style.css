@@ -241,14 +241,14 @@ header::before{
 }
 
 .last_link {
-	padding: 8px 10px !important ;
+	padding: 8px 8px !important ;
 	border-radius: .4rem;
 	background-color:#467fbc;
 	color:white;
 	margin-left: 35px;
 	border: none;
 	font-size: 15px;
-	letter-spacing: .5px;
+	letter-spacing: .3px;
 	/* font-weight: bolder; */
 }
 	/* NavLinks Hover state */
