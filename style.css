@@ -136,7 +136,7 @@ body{
 	user-select: none;
 	padding: 0;
 	margin: 0;
-	background-color: black; 
+	background-color: #f9f9f9; 
 	color: white;
 }
 
@@ -328,9 +328,18 @@ h2{
 	background-color: brown;
 	height:400px;
 	display: flex;
-	border-bottom: 10px solid #f9f9f9;
+	border-bottom: 7px solid #f9f9f9;
 }
 
+.divider {
+	width: 7px;
+	height: 100%;
+	background-color: #f9f9f9;
+}
+
+.top {
+	margin-top: 7px;
+}
 .section p{
 	/* font-family:'Montserrat' !important; */
 }
@@ -402,8 +411,9 @@ h2{
 
 
 .service-text{
-	border-bottom: 4px solid rgba(0,0,0,0.5);
-	margin: 60px auto 30px auto;
+	/* border-bottom: 4px solid rgba(0,0,0,0.5); */
+	margin: 60px auto 20px auto;
+		font-weight: 900;
 	/* display: flex; */
 	/* width: 30%;
 	justify-self: center; */
@@ -724,7 +734,7 @@ h2{
 
 .contact h2 {
 	color:black;
-	font-weight: bolder;
+	font-weight: 900;
 	/*text-decoration: underline;*/
 	/* border-bottom: 4px solid rgba(0,0,0,0.7); */
 	border-bottom: 4px solid rgba(0,0,0,0.5);
