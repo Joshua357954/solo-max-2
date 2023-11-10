@@ -261,7 +261,7 @@ header::before{
 }
 	/* NavLinks Hover state */
 li a:hover{
-	font-weight: 600;
+	/* font-weight: 600; */
 	/* border-bottom-color:#f9f9f9; */
 	color: #467fbc !important;
 }
@@ -275,7 +275,7 @@ li a:focus{
 .last_link:hover{
 	background-color:#467fbc;
 	border-bottom-color:#467fbc;
-	opacity: .8;
+	opacity: .9;
 }
 
 
@@ -1126,7 +1126,6 @@ footer {
 		height:100%;
 	}
 
-yellow
 
 	/* Services */
 	.service-container{
