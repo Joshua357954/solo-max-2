@@ -104,6 +104,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 
 *{
@@ -111,7 +112,9 @@
 	margin: 0;
 	box-sizing: border-box;
 	border: none;
-	font-family: 'Montserrat','SoDoSans', sans-serif;
+	/* font-family: 'Rubik','SoDoSans', sans-serif; */
+	font-family: 'Lato', sans-serif;?
+	font-family: 'Quicksand', sans-serif;
 	/* font-family: 'SoDoSans',"Helvetica Neue", Helvetica, Arial,sans-serif; */
 }
 
@@ -168,14 +171,16 @@ header::before{
 /* Navbar */
 .navbar{
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	display: flex;
-	/* position: fixed; */
-    /* top: 0px; */
+	background-color: #fcfcfc;
+	color: black !important ;
+	position: fixed;
+    top: 0px;
     z-index: 200;
     width: 100%;
-    transition: top 0.5s ease-in-out;
-    transition: background-color .9s ease-in-out;
+    /* transition: top 0.5s ease-in-out;
+    transition: background-color .4s linear; */
 }
 
 .navmenu-icon{
@@ -227,7 +232,7 @@ header::before{
 
 .navlinks_box li a {
 	text-decoration: none;
-	color: white;
+	color: black;
 	padding: 10px 2px 5px 2px ;
 	font: bolder;
 	border-bottom: 2px solid rgba(0,0,0,0);
@@ -326,7 +331,7 @@ h2{
 }
 
 .section p{
-	font-family:'Montserrat' !important;
+	/* font-family:'Montserrat' !important; */
 }
 
 .section-1-inner-1{

@@ -20,7 +20,15 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
 	    if (prevScrollPos > currentScrollPos) {
 	        // Scrolling up
-	        navbar.style.top = "0";
+	    } else {
+	        // Scrolling down
+
+	        if (!mobile_nav.classList.contains('active')){
+	        	 // nav_icon.style.display = 'none'
+	        	 // alert("does not")
+	        }
+
+	           navbar.style.top = "0";
 	        navbar.classList.add('bg-white')
 
 	        logo.src = "./assets/images/solomax.png"
@@ -39,20 +47,10 @@ const nav_icon = document.querySelector('.navmenu-icon')
 		        })
 			}
 
-			if (!mobile_nav.classList.contains('active')){
-				// nav_icon.style.display = 'flex'
-				// alert("does not")
-			}
 
-	    } else {
-	        // Scrolling down
 
-	        if (!mobile_nav.classList.contains('active')){
-	        	 // nav_icon.style.display = 'none'
-	        	 // alert("does not")
-	        }
 		        
-	        navbar.style.top = "-100px"; // Slide up the navbar
+	        // navbar.style.top = "-100px"; // Slide up the navbar
 	    }
 
 	    prevScrollPos = currentScrollPos;
