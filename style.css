@@ -878,7 +878,7 @@ label{
 .inner_one p {
 	font-size: .95rem;
 	padding: 0 30px;
-	font-family: 'Montserrat';
+	/* font-family: 'Montserrat'; */
 }
 
 .inner_two {
