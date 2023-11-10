@@ -187,6 +187,7 @@ header::before{
 	width: 45px;
 	height: 45px;
 	display: none;
+
 }
 
 .navbar_box{
@@ -200,7 +201,7 @@ header::before{
 .nav_img_box{
 	width: 220px ;
 	/*min-width: 200px;*/
-	height: 100px;
+	height: 80px;
 	display: flex;
 	margin-top: 10px;
 	border-radius: .2rem;
