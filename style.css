@@ -401,6 +401,7 @@ h2{
 .service-text{
 	border-bottom: 4px solid rgba(0,0,0,0.5);
 	margin: 60px 0 30px 0;
+	display: flex;
 }
 
 .service-container{
