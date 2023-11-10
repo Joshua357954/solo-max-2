@@ -249,7 +249,7 @@ header::before{
 	border: none;
 	font-size: 16px;
 	letter-spacing: .8px;
-	font-weight: bolder;
+	/* font-weight: bolder; */
 }
 	/* NavLinks Hover state */
 li a:hover{
