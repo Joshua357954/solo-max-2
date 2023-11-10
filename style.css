@@ -330,7 +330,7 @@ h2{
 	background-color: brown;
 	height:400px;
 	display: flex;
-	border-bottom: 4px solid #f9f9f9;
+	border-bottom: 3px solid #f9f9f9;
 }
 
 .divider {
@@ -340,7 +340,7 @@ h2{
 }
 
 .top {
-	margin-top: 4px;
+	margin-top: 3px;
 }
 .section p{
 	/* font-family:'Montserrat' !important; */
