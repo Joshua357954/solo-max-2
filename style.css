@@ -112,7 +112,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	border: none;
-	font-family: 'Rubik','SoDoSans', sans-serif;
+	font-family: 'Rubik',sans-serif;
 	/* font-family: 'Lato', sans-serif;?
 	font-family: 'Quicksand', sans-serif; */
 	/* font-family: 'SoDoSans',"Helvetica Neue", Helvetica, Arial,sans-serif; */
@@ -1101,7 +1101,7 @@ footer {
 	.section{
 		width:100%;
 		height: 800px;
-		background-color: yellow
+		/* background-color: yellow */
 	}
 	.section-1-inner-1{
 		width:100%;
@@ -1113,7 +1113,7 @@ footer {
 		height:100%;
 	}
 
-
+yellow
 
 	/* Services */
 	.service-container{
