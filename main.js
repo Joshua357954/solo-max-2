@@ -31,21 +31,21 @@ const nav_icon = document.querySelector('.navmenu-icon')
 	           navbar.style.top = "0";
 	        navbar.classList.add('bg-white')
 
-	        logo.src = "./assets/images/solomax.png"
+	        // logo.src = "./assets/images/solomax.png"
 
 	        // change text color while scrolling up
 	        li.forEach(el => {
 				el.style.color = 'black'
 	        })
 
-	        if (currentScrollPos  < 10){
-	        	navbar.classList.remove('bg-white')
-	        	// logo.src = "./assets/images/solo-pix.png"
+	  //       if (currentScrollPos  < 10){
+	  //       	navbar.classList.remove('bg-white')
+	  //       	// logo.src = "./assets/images/solo-pix.png"
 
-	        	  li.forEach(el => {
-					el.style.color = 'white'
-		        })
-			}
+	  //       	  li.forEach(el => {
+			// 		el.style.color = 'white'
+		 //        })
+			// }
 
 
 
