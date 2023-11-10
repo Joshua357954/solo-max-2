@@ -707,7 +707,7 @@ h2{
 
 /* Contact Us*/
 .contact {
-	font-family: 'Montserrat';
+	/* font-family: 'Montserrat'; */
 	height:730px;
 	width: 100%;
 	display: flex;
