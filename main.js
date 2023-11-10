@@ -40,7 +40,7 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
 	        if (currentScrollPos  < 10){
 	        	navbar.classList.remove('bg-white')
-	        	logo.src = "./assets/images/solo-pix.png"
+	        	// logo.src = "./assets/images/solo-pix.png"
 
 	        	  li.forEach(el => {
 					el.style.color = 'white'
