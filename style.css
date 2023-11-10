@@ -227,7 +227,15 @@ header::before{
 .navlinks_box li{
 	list-style: none;
 	margin:0 14px;
+	display: flex;
+	align-items: center;
+	gap: 4.5px;
 	font-size: 15px;	
+}
+
+.li-img{
+	width: 20px;
+	height: 20px;
 }
 
 .navlinks_box li a {
