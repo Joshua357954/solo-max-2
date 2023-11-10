@@ -241,7 +241,7 @@ header::before{
 }
 
 .last_link {
-	padding: 8px 12px !important ;
+	padding: 8px 10px !important ;
 	border-radius: .4rem;
 	background-color:#467fbc;
 	color:white;
