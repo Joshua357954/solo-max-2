@@ -320,7 +320,7 @@ img{
 }
 h2{
 	font-size: 2rem;
-	font-weight: 900 !important;
+	font-weight: 700 !important;
 }
 
 
@@ -340,7 +340,7 @@ h2{
 }
 
 .top {
-	/* margin-top: 3px; */
+	margin-top: 1px;
 }
 .section p{
 	/* font-family:'Montserrat' !important; */
