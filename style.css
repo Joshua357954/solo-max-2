@@ -136,7 +136,7 @@ body{
 	/* user-select: none; */
 	padding: 0;
 	margin: 0;
-	background-color: #f9f9f9; 
+	background-color: gray; 
 	color: white;
 }
 
@@ -330,6 +330,11 @@ h2{
 	background-color: brown;
 	height:500px;
 	display: flex;
+	border-bottom: 1px solid #f9f9f9;
+}
+
+
+.s2 {
 	border-bottom: 3px solid #f9f9f9;
 }
 
