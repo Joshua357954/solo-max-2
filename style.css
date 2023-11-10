@@ -171,7 +171,7 @@ header::before{
 /* Navbar */
 .navbar{
 	width: 100%;
-	height: 80px;
+	height: 70px;
 	display: flex;
 	background-color: #fcfcfc;
 	color: black !important ;
@@ -241,14 +241,14 @@ header::before{
 }
 
 .last_link {
-	padding: 10px 13px !important ;
+	padding: 8px 12px !important ;
 	border-radius: .4rem;
 	background-color:#467fbc;
 	color:white;
 	margin-left: 35px;
 	border: none;
-	font-size: 16px;
-	letter-spacing: .6px;
+	font-size: 15px;
+	letter-spacing: .5px;
 	/* font-weight: bolder; */
 }
 	/* NavLinks Hover state */
