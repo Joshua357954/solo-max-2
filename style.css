@@ -400,10 +400,10 @@ h2{
 
 .service-text{
 	border-bottom: 4px solid rgba(0,0,0,0.5);
-	margin: 60px 0 30px 0;
+	margin: 60px auto 30px auto;
 	/* display: flex; */
-	width: 30%;
-	justify-self: center;
+	/* width: 30%;
+	justify-self: center; */
 }
 
 .service-container{
