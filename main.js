@@ -55,3 +55,34 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+var item3 = document.getElementById("projects");
+var contextMenu = document.getElementById("contextMenu");
+
+item3.addEventListener("mouseenter", function () {
+    showContextMenu();
+});
+
+item3.addEventListener("mouseleave", function () {
+    hideContextMenu();
+});
+
+contextMenu.addEventListener("mouseenter", function () {
+    showContextMenu();
+});
+
+contextMenu.addEventListener("mouseleave", function () {
+    hideContextMenu();
+});
+
+function showContextMenu() {
+    var rect = item3.getBoundingClientRect();
+    contextMenu.style.display = "block";
+    contextMenu.style.left = rect.left + "px";
+    contextMenu.style.top = rect.bottom + "px";
+}
+
+function hideContextMenu() {
+    contextMenu.style.display = "none";
+}

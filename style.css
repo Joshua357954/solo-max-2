@@ -214,6 +214,44 @@ header::before{
 	transition: all .5s ease-in-out;
 }
 
+/*  Context */
+ .context-menu {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: .3rem;
+	border: 0px solid #ccc;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	}
+
+.context-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	}
+
+.context-menu li{
+	padding: 12px 16px;
+	font-weight: 300;
+	cursor: pointer;
+	border-bottom: 1px solid lightgray;
+}
+.context-menu li:last-child{
+	border-bottom: none;
+}
+
+.context-menu li a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 95);
+}
+
+
+.context-menu li:hover {
+	background-color: #f0f0f0;
+}
+
 
 .nav_img_box img{
 	width: 100%;
