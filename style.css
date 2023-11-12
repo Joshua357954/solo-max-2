@@ -118,6 +118,10 @@
 	font-family: 'SoDoSans',"Helvetica Neue", Helvetica, Arial,sans-serif;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 :root{
 	--yellow:#fbffa7;
 	--red:#ff764d;

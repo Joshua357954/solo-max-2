@@ -38,89 +38,20 @@ const nav_icon = document.querySelector('.navmenu-icon')
 				el.style.color = 'black'
 	        })
 
-	  //       if (currentScrollPos  < 10){
-	  //       	navbar.classList.remove('bg-white')
-	  //       	// logo.src = "./assets/images/solo-pix.png"
-
-	  //       	  li.forEach(el => {
-			// 		el.style.color = 'white'
-		 //        })
-			// }
-
-
-
-		        
-	        // navbar.style.top = "-100px"; // Slide up the navbar
 	    }
 
 	    prevScrollPos = currentScrollPos;
 	};
 
 
-	const testimoniesContainer = document.querySelector('.testimonies-container');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
 
-let currentIndex = 0;
-const testimonies = document.querySelectorAll('.testimony');
-
-prevButton.addEventListener('click', () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-        scrollTestimonies();
-    }
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
 });
-
-nextButton.addEventListener('click', () => {
-    if (currentIndex < testimonies.length - 1) {
-        currentIndex++;
-        scrollTestimonies();
-    }
-});
-
-function scrollTestimonies() {
-    testimoniesContainer.scrollLeft = currentIndex * testimonies[0].offsetWidth;
-}
-
-// Optionally, you can add touch event support for mobile devices.
-
-testimoniesContainer.addEventListener('touchstart', handleTouchStart, false);
-testimoniesContainer.addEventListener('touchmove', handleTouchMove, false);
-
-let xDown = null;
-let yDown = null;
-
-function handleTouchStart(event) {
-    const firstTouch = event.touches[0];
-    xDown = firstTouch.clientX;
-    yDown = firstTouch.clientY;
-}
-
-function handleTouchMove(event) {
-    if (!xDown || !yDown) {
-        return;
-    }
-
-    const xUp = event.touches[0].clientX;
-    const yUp = event.touches[0].clientY;
-
-    const xDiff = xDown - xUp;
-    const yDiff = yDown - yUp;
-
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-        if (xDiff > 0) {
-            if (currentIndex < testimonies.length - 1) {
-                currentIndex++;
-                scrollTestimonies();
-            }
-        } else {
-            if (currentIndex > 0) {
-                currentIndex--;
-                scrollTestimonies();
-            }
-        }
-    }
-
-    xDown = null;
-    yDown = null;
-}
