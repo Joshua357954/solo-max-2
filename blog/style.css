@@ -246,7 +246,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	gap:15px;
-	font-family: 'Montserrat'; 
+	/* font-family: 'Montserrat';  */
 }
 
 header h1 {
@@ -278,11 +278,6 @@ header li {
 }
 
 
-
-.nav2{
-	padding: 0 20px;
-	margin:5px 0 30px 0 ;
-}
 
 main {
  padding:0 20px;

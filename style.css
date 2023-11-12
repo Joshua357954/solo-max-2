@@ -426,6 +426,11 @@ h2{
 	border-bottom: 4px solid #f9f9f9;
 }
 
+#services {
+	height: 30px;
+	width: 100%;
+	background-color: white
+}
 
 .service-text{
 	margin: 60px auto 20px auto;
