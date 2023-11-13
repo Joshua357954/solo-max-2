@@ -267,6 +267,17 @@ header::before{
 	background-color: #f0f0f0;
 }
 
+/* Background video */
+
+video {
+  width: 100%;
+  height: 100%;
+  z-index: 10; /* Push the video behind other content */
+  object-fit: cover;
+  overflow: hidden;
+}
+
+
 /* Caret */
 .caret{
 	width: 15px;
