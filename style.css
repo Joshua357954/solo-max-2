@@ -213,9 +213,10 @@ header::before{
 }
 
 .nav_img_box{
-	width: 200px ;
+	width: 180px ;
 	/*min-width: 200px;*/
-	height: 45px;
+	height: 35px;
+	margin-top: 15px;
 	display: flex;
 	margin-left: 40px;
 	border-radius: .2rem;
@@ -235,7 +236,7 @@ header::before{
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	z-index: 1000;
 	transition: all 4s ease-in-out;
-	}
+}
 
 .context-menu ul {
 	list-style: none;
@@ -1114,6 +1115,11 @@ footer {
 		height: 30px;
 		top:20px;
 		right: 30px;
+	}
+
+	.nav_img_box{
+		width: 150px ;
+		height: 25px;
 	}
 
 	.nvb {
