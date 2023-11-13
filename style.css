@@ -327,7 +327,7 @@ video {
 .last_link {
 	padding: 10px 12px !important ;
 	border-radius: .4rem;
-	/* background-color:#467fbc; */
+	background-color:#f9f9f9;
 	cursor: pointer;
 	color:black;
 	margin-left: 35px;
