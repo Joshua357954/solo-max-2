@@ -152,6 +152,9 @@ body{
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /*.header {
@@ -186,6 +189,17 @@ header::before{
     transition: all 1s ease-in-out;
     /* transition: background-color .4s linear; */
 }
+
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .navmenu-icon{
 	width: 45px;
@@ -253,6 +267,12 @@ header::before{
 	background-color: #f0f0f0;
 }
 
+/* Caret */
+.caret{
+	width: 15px;
+	height: 10px;
+}
+
 
 .nav_img_box img{
 	width: 100%;
@@ -296,7 +316,7 @@ header::before{
 .last_link {
 	padding: 10px 12px !important ;
 	border-radius: .4rem;
-	background-color:#467fbc;;
+	background-color:#467fbc;
 	color:white;
 	margin-left: 35px;
 	border: none;
@@ -305,7 +325,7 @@ header::before{
 	/* font-weight: bolder; */
 }
 	/* NavLinks Hover state */
-li a:hover{
+nav li a:hover{
 	/* font-weight: 600; */
 	/* border-bottom-color:#f9f9f9; */
 	color: #467fbc !important;
