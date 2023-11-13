@@ -327,12 +327,14 @@ video {
 .last_link {
 	padding: 10px 12px !important ;
 	border-radius: .4rem;
-	background-color:#467fbc;
-	color:white;
+	/* background-color:#467fbc; */
+	cursor: pointer;
+	color:black;
 	margin-left: 35px;
 	border: none;
 	font-size: 16px;
 	letter-spacing: .4px;
+	border: 3px solid black;
 	/* font-weight: bolder; */
 }
 	/* NavLinks Hover state */
@@ -349,9 +351,9 @@ li a:focus{
 }
 
 .last_link:hover{
-	background-color:#467fbc;
-	border-bottom-color:#467fbc;
-	opacity: .9;
+	/* background-color:#467fbc;
+	border-bottom-color:#467fbc; */
+	opacity: .85;
 }
 
 
