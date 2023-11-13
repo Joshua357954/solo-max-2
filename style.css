@@ -63,44 +63,46 @@
 
 
 
-	@font-face { 
-		font-family: 'SoDoSans'; 
-	    src:url("./assets/fonts/SoDoSans-Black.ttf"); 
-		font-weight: 900; 
-	} 
+@font-face { 
+	font-family: 'SoDoSans'; 
+    src:url("./assets/fonts/SoDoSans-Black.ttf"); 
+	font-weight: 900; 
+} 
 
 
-	@font-face { 
-		font-family: 'SoDoSans'; 
-	    src:url("./assets/fonts/SoDoSans-Bold.ttf"); 
-		font-weight: 700; 
-	} 
+@font-face { 
+	font-family: 'SoDoSans'; 
+    src:url("./assets/fonts/SoDoSans-Bold.ttf"); 
+	font-weight: 700; 
+} 
 
 
-	@font-face { 
-		font-family: 'SoDoSans'; 
-	    src:url("./assets/fonts/SoDoSans-Light.ttf"); 
-		font-weight: 300; 
-	} 
+@font-face { 
+	font-family: 'SoDoSans'; 
+    src:url("./assets/fonts/SoDoSans-Light.ttf"); 
+	font-weight: 300; 
+} 
 
 
-	@font-face { 
-		font-family: 'SoDoSans'; 
-	    src:url("./assets/fonts/SoDoSans-Regular.ttf"); 
-		font-weight: 400; 
-	} 
+@font-face { 
+	font-family: 'SoDoSans'; 
+    src:url("./assets/fonts/SoDoSans-Regular.ttf"); 
+	font-weight: 400; 
+} 
 
-	@font-face { 
-		font-family: 'SoDoSans'; 
-	    src:url("./assets/fonts/SoDoSans-SemiBold.ttf"); 
-		font-weight: 600; 
-	} 
+@font-face { 
+	font-family: 'SoDoSans'; 
+    src:url("./assets/fonts/SoDoSans-SemiBold.ttf"); 
+	font-weight: 600; 
+} 
 
-	@font-face { 
-		font-family: 'SoDoSans'; 
-	    src:url("./assets/fonts/SoDoSans-Thin.ttf"); 
-		font-weight: 100; 
-	}
+@font-face { 
+	font-family: 'SoDoSans'; 
+    src:url("./assets/fonts/SoDoSans-Thin.ttf"); 
+	font-weight: 100; 
+}
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
@@ -157,13 +159,7 @@ body{
 	justify-content: center;
 }
 
-/*.header {
-  --mask:
-    radial-gradient(176.65px at 50% calc(100% - 237.00px),#000 99%,#0000 101%) calc(50% - 158px) 0/316px 100%,
-    radial-gradient(176.65px at 50% calc(100% + 158.00px),#0000 99%,#000 101%) 50% calc(100% - 79px)/316px 100% repeat-x;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-}*/
+
 
 header::before{
 	content: "";
@@ -326,43 +322,30 @@ video {
 
 .last_link {
 	padding: 3px 12px !important ;
-	border-radius: .4rem;
+	border-radius: .3rem;
 	background-color:#f9f9f9;
 	cursor: pointer;
 	color:black;
-	margin-left: 35px;
-	border: none;
 	font-size: 16px;
 	letter-spacing: .4px;
 	border: 3px solid black;
 	font-weight: 400;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
-.last_link a {
-	margin:auto 0 ;
-}
 
 .last_link 
 
 /* NavLinks Hover state */
 nav li a:hover{
-	/* font-weight: 600; */
-	/* border-bottom-color:#f9f9f9; */
 	color: #467fbc !important;
 }
 
 li a:focus{
 	outline: none;
 	font-weight: 600;
-	/* border-bottom-color:#f9f9f9; */
 }
 
 .last_link:hover{
-	/* background-color:#467fbc;
-	border-bottom-color:#467fbc; */
 	opacity: .85;
 }
 
@@ -455,15 +438,20 @@ h2{
 	justify-content: center;
 	text-align: center;
 	color:black;
+	height: 100%;
 	padding: 0 18px;
 	/* border-left: 10px solid #f9f9f9; */
 }
+
+
+
 
 .section-1-inner-2{
 	width:50%;
 	background-color: black;
 	display: flex;
 	color: white;
+	height: 100%;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
@@ -1103,11 +1091,10 @@ footer {
 
 
 
-/* smooth scroll animation */
-/* Jump to "section" */
-/* Animate on scroll  */
-
-
+/* smooth scroll animation  done*/
+/* Jump to "section" done*/
+/* Animate on scroll  done*/
+ 
 @media (max-width: 720px){
 
 	body{
@@ -1123,6 +1110,8 @@ footer {
 		z-index: 944;
 		display: flex;
 		position: fixed;
+		width: 30px;
+		height: 30px;
 		top:20px;
 		right: 30px;
 	}
@@ -1133,9 +1122,9 @@ footer {
 		top:0;
 		left:-100;
 		bottom:0;
-		width:50vw;
+		width:100vw;
 		height:100vh;
-		background-color: black;
+		background-color: #f9f9f9;
 		flex-direction: column;
 		align-items: center;
 		z-index: 100;
@@ -1147,25 +1136,30 @@ footer {
 
 	.nvb.active li {
 		color: black;
+		margin: 0 auto;
+		text-align: center;
 	}	
 
 
 	/* Nav Links */
-	
 	.navlinks_box li a {
-		color:white !important ;
+		color:black !important ;
 	}
 
 	.navlinks_box li{
-		margin-top:25px; 
+		padding: 10px 0;
 		text-align: center;
 		width: 100%;
+		justify-content: center;
 	}
+
 	.last_link {
+		text-align: center;
 		width: 50% !important;
 		padding-right:0px;
-		margin-right:0px; 
-		/*background-color: red;*/
+		margin-right:0px;
+
+		/* background-color: red; */
 		/*margin-left: 0px;*/
 	}
 
@@ -1201,9 +1195,9 @@ footer {
 		font-size: 1.7rem;
 		line-height: 33px !important;
 	}
+
 		
 	/* inner section*/
-
 	.section{
 		width:100%;
 		height: 800px;
@@ -1218,6 +1212,15 @@ footer {
 		width:100%;
 		height:100%;
 	}
+	.divider {
+		height: unset;
+	}
+
+
+
+
+
+
 
 
 	/* Services */
@@ -1367,9 +1370,6 @@ footer {
 	}
 	.inner_two {
 		height: 40%;
-		/*background-color: 
-		red*/
-
 	}
 
 	.inner_one h2 {
