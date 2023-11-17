@@ -154,9 +154,10 @@ body{
 }
 
 .nav_img_box{
-	width: 200px ;
+	width: 180px ;
 	/*min-width: 200px;*/
-	height: 45px;
+	height: 35px;
+	margin-top: 15px;
 	display: flex;
 	margin-left: 40px;
 	border-radius: .2rem;
@@ -164,7 +165,6 @@ body{
 	align-items: center;
 	transition: all .5s ease-in-out;
 }
-
 
 .nav_img_box img{
 	width: 100%;
