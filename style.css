@@ -445,8 +445,6 @@ h2{
 }
 
 
-
-
 .section-1-inner-2{
 	width:50%;
 	background-color: black;
@@ -460,37 +458,10 @@ h2{
 }
 
 
-/*.section p {
-	font-family:'Montserrat' !important;
-}
 
-.section1{
-	width:100%;
-	border-bottom: 2px solid lightgray;
-	padding-top: 50px;
-	
-}
-*/
-/*.section_one{
-	color:black;
-	background-color: white;
-	display:flex;
 
-}*/
-
-/*.section_one .one {
-	background-color: white;
-	width:50%;
-}
-*/
-/*.section_one .two {
-	width:50%;
-	background-color: white;
-}
-*/
 
 /* Our Services */
-
 .section-2{
 	color:black;
 	background-color: white;
@@ -571,102 +542,6 @@ h2{
 	color:white!important;
 }
 
-/*.complex-grid {
-	width:100%;
-	margin-top:30px;
-	height: 800px;
-	display: flex;
-	flex-direction: column;
-}
-
-.cg_one{
-	width: 100%; 
-	background-color: yellow;
-	display: flex;
-	flex-direction: column;
-}
-
-.sbo{
-	width:100%;
-	height: 250px;
-	background-color: purple;
-}
-.sb-container{
-	width: 100%;
-	background-color: purple;
-}
-
-
-.cg_two{
-	width: 100%;
-	height:50%;
-	text-align: center;
-	display: none;
-}
-
-.sb-bgImg{
-
-}*/
-
-/*.service-box{
-	height: 250px;
-	min-height: 250px;
-	max-width:100%; 
-	background-color: #Fafafa !important;
-	display: flex;
-	flex-direction: column;
-	padding:5px;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-*/
-/* Utility Classes */
-/*.cut-text{
-	text-align: center;
-	padding: 0 35px;
-}
-
-.flex{
-	display: flex
-}
-
-.flex-col{
-	flex-direction: column;
-}
-
-.justify-center{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.full{
-	width: 100%;
-	height:100%;
-}
-
-.text-center{
-	text-align: center;
-}
-
-.py5{
-	padding:50px 0 0 0;
-}
-
-.bg-white{
-	color:black !important;
-	background-color: white !important;
-}
-
-.dark {
-	color:#f9f9f9 !important;
-	background-color: black !important;
-}*/
-/*.reverse {
-	flex-direction: row ;
-}*/
-
 
 .closemenu-icon{
 	display: none;
@@ -742,10 +617,8 @@ h2{
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     background-color: white;
-    /*background-image: url('background.jpg'); /* Add your background image URL */*/
     background-size: cover;
     background-position: center;
-    /*border: 1px solid #ddd;*/
     border-radius: 5px;
 }
 
@@ -814,7 +687,6 @@ h2{
 
 /* Contact Us*/
 .contact {
-	/* font-family: 'Montserrat'; */
 	height:730px;
 	width: 100%;
 	display: flex;
@@ -829,12 +701,7 @@ h2{
 .contact h2 {
 	color:black;
 	font-weight: 900;
-	/*text-decoration: underline;*/
-	/* border-bottom: 4px solid rgba(0,0,0,0.7); */
-	/* border-bottom: 4px solid rgba(0,0,0,0.5); */
-
 	font-size: 2.2rem;
-	/*font-family: 'Snell Roundhand', 'URW Chancery L', cursive; */
 }
 .contact_inner {
 	display: flex;
