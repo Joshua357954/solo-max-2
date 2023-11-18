@@ -710,6 +710,13 @@ h2{
 	flex-direction: column;
 }
 
+ .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 12px;
+}
+
 label{
 	color:black;
 	display: flex;

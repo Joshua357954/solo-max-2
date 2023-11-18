@@ -86,3 +86,77 @@ function showContextMenu() {
 function hideContextMenu() {
     contextMenu.style.display = "none";
 }
+
+
+// submit project mechanism
+
+function validateForm() {
+    // Reset previous error messages
+    document.getElementById('nameError').innerText = '';
+    document.getElementById('emailError').innerText = '';
+    document.getElementById('messageError').innerText = '';
+    document.getElementById('cadFilesError').innerText = '';
+    document.getElementById('recaptchaError').innerText = '';
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    var cadFiles = document.querySelector('input[name="cadFiles"]:checked');
+    var recaptcha = document.getElementById('recaptcha').value;
+
+    // Validate name
+    if (name.trim() === '') {
+        document.getElementById('nameError').innerText = 'Name is required';
+        return;
+    }
+
+    // Validate email
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        document.getElementById('emailError').innerText = 'Invalid email address';
+        return;
+    }
+
+    // Validate message
+    if (message.trim() === '') {
+        document.getElementById('messageError').innerText = 'Please provide information about your project';
+        return;
+    }
+
+    // Validate CAD files selection
+    if (!cadFiles) {
+        document.getElementById('cadFilesError').innerText = 'Please select whether you have CAD files or not';
+        return;
+    }
+
+    // Validate recaptcha
+    if (recaptcha.trim() !== '7') {
+        document.getElementById('recaptchaError').innerText = 'Incorrect answer to the math question';
+        return;
+    }
+
+    // Form is valid, continue with submission (you can replace this with actual form submission code)
+    alert('Form submitted successfully!');
+}
+
+function updateCB(clickedCheckbox) {
+    var checkboxes = document.querySelectorAll('input[name="cadFiles"]');
+    
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] !== clickedCheckbox) {
+            checkboxes[i].checked = false;
+        }
+    }
+}
+
+
+// checkbox
+// function updateCB(clickedCB) {
+// 	var checkboxes = document.getElementsByClassName('cbGroup')
+// 	for (let i=0; i < checkboxes.length;i++){
+// 		if (checkboxes[i] !== clickedCB){
+// 			checkboxes[i].checked = false
+// 		}
+// 	}
+// }
+

@@ -293,54 +293,54 @@
     </section>
 
 	<!-- Contact Us  -->
+    <section id="contact" class="contact">
+        <h2>Submit Project</h2>
 
-	<section id="contact" class="contact">
-		 <h2>Submit Project</h2>
+        <div class="contact_inner">
+            <label>
+                Name
+                <input type="text" name="name" id="name" placeholder="eg. solomax">
+            </label>
+            <div class="error-message" id="nameError"></div>
 
-		 <div class="contact_inner">
-		 	<label name="Name">
-		 		Name
-		 		<input type="name" name="name" placeholder="eg. solomax">
-		 	</label>
+            <label>
+                Email
+                <input type="email" name="email" id="email" placeholder="solomaxstudios@gmail.com">
+            </label>
+            <div class="error-message" id="emailError"></div>
 
-		 	<label name="Email">
-		 		Email
-		 		<input type="email" name="email" placeholder="solomaxstudios@gmail.com">
-		 	</label>
-		 	
-		 	<!-- <input type="" name="" placeholder="Tell us a bit about you Project"> -->
-		 	<label name="message">
-		 		<textarea placeholder="Tell us a bit about your project ..."></textarea>
-		 	</label>
+            <label>
+                Tell us a bit about your project ...
+                <textarea id="message" placeholder="Tell us a bit about your project ..."></textarea>
+            </label>
+            <div class="error-message" id="messageError"></div>
 
-		 	<label class="cad-main">
-		 		Do you have the "CAD" 3D files for your product
-		 		<div class="cad">
-			 		<label class="radio-container">
-			 			<input type="radio" name="" value="Yes">
-			 			<p>Yes</p>
-			 		</label>
+            <label class="cad-main">
+                Do you have the "CAD" 3D files for your product
+                <div class="cad">
+                    <label class="radio-container">
+                        <input type="radio" name="cadFiles" value="Yes" class="cbGroup" onclick="updateCB(this)">
+                        <p>Yes</p>
+                    </label>
 
-			 		<label class="radio-container">
-			 			<input type="radio" name="" value="No">
-			 			<p>No</p>
-			 		</label>
-		 		</div>
-		 	</label>
+                    <label class="radio-container">
+                        <input type="radio" name="cadFiles" value="No" class="cbGroup" onclick="updateCB(this)">
+                        <p>No</p>
+                    </label>
+                </div>
+            </label>
+            <div class="error-message" id="cadFilesError"></div>
 
-		 	<label name="recaptcha">
-		 		3 + 4 ?
-		 		<input type="text" name="recaptcha" placeholder="">
-		 	</label>
-		 	
+            <label>
+                3 + 4 ?
+                <input type="text" name="recaptcha" id="recaptcha" placeholder="">
+            </label>
+            <div class="error-message" id="recaptchaError"></div>
+        </div>
 
-		 </div>
+        <button class="contact_btn" onclick="validateForm()">Send</button>
 
-		 <button class="contact_btn">
-		 	Send 
-		 </button>
-
-	</section>
+    </section>
 
 
 
