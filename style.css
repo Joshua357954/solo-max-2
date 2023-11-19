@@ -311,18 +311,53 @@ video {
 	height: 20px;
 }
 
-.navlinks_box li a {
+/* .navlinks_box li a {
 	text-decoration: none;
 	color: black;
 	padding: 10px 2px 5px 2px ;
 	font: bolder;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	border-bottom: 2px solid rgba(0,0,0,0); 
+	transition: border-bottom-color .5s ease-in-out;
+	transition: font-weight 0s ease-in-out;  
+}*/
+
+/* Style the list item (optional) */
+.nvb li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nvb li p {
+	margin-top: 5px;
+	color: black;
+}
+
+.nvb a:-webkit-any-link {
+	text-decoration:none;
+	color: black; 
+}
+
+
+/* .navlinks_box a {
+	text-decoration: none;
+	color: black;
+	font: bolder;
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+	gap: 5px;
 	border-bottom: 2px solid rgba(0,0,0,0);
 	transition: border-bottom-color .5s ease-in-out;
 	transition: font-weight 0s ease-in-out;  
-}
+} */
+
 
 .last_link {
-	padding: 3px 12px !important ;
+	padding: 12px 12px !important ;
 	border-radius: .3rem;
 	background-color:#f9f9f9;
 	cursor: pointer;
@@ -334,17 +369,8 @@ video {
 }
 
 
-.last_link 
-
 /* NavLinks Hover state */
-nav li a:hover{
-	color: #467fbc !important;
-}
 
-li a:focus{
-	outline: none;
-	font-weight: 600;
-}
 
 .last_link:hover{
 	opacity: .85;
@@ -687,7 +713,7 @@ h2{
 
 /* Contact Us*/
 .contact {
-	height:730px;
+	height:850px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -696,7 +722,9 @@ h2{
 	gap:12px;
 	margin-top: 30px;
 	background-color: white;
-	padding-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	transition: all .5s ease-in-out; 
 }
 
 .contact h2 {
@@ -710,11 +738,11 @@ h2{
 	flex-direction: column;
 }
 
- .error-message {
+.error-message {
     color: red;
     font-size: 14px;
-    margin-top: -8px;
-    margin-bottom: 12px;
+    margin-top:-4px;
+    margin-bottom: 16px;
 }
 
 label{
@@ -755,11 +783,12 @@ label{
 
 .contact_inner textarea {
 	resize: none;
-	padding: 10px 8px ;
+	padding: 14px 8px 8px ;
 	font-size: 1.2rem;
 	border-radius: .1rem;
 	height: 100px;
 	border:1px solid gray;
+	margin-bottom: 5px;
 }
 
 
@@ -803,7 +832,7 @@ label{
 }
 
 .contact_btn{
-	padding: 17px 50px;
+	padding: 18px 50px;
 	font-size: 1.2rem;
 	background-color:#074D85;
 	color:white;
