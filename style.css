@@ -1021,6 +1021,7 @@ b{
 	.nav_img_box{
 		width: 150px ;
 		height: 25px;
+		z-index: 200;
 	}
 
 	.nvb {
