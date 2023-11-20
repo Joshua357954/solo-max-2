@@ -239,9 +239,9 @@ li a:focus{
 
 /* Header */
 header {
-	height: 250px;
+	/* height: 250px; */
 	width: 100%;
-	/*background-color: cornflowerblue;*/
+	background-color: cornflowerblue;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -259,14 +259,14 @@ header h1 {
 
 header p {
 	font-weight: 300;
-	color:#1D1929;
+	color: rgba(17,17,17,.5);
 	/*font-size: 2.5rem;*/
 	/*font-family: 'Montserrat'*/
 }
 
 header li {
 	padding: 8px 10px;
-	background-color: #F2F2F2;
+	border: 2px solid  rgba(17,17,17,.5);
 	border-radius: .2rem;
 	/*border:1px solid darkgray;*/
 }
@@ -487,6 +487,72 @@ b{
 
 
 @media screen and (max-width: 768px) {
+	main {
+		padding:0 10px;
+	}
+	/*  Navbar */
+	.navmenu-icon{
+		z-index: 944;
+		display: flex;
+		position: fixed;
+		width: 30px;
+		height: 30px;
+		top:20px;
+		right: 30px;
+	}
+
+	.nav_img_box{
+		width: 150px ;
+		height: 25px;
+	}
+
+	.nvb {
+		padding-top: 50px;
+		position: fixed;
+		top:0;
+		left:-100;
+		bottom:0;
+		width:100vw;
+		height:100vh;
+		background-color: #f9f9f9;
+		flex-direction: column;
+		align-items: center;
+		z-index: 100;
+
+	}
+	.nvb.active {
+		left:0;
+	}
+
+	.nvb.active li {
+		color: black;
+		margin: 0 auto;
+		text-align: center;
+	}	
+
+
+	/* Nav Links */
+	.navlinks_box li a {
+		color:black !important ;
+	}
+
+	.navlinks_box li{
+		padding: 10px 0;
+		text-align: center;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.last_link {
+		text-align: center;
+		width: 50% !important;
+		padding-right:0px;
+		margin-right:0px;
+
+		/* background-color: red; */
+		/*margin-left: 0px;*/
+	}
+
 	header {
 		gap:3px;
 	} 

@@ -43,6 +43,7 @@ const nav_icon = document.querySelector('.navmenu-icon')
 	    prevScrollPos = currentScrollPos;
 	};
 
+//  Smooth Scrolling .
 
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {

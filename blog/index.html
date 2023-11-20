@@ -21,27 +21,27 @@
 					<img class="navmenu-icon" src="../assets/images/menu (3).svg">
 					
 					<ul class="nvb">
-						<!-- <li class="li_active">
+						<li class="li_active">
 							<img class="li-img" src="../assets/images/hom (5).svg">
 							<a class="li"href="../index.html">Home</a>
-						</li> -->
+						</li>
 
-						<!-- 
+						
 						<li>
 							<img class="li-img" src="../assets/images/service (1).svg">
 							<a class="li" href="#services">Services</a>
-						</li> -->
+						</li>
 
 						<!-- <li>
 							<img class="li-img" src="../assets/images/portfolio (1).svg">
 							<a class="li" href="#">Projects</a>
-						</li>
- -->
-						<!-- <li>
+						</li> -->
+
+						<li>
 							<img class="li-img" src="../assets/images/blog (3).svg">
 							<a class="li" href="blog/index.html">Blog</a>
 						</li>
- -->
+
 						<li>
 							<img class="li-img" src="../assets/images/about (1).svg">
 							<a class="li" href="#contact">About</a>
@@ -186,7 +186,15 @@
 	<footer class="footer-2">
 		&copy;  SoloMax - Studios 2023
 	</footer>
+<script >
+	const nav_icon = document.querySelector('.navmenu-icon') 
+	const mobile_nav1 = document.querySelector('.navlinks_box')
+	const mobile_nav = document.querySelector('.nvb')
 
+	nav_icon.addEventListener('click',() => {	
+		mobile_nav.classList.toggle('active')
+	} )
+</script>
 
 </body>
 </html>
