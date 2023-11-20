@@ -496,7 +496,7 @@ b{
 
 	/*  Navbar */
 	.navbar{
-		background-color: red;
+		/* background-color: red; */
 	}
 
 	.navmenu-icon{
@@ -507,6 +507,11 @@ b{
 		height: 30px;
 		top:20px;
 		right: 30px;
+		transition: all 0.5s ease;
+	}
+
+	.nvb.active .navmenu-icon{
+		transform: rotate(180deg); 
 	}
 
 	.nav_img_box{

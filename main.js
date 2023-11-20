@@ -4,6 +4,11 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
 	nav_icon.addEventListener('click',() => {	
 		mobile_nav.classList.toggle('active')
+
+		if (mobile_nav.classList.contains('active'))
+		    nav_icon.src = './assets/images/close-svgrepo-com.svg' 
+		else
+		    nav_icon.src = './assets/images/menu (3).svg';
 	} )
 
 	let prevScrollPos = window.pageYOffset;

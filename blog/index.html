@@ -139,7 +139,6 @@
     </div>
 
  <footer>
-
         <div class="footer-content">
             <!-- <div class="footer-logo">
                 <img src="../assets/images/solo-pix.png" alt="Animation Studio Logo">
@@ -194,7 +193,14 @@
 
 	nav_icon.addEventListener('click',() => {	
 		mobile_nav.classList.toggle('active')
+		nav_icon.src = '../assets/images/close.png'
+		
+		if (mobile_nav.classList.contains('active'))
+		    nav_icon.src = '../assets/images/close-svgrepo-com.svg' 
+		else
+		    nav_icon.src = '../assets/images/menu (3).svg';
 	} )
+
 </script>
 
 </body>
