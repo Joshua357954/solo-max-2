@@ -1025,7 +1025,7 @@ b{
 	}
 
 	.nvb {
-		padding-top: 50px;
+		padding-top: 80px;
 		position: fixed;
 		top:0;
 		left:-100;
@@ -1123,11 +1123,6 @@ b{
 	.divider {
 		height: unset;
 	}
-
-
-
-
-
 
 
 
