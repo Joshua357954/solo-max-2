@@ -324,8 +324,8 @@ main {
 .newsletter-box {
     /* background-color: #fcfcfc; */
     background-color: rgba(0, 0, 0, 0.92);
-    margin: 20px 0 ;
-    padding: 10px;
+    margin: 10px 0 ;
+    padding: 15px;
     text-align: center;
     display: flex;
     justify-content: center;
