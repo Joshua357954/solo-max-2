@@ -130,8 +130,9 @@ body{
 	display: flex;
 	background-color: #fcfcfc;
 	color: black !important ;
-	position: fixed;
+	position: sticky;
     top: 0px;
+    left: 0px;
     z-index: 200;
     width: 100%;
     /* transition: top 0.5s ease-in-out;
@@ -239,10 +240,11 @@ li a:focus{
 
 /* Header */
 header {
-	/* height: 250px; */
+	/* height: 150px; */
 	width: 100%;
-	background-color: cornflowerblue;
+	/* background-color: cornflowerblue; */
 	display: flex;
+	padding: 30px 20px 45px 20px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
