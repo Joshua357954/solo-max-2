@@ -1123,7 +1123,11 @@ b{
 	}
 
 
-	/* Middle text */
+	/* Header text */
+	.header {
+		height: calc(100vh - 70px);
+	}
+
 	.middle_text{
 		width: 80%;
 		top:45%;
@@ -1318,7 +1322,6 @@ b{
 		align-items: center;
 		padding-top: 30px 0;
 	}
-
 	.inner_one {
 		height: 60%;
 	}
