@@ -945,6 +945,11 @@ footer {
     margin-bottom: 10px;
 }
 
+.code{
+	color: black;
+	text-decoration: none;
+}
+
 b{
 	font-weight: bold;
 	color: rgba(0, 0, 0, .7);
