@@ -9,12 +9,13 @@ const nav_icon = document.querySelector('.navmenu-icon')
 		if (mobile_nav.classList.contains('active')){
 			navbar.style.height = '100vh';
 		    nav_icon.src = './assets/images/close-svgrepo-com.svg' 
-		    navbar.classList.add('bg-oo')
+		    navbar.classList.add('bg-ol')
 		}
 		else{
 			navbar.style.height = '70px';
-			navbar.classList.add('bg-ol')
+			
 			navbar.classList.remove('bg-oo')
+			navbar.classList.add('bg-ol')
 		    nav_icon.src = './assets/images/menu (3).svg';
 		}
 	} )
