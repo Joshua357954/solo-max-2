@@ -1,14 +1,22 @@
 const nav_icon = document.querySelector('.navmenu-icon') 
 	const mobile_nav1 = document.querySelector('.navlinks_box')
 	const mobile_nav = document.querySelector('.nvb')
+	const navbar =  document.querySelector('.navbar')
 
 	nav_icon.addEventListener('click',() => {	
 		mobile_nav.classList.toggle('active')
 
-		if (mobile_nav.classList.contains('active'))
+		if (mobile_nav.classList.contains('active')){
+			navbar.style.height = '100vh';
 		    nav_icon.src = './assets/images/close-svgrepo-com.svg' 
-		else
+		    navbar.classList.add('bg-oo')
+		}
+		else{
+			navbar.style.height = '70px';
+			navbar.classList.add('bg-ol')
+			navbar.classList.remove('bg-oo')
 		    nav_icon.src = './assets/images/menu (3).svg';
+		}
 	} )
 
 	let prevScrollPos = window.pageYOffset;
