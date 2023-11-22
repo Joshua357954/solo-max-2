@@ -436,7 +436,7 @@ h2{
 	background-color: brown;
 	height:500px;
 	display: flex;
-	border-bottom: 1px solid #f9f9f9;
+	border-bottom: 2.5px solid #f9f9f9;
 }
 
 
@@ -451,8 +451,9 @@ h2{
 }
 
 .top {
-	margin-top:2px;
+	margin-top:2.5px;
 }
+
 .section p{
 	/* font-family:'Montserrat' !important; */
 }
@@ -511,12 +512,12 @@ h2{
 	padding: 4px 10px;
 	/* background-color: #f9f9f9; */
 }
-.service-text span {
+/* .service-text span {
 	background-color: lightblue;
 	border: 1px solid lightsteelblue;
 	padding: 2px 5px;
 	border-radius: .3rem ;
-}
+} */
 
 .service-container{
 	display: flex;
@@ -1046,7 +1047,7 @@ b{
 		top:0;
 		bottom:0;
 		width:100%;
-		background-color: #fcfcfc/* red */ !important;
+		background-color: #fcfcfc/* red */  ;
 		align-items: center;
 		z-index: 240;
 	}
@@ -1055,7 +1056,7 @@ b{
 		position: fixed;
 		top: 0;
 		right: 0;
-		padding-top: 60px;
+		padding-top: 40px;
 		width: 100%;
 		flex-direction: column;
 		align-items: center;

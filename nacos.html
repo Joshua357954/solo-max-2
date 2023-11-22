@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+
+  <style>
+    /* Navigation Bar Styles */
+.navbar {
+  background-color: transparent; /* Set background color */
+  position: fixed;
+  width: 100%;
+  height: 50px; /* Adjust height as needed */
+  z-index: 1000; /* Ensure visibility above other elements */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Half-transparent background when checkbox is checked */
+.navbar input[type="checkbox"]:checked {
+  background-color: rgba(255, 255, 255, 0.5); /* Set background color and transparency */
+}
+
+/* Container for Navigation Elements */
+.navbar_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding */
+}
+
+/* Logo Styles */
+.logo {
+  max-height: 30px; /* Set max height for the logo */
+}
+
+/* Navigation Links Styles */
+.nvb {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.li {
+  text-decoration: none;
+  color: #333; /* Set text color */
+  margin: 0 10px; /* Adjust margin */
+  position: relative;
+}
+
+/* Mobile Navigation Styles */
+.nav_mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5); /* Set background color and transparency */
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 900; /* Set z-index below the navigation bar */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+/* Display mobile navigation when checkbox is checked */
+.navbar input[type="checkbox"]:checked + .nav_mobile {
+  display: flex;
+}
+
+/* Mobile Menu Icon Styles */
+.navmenu-icon {
+  display: none; /* Initially hide the icon for larger screens */
+  cursor: pointer;
+}
+
+/* Display mobile menu icon for smaller screens */
+@media only screen and (max-width: 768px) {
+  .navlinks_box {
+    display: none; /* Hide regular navigation links for smaller screens */
+  }
+
+  .navmenu-icon {
+    display: block; /* Show mobile menu icon for smaller screens */
+  }
+
+  /* Hide the checkbox */
+  .navbar input[type="checkbox"] {
+    display: none;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar_box">
+
+      <!-- Logo -->
+      <div class="nav_img_box">
+        <a href="#home">
+          <img class='logo' src="assets/images/so-max_Renew.png" alt="Logo">
+        </a>
+      </div>
+
+      <!-- Mobile Menu Icon -->
+      <label class="navmenu-icon" for="toggle-mobile-menu">&#9776;</label>
+      <input type="checkbox" id="toggle-mobile-menu">
+
+      <!-- Navigation Links -->
+      <ul class="nvb">
+        <li class="li"><a href="#home">Home</a></li>
+        <li class="li"><a href="#services">Services</a></li>
+        <li class="li">
+          <a href="#" id="projects">Projects
+            <img class="caret" src="assets/images/car-d (3).svg" alt="caret">
+          </a>
+        </li>
+        <li class="li"><a href="blog/index.html">Blog</a></li>
+        <li class="li"><a href="#contact">About</a></li>
+        <li class="last_link"><a href="#contact">Get a quote</a></li>
+      </ul>
+
+      <!-- Mobile Navigation -->
+      <div class="nav_mobile">
+        <ul class="nvb">
+          <li class="li"><a href="#home">Home</a></li>
+          <li class="li"><a href="#services">Services</a></li>
+          <li class="li">
+            <a href="#" id="projects">Projects
+              <img class="caret" src="assets/images/car-d (3).svg" alt="caret">
+            </a>
+          </li>
+          <li class="li"><a href="blog/index.html">Blog</a></li>
+          <li class="li"><a href="#contact">About</a></li>
+          <li class="last_link"><a href="#contact">Get a quote</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+</body>
+
+</html>
