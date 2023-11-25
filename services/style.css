@@ -309,14 +309,14 @@ header h1 {
 	color: black;
 	font-size: 1.6rem;
 	letter-spacing: 1.2px;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .last button {
 	background-color: #467fbc;
-	padding: 12px 20px;
+	padding: 13px 23px;
 	color: white;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	font-weight: 400;
 	/* border-radius: .2rem; */
 }
