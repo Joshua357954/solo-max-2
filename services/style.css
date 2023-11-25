@@ -520,6 +520,10 @@ b{
 		background-color: #467fbc;
 		padding: 15px 23px;
 	}
+
+	.last div {
+		padding: 40px 15px;
+	}
 }
 
 
