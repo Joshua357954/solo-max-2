@@ -472,6 +472,10 @@ h2{
 	background-color: white
 }
 
+.section-2 {
+	font-size: 1.5rem;
+}
+
 .service-text{
 	margin: 60px auto 10px auto;
 	font-weight: 900;
