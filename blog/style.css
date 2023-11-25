@@ -223,20 +223,14 @@ body{
 li a:hover{
 	/* font-weight: 600; */
 	/* border-bottom-color:#f9f9f9; */
-	color: #467fbc !important;
+	/* color: #467fbc !important; */
 }
 
 li a:focus{
 	outline: none;
 	font-weight: 600;
-	/* border-bottom-color:#f9f9f9; */
 }
 
-.last_link:hover{
-	background-color:#467fbc;
-	border-bottom-color:#467fbc;
-	opacity: .9;
-}
 
 
 /* Header */
