@@ -515,6 +515,11 @@ b{
         align-items: center;
         gap:20px;
     }
+
+    .last button {
+		background-color: #467fbc;
+		padding: 15px 23px;
+	}
 }
 
 
