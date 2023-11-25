@@ -299,6 +299,12 @@ header h1 {
 	padding: 20px 20px;
 }
 
+.last div section {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
 .last h2 {
 	color: black;
 	font-size: 1.6rem;
