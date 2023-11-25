@@ -474,6 +474,20 @@ b{
 		width: 100%;
 		justify-content: center;
 	}
+
+	.s-two {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.s-two div {
+		width: 100%;
+
+	}
+
+	.s-four  {
+		padding:  0 20px;
+	}
 }
 
 
