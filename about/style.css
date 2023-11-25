@@ -279,7 +279,7 @@ body{
 }
 
 .s-four div h2{
-	padding: 0  300px;
+	padding: 0  30px;
 	background-color: red;
 
 }
@@ -485,8 +485,8 @@ b{
 
 	}
 
-	.s-four  {
-		padding:  0 20px;
+	.s-four div {
+		width: 50%;
 	}
 }
 
