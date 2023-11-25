@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<title>About</title>
+	<link rel="icon" href="../assets/images/favicon.ico">
+</head>
+
+<body>
+
+	<nav class="navbar">
+		<div class="navbar_box">
+
+			<div class="nav_img_box">
+				<a href="../index.html"><img class='logo' src="../assets/images/so-max_Renew.png
+				"></a>
+			</div>
+			
+			<div class="navlinks_box">
+				
+				<img class="navmenu-icon" src="../assets/images/menu (3).svg">
+				
+				<ul class="nvb">
+					<li class="li_active">
+						<img class="li-img" src="../assets/images/hom (5).svg">
+						<a class="li"href="../index.html">Home</a>
+					</li>
+
+					
+					<li>
+						<img class="li-img" src="../assets/images/service (1).svg">
+						<a class="li" href="#services">Services</a>
+					</li>
+
+					<!-- <li>
+						<img class="li-img" src="../assets/images/portfolio (1).svg">
+						<a class="li" href="#">Projects</a>
+					</li>
+-->
+					<li>
+						<img class="li-img" src="../assets/images/blog (3).svg">
+						<a class="li" href="blog/index.html">Blog</a>
+					</li>
+
+					<li>
+						<img class="li-img" src="../assets/images/about (1).svg">
+						<a class="li" href="#contact">About</a>
+					</li>
+					
+					<!-- <li class="last_link">Get a quote</li> -->
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+ 
+
+ <h1>About Us</h1>
+ 
+<script >
+	const nav_icon = document.querySelector('.navmenu-icon') 
+	const mobile_nav1 = document.querySelector('.navlinks_box')
+	const mobile_nav = document.querySelector('.nvb')
+
+	nav_icon.addEventListener('click',() => {	
+		mobile_nav.classList.toggle('active')
+		nav_icon.src = '../assets/images/close.png'
+		
+		if (mobile_nav.classList.contains('active'))
+		    nav_icon.src = '../assets/images/close-svgrepo-com.svg' 
+		else
+		    nav_icon.src = '../assets/images/menu (3).svg';
+	} )
+
+</script>
+</body>
+</html>
+
+
