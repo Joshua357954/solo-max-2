@@ -524,11 +524,12 @@ b{
 		padding: 0 10px;
 		line-height: 1.2;
 		font-size: 1.2rem;
+		font-weight: 500
 	}
 
 	.s-four div button {
 	padding: 20px 20px;
-	height: 60%;
+	height: 65%;
 }
 }
 
