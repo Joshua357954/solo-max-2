@@ -265,24 +265,48 @@ body{
 
 .s-four {
 	display: flex;
-	width: 100%;
+	width: 80%;
 	gap:30px;
-	padding: 30px 20px;
+	margin: 0 auto;
+	padding: 30px 15px;
+	justify-content: space-around;
+	
+	/* background-color: red; */
 }
 
 
 .s-four div{
 	display: flex;
 	gap:30px;
+	margin: 0 auto;
 	padding: 30px 20px;
+	background-color: #f9f9f9;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 }
 
 .s-four div h2{
-	padding: 0  30px;
-	background-color: red;
-
+	padding: 0 30px;
+		line-height: 1.5;
+	letter-spacing: .08rem;
+	/* width: 70%; */
+	/* background-color: red; */
 }
+
+.s-four div button {
+	padding: 20px 30px;
+	background-color: #467fbc;
+	color: white;
+	height: 50%;
+	text-align: center;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+
+
+
 
 
 
@@ -486,7 +510,18 @@ b{
 	}
 
 	.s-four div {
-		width: 50%;
+		/* width: 50%; */
+		/* padding: 30px 10px; */
+	}
+
+	.s-four {
+		display: flex;
+		width: 100%;
+		gap:20px;
+	}
+
+	.s-four div h2{
+		padding: 0 10px;
 	}
 }
 
