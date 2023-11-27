@@ -252,7 +252,7 @@ header h1 {
 	flex-basis: 250px;
 	height: 300px;
 	flex-grow: 1;
-	margin: 10px 10px 40px 10px  ;
+	margin: 10px 0px 40px 10px  ;
 	background-color: black;
 }
 
