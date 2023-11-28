@@ -7,12 +7,12 @@ const nav_icon = document.querySelector('.navmenu-icon')
 		mobile_nav.classList.toggle('active')
 
 		if (mobile_nav.classList.contains('active')){
-			navbar.style.height = '100vh';
+			// navbar.style.height = '100vh';
 		    nav_icon.src = './assets/images/close-svgrepo-com.svg' 
 		    // navbar.style.backgroundColor = 'red';
 		}
 		else{
-			navbar.style.height = '70px';
+			// navbar.style.height = '70px';
 		    nav_icon.src = './assets/images/menu (3).svg';
 		}
 	} )

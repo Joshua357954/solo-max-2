@@ -295,6 +295,7 @@ video {
 	text-decoration:none;
 	align-items: center;
 	/* padding-right: 10px; */
+	max-height: 400px;
 	transition: all 1s linear,
 }
 
@@ -1004,11 +1005,12 @@ b{
 	.navbar {
 		position: sticky;
 		top:0;
-		bottom:0;
+		/* bottom:0; */
 		width:100%;
 		background-color: #fcfcfc/* red */  ;
 		align-items: center;
 		z-index: 240;
+		transition: all .3s ease-in-out;
 	}
 
 	.nvb {
@@ -1020,7 +1022,8 @@ b{
 		flex-direction: column;
 		align-items: center;
 		background-color: #fcfcfc;
-		transition: all .2s ease-in-out;
+		height: 700px;
+		transition: height 1s ease-in-out;
 	}
 
 	.nav_img_box{
@@ -1193,7 +1196,7 @@ b{
 	.service-box {
 		flex-direction: row;
 		width: 100%;
-		background-color: red;
+		/* background-color: red; */
 		flex-direction: column;
 	}
 
