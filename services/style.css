@@ -214,8 +214,8 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #fcfcfc;
-	border-bottom: 4px solid #f9f9f9;
+	/* background-color: #fcfcfc; */
+	border-bottom: 2px solid #fcfcfc;
 	/* color: white; */
 }
 
