@@ -460,90 +460,6 @@ h2{
 
 
 
-/* Our Services */
-.section-2{
-	color:black;
-	background-color: white;
-	display:flex;
-	/* width:100%; */
-	flex-direction: column;
-	border-bottom: 3.5px solid #f9f9f9;
-}
-
-.section-2 h2 {
-	font-size: 2.2rem;
-}
-
-.section-2 p {
-	font-size: 1rem;
-}
-
-#services {
-	height: 30px;
-	width: 100%;
-	background-color: white
-}
-
-.section-2 {
-	font-size: 1.5rem;
-}
-
-.service-text{
-	margin: 60px auto 10px auto;
-	font-weight: 900;
-	/* border: 1px solid gray; */
-	border-radius: .3rem ;
-	padding: 4px 10px;
-	/* background-color: #f9f9f9; */
-}
-/* .service-text span {
-	background-color: lightblue;
-	border: 1px solid lightsteelblue;
-	padding: 2px 5px;
-	border-radius: .3rem ;
-} */
-
-.service-container{
-	display: flex;
-	height:550px;
-	margin-top: 20px;
-	/* background-color: yellow; */
-	width:100%;
-}
-
-.service-inner {
-	display: flex;
-	width:50%;
-	height: 100%;
-}
-
-.service-box{
-	display: flex;
-	flex-direction: column;
-	width:100%;
-	height:100%;
-	/* background-color:purple;  */
-}
-
-.service-box-inner{
-	width:100%;
-	height:100%;
-	display: flex;
-	flex-direction: column;
-	padding:5px;
-	background-color: #Fafafa !important;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-
-}
-
-.service-inner-2{
-	width: 50% ;
-	height: 100% ;
-	background-color: black;
-}
-
 
 /* Classes */
 .bg-img{
@@ -978,10 +894,6 @@ b{
 		overflow-x: none;
 	}
 
-	.navbar{
-		/*position: relative;*/
-
-	}
 	
 	.navmenu-icon{
 		z-index: 944;
@@ -1047,44 +959,6 @@ b{
 		background-color: #fcfcfc !important ;
 	}
 
-	/* .nvb.active + .navbar {
-		height:100vh;
-	} */
-
-
-/* 	.navmenu-icon{
-		z-index: 944;
-		display: flex;
-		position: fixed;
-		width: 30px;
-		height: 30px;
-		top:20px;
-		right: 30px;
-	}
-
-	.nav_img_box{
-		width: 150px ;
-		height: 25px;
-		z-index: 200;
-	}
-
-	.nvb {
-		padding-top: 0px;
-		position: fixed;
-		top:0;
-		left:-100;
-		bottom:0;
-		width:100vw;
-		height:100vh;
-		background-color: #f9f9f9;
-		flex-direction: column;
-		align-items: center;
-		z-index: 100;
-
-	}
-	.nvb.active {
-		left:0;
-	} */
 
 	.nvb.active li {
 		color: black;
