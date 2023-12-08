@@ -220,7 +220,7 @@ header {
 }
 
 header h1 {
-	font-size:3rem;
+	font-size:2.3rem;
 	font-weight:900;
 	font-family: 'Dancing Script', cursive;
 	text-align: center;
@@ -242,7 +242,7 @@ header h1 {
 	padding: 0 10px;
 	width: 100%;
 	display: flex;
-	gap: 10px;
+	gap: 5px;
 	flex-wrap: wrap;
 }
 
@@ -253,19 +253,22 @@ header h1 {
 	flex-basis: 250px;
 	height: 300px;
 	flex-grow: 1;
-
-	margin: 10px 0px 20px 0px  ;
+	position: relative;
+	margin: 0px 0px 0px 0px  ;
 	background-color: black;
 }
 
 
 .service_card img {
 	width: 100%;
-	height: 80%;
+	height: 100%;
+	object-fit: cover;
+	background-size: cover;
+	
 }
 
 
-.service_card div {
+/* .service_card div {
 	width: 100%;
 	height: 20%;
 	color: white;
@@ -273,12 +276,49 @@ header h1 {
 	align-items: center;
 	padding-left: 20px;
 	background-color: black;
-}
+} */
 
-.service_card div p {
+/* .service_card div p {
 	font-weight: 700;
 	font-size: 1.4rem;
 }
+ */
+
+
+    /* Style for the overlay */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+      opacity: 0; /* Initially hidden */
+      transition: opacity 0.3s ease-in-out;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+
+    /* Style for the clickable text in the overlay */
+    .overlay-text {
+      color: #fff;
+      font-size: 20px;
+      text-align: left;
+      cursor: pointer;
+      font-weight: 700;
+      margin: 0 20px 40px 20px ;
+    }
+
+    .overlay small {
+    	font-size: 15px;
+    	font-weight: 300;
+    }
+    /* Show the overlay on hover */
+    .service_card:hover .overlay {
+      opacity: 1;
+    }
 
 
 
@@ -514,6 +554,10 @@ b{
 		text-align: center;
 		width: 100%;
 		justify-content: center;
+	}
+
+	header h1 {
+		font-size: 3rem;
 	}
 
 	.footer-content {
