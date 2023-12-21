@@ -220,7 +220,7 @@ header::before{
 	height: 35px;
 	margin-top: 15px;
 	display: flex;
-	margin-left: 40px;
+	margin-left: 20px;
 	border-radius: .2rem;
 	justify-content: center;
 	align-items: center;
@@ -311,6 +311,11 @@ video {
 .li-img{
 	width: 20px;
 	height: 20px;
+}
+
+.reduce {
+	width: 17px;
+	height: 17px;
 }
 
 
