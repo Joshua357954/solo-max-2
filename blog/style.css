@@ -295,7 +295,7 @@ main {
 	font-weight: 500;
 	line-height: 28px;
 	color: rgb(0, 0, 0);
-	/*background-color: red;*/
+	border-radius: .4rem;
 	height:300px;
 	margin-bottom: 20px;
 	width: 330px;
