@@ -231,6 +231,15 @@ function validateForm() {
         text
     };
 
+    const recaptchaResponse = grecaptcha.getResponse();
+
+    // Check if the reCAPTCHA response is empty
+    if (!recaptchaResponse) {
+        alert('Please complete the reCAPTCHA challenge.');
+        return  
+    }
+
+
 
     // make request to server
     fetch(email_endpoint, {
