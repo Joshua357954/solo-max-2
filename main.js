@@ -100,8 +100,13 @@ function hideContextMenu() {
 }
 
 
-// submit project mechanism
 
+
+
+
+
+
+// submit project mechanism
 function validateForm() {
     // Reset previous error messages
     document.getElementById('nameError').innerText = '';
@@ -203,7 +208,7 @@ function validateForm() {
     const randomEmoji = getRandomEmoji();
     const randomSubject = pickRandomPhrase(phrases);
 
-
+    // Constructed message to send
     const text = `
         Name: ${name} \n\n
         Message: ${message} \n\n
@@ -219,6 +224,7 @@ function validateForm() {
         text
     };
 
+    // make request to server
     fetch(email_endpoint, {
         method: 'POST',
         headers: {
