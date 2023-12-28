@@ -246,7 +246,7 @@ function validateForm() {
         swal({
           icon: 'warning',
           title: 'Opps, reCAPTCHA ',
-          text: 'Please complete the reCAPTCHA to confirm you are not a Bot',
+          text: 'Please complete the reCAPTCHA to continue',
           timer: 10000,
           showConfirmButton: false,
         });
