@@ -102,6 +102,13 @@ function hideContextMenu() {
 
 
 
+// Callback function called when reCAPTCHA is successful
+function onCaptchaSuccess(response) {
+    console.log('reCAPTCHA response:', response);
+    alert(response)
+    // You can use the 'response' value in your form submission or any other logic
+}
+
 
 
 
@@ -224,12 +231,6 @@ function validateForm() {
         text
     };
 
-    // Callback function called when reCAPTCHA is successful
-    function onCaptchaSuccess(response) {
-        console.log('reCAPTCHA response:', response);
-        alert(response)
-        // You can use the 'response' value in your form submission or any other logic
-    }
 
     // make request to server
     fetch(email_endpoint, {
