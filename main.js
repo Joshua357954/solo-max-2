@@ -104,7 +104,7 @@ function hideContextMenu() {
 
 // Callback function called when reCAPTCHA is successful
 function onCaptchaSuccess(response) {
-    console.log('reCAPTCHA response:', response);
+    // console.log('reCAPTCHA response:', response);
     alert(response)
     swal({
           icon: 'warning',
