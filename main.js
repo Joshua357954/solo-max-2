@@ -106,6 +106,13 @@ function hideContextMenu() {
 function onCaptchaSuccess(response) {
     console.log('reCAPTCHA response:', response);
     alert(response)
+    swal({
+          icon: 'warning',
+          title: 'Opps',
+          text: response,
+          timer: 50000,
+          // showConfirmButton: false,
+        });
     // You can use the 'response' value in your form submission or any other logic
 }
 
@@ -235,7 +242,7 @@ function validateForm() {
 
     // Check if the reCAPTCHA response is empty
     if (!recaptchaResponse) {
-        alert('Please complete the  challenge.');
+        // alert('Please complete the  challenge.');
         swal({
           icon: 'warning',
           title: 'Opps, reCAPTCHA ',
