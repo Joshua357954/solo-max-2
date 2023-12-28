@@ -249,8 +249,8 @@ function validateForm() {
 // 😔
       .catch(error => {
         swal({
-          icon: 'error',
-          title: 'An Error Occured 😥',
+          icon: 'warning',
+          title: 'Oh, Snap 😔',
           text: 'Your request was not sent, Try again .',
           timer: 5000,
           showConfirmButton: false,
