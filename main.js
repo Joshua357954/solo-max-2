@@ -215,7 +215,7 @@ function validateForm() {
 
     const data = {
         to: recipient,
-        subject: `${subject}!! ${randomEmoji}`,
+        subject: `${subject}  ${randomEmoji} .`,
         text
     };
 
