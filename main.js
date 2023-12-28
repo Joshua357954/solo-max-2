@@ -150,7 +150,7 @@ function validateForm() {
 
 
     // Form is valid, continue with submission (you can replace this with actual form submission code)
-    const email_endpoint = 'http://localhost:3000/send-email'
+    const email_endpoint = 'https://beanie-fawn.cyclic.app/send-email'
     const subject = 'Project Request '
     const recipient = 'solomaxstudios@gmail.com'
     const emojiList = ['😀', '😍', '🚀', '🎉', '🌟','🔩','🔨','⛏','⚒','🔧','🚧','👷','💻', '🍕', '🌈', '🎸'];
