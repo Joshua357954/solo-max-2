@@ -235,7 +235,14 @@ function validateForm() {
 
     // Check if the reCAPTCHA response is empty
     if (!recaptchaResponse) {
-        alert('Please complete the reCAPTCHA challenge.');
+        alert('Please complete the  challenge.');
+        swal({
+          icon: 'warning',
+          title: 'Opps, reCAPTCHA ',
+          text: 'Please complete the reCAPTCHA to confirm you are not a Bot',
+          timer: 10000,
+          showConfirmButton: false,
+        });
         return  
     }
 
@@ -262,7 +269,7 @@ function validateForm() {
           icon: 'success',
           title: 'Request Sent 😊',
           text: 'Your project request has been sent successfully',
-          timer: 5000,
+          // timer: 5000,
           showConfirmButton: false,
         });;
         clearInputs()
@@ -275,7 +282,7 @@ function validateForm() {
           icon: 'warning',
           title: 'Oh, Snap 😔',
           text: 'Your request was not sent, Try again .',
-          timer: 5000,
+          // timer: 5000,
           showConfirmButton: false,
         });;
 
