@@ -234,19 +234,32 @@ function validateForm() {
         return response.json();
       })
 
-      .then(data => {
-        swal('Form submitted successfully!');
+     .then(data => {
+        swal({
+          icon: 'success',
+          title: 'Request Sent 😊',
+          text: 'Your project request has been sent successfully',
+          timer: 5000,
+          showConfirmButton: false,
+        });;
         clearInputs()
         console.log('Email sent successfully:', data);
       })
-
+// 😥
+// 😔
       .catch(error => {
-        swal('Error : Mail Not Sent');
+        swal({
+          icon: 'error',
+          title: 'An Error Occured 😥',
+          text: 'Your request was not sent, Try again .',
+          timer: 5000,
+          showConfirmButton: false,
+        });;
+
         console.error('Error sending email:', error.message);
         // Handle error, if needed
       });
     }
-
 
 
 function updateCB(clickedCheckbox) {
