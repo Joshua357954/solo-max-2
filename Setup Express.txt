@@ -1,0 +1,6 @@
+Setup Express
+setup nodemailer
+setup gmail secret key
+Deploy to vercel or cyclic or render
+
+install

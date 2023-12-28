@@ -147,9 +147,107 @@ function validateForm() {
         return;
     }
 
+
+
     // Form is valid, continue with submission (you can replace this with actual form submission code)
-    swal('Form submitted successfully!');
-}
+    const email_endpoint = 'http://localhost:3000/send-email'
+    const subject = 'Project Request '
+    const recipient = 'solomaxstudios@gmail.com'
+    const emojiList = ['😀', '😍', '🚀', '🎉', '🌟','🔩','🔨','⛏','⚒','🔧','🚧','👷','💻', '🍕', '🌈', '🎸'];
+
+
+    const phrases = [
+      "New Project Alert ",
+      "Embark on a thrilling initiative.",
+      "Launch a brand-new endeavor.",
+      "Initiate an innovative project.",
+      "Begin an exciting venture.",
+      "Kickstart a fresh undertaking.",
+      "Commence a novel project.",
+      "Start a compelling new initiative.",
+      "Embark on a creative project journey.",
+      "Pioneer a cutting-edge endeavor.",
+      "Commence an inspiring new project."
+    ];
+
+    // get random phrases
+    function pickRandomPhrase(phrasesArray) {
+      const randomIndex = Math.floor(Math.random() * phrasesArray.length);
+      return phrasesArray[randomIndex];
+    }
+    
+    // get random emoji's
+    function getRandomEmoji() {
+      const randomIndex = Math.floor(Math.random() * emojiList.length);
+      return emojiList[randomIndex];
+    }
+
+    //  clear inputs function
+    function clearInputs() {
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+        document.getElementById('recaptcha').value = '';
+
+        // Clear radio buttons (assuming there are only two)
+        const radioButtons = document.getElementsByName('cadFiles');
+        radioButtons.forEach(button => (button.checked = false));
+
+        // Clear error messages
+        const errorMessages = document.querySelectorAll('.error-message');
+        errorMessages.forEach(errorMessage => (errorMessage.textContent = ''));
+    }
+
+
+
+    const randomEmoji = getRandomEmoji();
+    const randomSubject = pickRandomPhrase(phrases);
+
+
+    const text = `
+        Name: ${name} \n\n
+        Message: ${message} \n\n
+        Email: ${email}\n\n
+        CAD Files Availability : ${cadFiles.value} \n\n\n
+        With ❤ Solomaxstudios.com
+    `
+
+
+    const data = {
+        to: recipient,
+        subject: `${subject}!! ${randomEmoji}`,
+        text
+    };
+
+    fetch(email_endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+
+    .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+
+      .then(data => {
+        swal('Form submitted successfully!');
+        clearInputs()
+        console.log('Email sent successfully:', data);
+      })
+
+      .catch(error => {
+        swal('Error : Mail Not Sent');
+        console.error('Error sending email:', error.message);
+        // Handle error, if needed
+      });
+    }
+
+
 
 function updateCB(clickedCheckbox) {
     var checkboxes = document.querySelectorAll('input[name="cadFiles"]');
