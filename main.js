@@ -135,7 +135,7 @@ function validateForm() {
     var cadFiles = document.querySelector('input[name="cadFiles"]:checked');
     var recaptcha = document.getElementById('recaptcha').value;
 
-    // Validate name
+     // Validate name
     if (name.trim() === '') {
         document.getElementById('nameError').innerText = 'Name is required';
         return;
@@ -151,12 +151,9 @@ function validateForm() {
     // Validate message
     if (message.trim() === '') {
         document.getElementById('messageError').innerText = 'Please provide information about your project';
-        return;
-    }
-
-    // Validate message characters
-    if (message.value.length < 20 || message.value.length > 500 ) {
-        document.getElementById('messageError').innerText = 'Please enter between 20 and 500 characters. 😊';
+        return;  // Add return statement to stop further execution if message is empty
+    } else if (message.length < 20 || message.length > 500) {
+        document.getElementById('messageError').innerText = 'Please enter between 20 and 500 characters. Thank you! 😊';
         return;
     }
 
@@ -171,8 +168,7 @@ function validateForm() {
         document.getElementById('recaptchaError').innerText = 'Incorrect answer to the math question';
         return;
     }
-
-
+    
 
     // Form is valid, continue with submission (you can replace this with actual form submission code)
     const email_endpoint = 'https://beanie-fawn.cyclic.app/send-email'
