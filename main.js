@@ -238,7 +238,7 @@ function validateForm() {
           <strong>Name:</strong> ${name} <br><br>
           <strong>Message:</strong> ${message} <br><br>
           <strong>Email:</strong> ${email} <br><br>
-          <strong>CAD Files Availability:</strong> ${cadFiles} <br><br><br>
+          <strong>CAD Files Availability:</strong> ${cadFiles.value} <br><br><br>
           With ❤ From <a href="https://solomaxstudios.com" target="_blank">Solomaxstudios.com</a> 🌐
         </body>
       </html>
@@ -247,7 +247,7 @@ function validateForm() {
 
     const data = {
         to: recipient,
-        subject: `${subject}  ${randomEmoji} .`,
+        subject: `${subject} . ${randomEmoji} `,
         text
     };
 
