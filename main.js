@@ -168,7 +168,7 @@ function validateForm() {
         document.getElementById('recaptchaError').innerText = 'Incorrect answer to the math question';
         return;
     }
-    
+
 
     // Form is valid, continue with submission (you can replace this with actual form submission code)
     const email_endpoint = 'https://beanie-fawn.cyclic.app/send-email'
@@ -238,7 +238,7 @@ function validateForm() {
           <strong>Name:</strong> ${name} <br><br>
           <strong>Message:</strong> ${message} <br><br>
           <strong>Email:</strong> ${email} <br><br>
-          <strong>CAD Files Availability:</strong> ${cadFilesAvailability} <br><br><br>
+          <strong>CAD Files Availability:</strong> ${cadFiles} <br><br><br>
           With ❤ From <a href="https://solomaxstudios.com" target="_blank">Solomaxstudios.com</a> 🌐
         </body>
       </html>
