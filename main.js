@@ -223,12 +223,23 @@ function validateForm() {
     const randomSubject = pickRandomPhrase(phrases);
 
     // Constructed message to send
-    const text = `
-        Name: ${name} \n\n
-        Message: ${message} \n\n
-        Email: ${email}\n\n
-        CAD Files Availability : ${cadFiles.value} \n\n\n
-        With ❤ Solomaxstudios.com
+    const text =  `
+      <html>
+        <head>
+          <style>
+            strong {
+              font-weight: bold;
+            }
+          </style>
+        </head>
+        <body>
+          <strong>Name:</strong> ${name} <br><br>
+          <strong>Message:</strong> ${message} <br><br>
+          <strong>Email:</strong> ${email} <br><br>
+          <strong>CAD Files Availability:</strong> ${cadFilesAvailability} <br><br><br>
+          With ❤ From <a href="https://solomaxstudios.com" target="_blank">Solomaxstudios.com</a> 🌐
+        </body>
+      </html>
     `
 
 
