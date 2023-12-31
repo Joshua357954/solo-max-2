@@ -285,7 +285,7 @@ function validateForm() {
      .then(data => {
         swal({
           icon: 'success',
-          title: 'Request Sent 😊',
+          title: 'Request Sent 😊.',
           text: 'Your project request has been sent successfully',
           // timer: 5000,
           showConfirmButton: false,
@@ -298,7 +298,7 @@ function validateForm() {
       .catch(error => {
         swal({
           icon: 'warning',
-          title: 'Oh, Snap 😔',
+          title: 'Oh, Snap 😔.',
           text: 'Your request was not sent, Try again .',
           // timer: 5000,
           showConfirmButton: false,
