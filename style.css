@@ -737,6 +737,7 @@ input[type="radio"]:checked::before {
   width: 20px;
   height: 20px;
   background-color: black;
+  opacity: .9;
   border-radius: 50%;
   position: absolute;
   top: 50%;
