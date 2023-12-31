@@ -685,7 +685,7 @@ label{
 .contact_inner textarea {
 	resize: none;
 	padding: 14px 8px 8px ;
-	font-size: .95rem;
+	font-size: 1rem;
 	border-radius: .1rem;
 	height: 100px;
 	border:1px solid lightgray;

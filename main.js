@@ -154,6 +154,12 @@ function validateForm() {
         return;
     }
 
+    // Validate message characters
+    if (message.value.length < 20 || message.value.length > 500 ) {
+        document.getElementById('messageError').innerText = 'Please enter between 20 and 500 characters. 😊';
+        return;
+    }
+
     // Validate CAD files selection
     if (!cadFiles) {
         document.getElementById('cadFilesError').innerText = 'Please select whether you have CAD files or not';
