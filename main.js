@@ -177,20 +177,6 @@ function validateForm() {
     const emojiList = ['😀', '😍', '🚀', '🎉', '🌟','🔩','🔨','⛏','⚒','🔧','🚧','👷','💻', '🍕', '🌈', '🎸'];
 
 
-    const phrases = [
-      "New Project Alert ",
-      "Embark on a thrilling initiative.",
-      "Launch a brand-new endeavor.",
-      "Initiate an innovative project.",
-      "Begin an exciting venture.",
-      "Kickstart a fresh undertaking.",
-      "Commence a novel project.",
-      "Start a compelling new initiative.",
-      "Embark on a creative project journey.",
-      "Pioneer a cutting-edge endeavor.",
-      "Commence an inspiring new project."
-    ];
-
     // get random phrases
     function pickRandomPhrase(phrasesArray) {
       const randomIndex = Math.floor(Math.random() * phrasesArray.length);
@@ -263,7 +249,7 @@ function validateForm() {
           timer: 10000,
           showConfirmButton: false,
         });
-        return  
+        return;  
     }
 
 
@@ -295,8 +281,10 @@ function validateForm() {
         clearInputs()
         console.log('Email sent successfully:', data);
       })
+     
 // 😥
 // 😔
+
       .catch(error => {
         swal({
           icon: 'warning',
@@ -322,14 +310,4 @@ function updateCB(clickedCheckbox) {
     }
 }
 
-
-// checkbox
-// function updateCB(clickedCB) {
-// 	var checkboxes = document.getElementsByClassName('cbGroup')
-// 	for (let i=0; i < checkboxes.length;i++){
-// 		if (checkboxes[i] !== clickedCB){
-// 			checkboxes[i].checked = false
-// 		}
-// 	}
-// }
 
