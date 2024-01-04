@@ -341,7 +341,7 @@ video {
 	/*
 	
 	background: none; */
-	background-color:#467fbc;
+	background-color: var(--darkblue);
 	/* cursor: pointer;
 	color:white !important;
 	font-size: 16px;
