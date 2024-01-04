@@ -208,7 +208,7 @@ function validateForm() {
 
 
     const randomEmoji = getRandomEmoji();
-    const randomSubject = pickRandomPhrase(phrases);
+    
 
     // Constructed message to send
     const text =  `
