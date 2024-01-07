@@ -326,7 +326,7 @@ header h1 {
 /* Line */
 .service_card:hover .line {
   width: 90%;
-  height: 4px;
+  height: 2px;
   margin-top: 3px;
   background-color: red;
   transition: width 0.5s ease;

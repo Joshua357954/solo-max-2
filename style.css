@@ -1029,6 +1029,7 @@ b{
 		text-align: center;
 		width: 40% !important;
 		padding: 8px 6px !important ; 
+		margin: 0 auto;
 	} 
 
 	/* Header text */
