@@ -285,40 +285,70 @@ header h1 {
  */
 
 
-    /* Style for the overlay */
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
-      opacity: 0; /* Initially hidden */
-      transition: opacity 0.3s ease-in-out;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-end;
-    }
+/* Style for the overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
 
-    /* Style for the clickable text in the overlay */
-    .overlay-text {
-      color: #fff;
-      font-size: 20px;
-      text-align: left;
-      cursor: pointer;
-      font-weight: 700;
-      margin: 0 20px 40px 20px ;
-    }
+/* Style for the clickable text in the overlay */
+.overlay-text {
+  color: #fff;
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 700;
+  /* background-color: yellow; */
+  margin: 0 20px 40px 20px ;
+  width: 40%;
+}
 
-    .overlay small {
-    	font-size: 15px;
-    	font-weight: 300;
-    }
-    /* Show the overlay on hover */
-    .service_card:hover .overlay {
-      opacity: 1;
-    }
+.overlay small {
+	font-size: 15px;
+	font-weight: 300;
+}
+/* Show the overlay on hover */
+.service_card:hover .overlay {
+  opacity: 1;
+  
+}
+
+/* Line */
+.service_card:hover .line {
+  width: 90%;
+  height: 4px;
+  margin-top: 3px;
+  background-color: red;
+  transition: width 0.5s ease;
+}
+
+@keyframes expandAndContract {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+.service_card:hover .line {
+  animation: expandAndContract 2s linear ;
+}
+
+
 
 
 
