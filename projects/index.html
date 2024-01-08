@@ -11,7 +11,133 @@
 
 <body>
 
+<nav class="navbar">
+	<div class="navbar_box">
+
+		<div class="nav_img_box">
+			<a href="../index.html"><img class='logo' src="../assets/images/so-max_Renew.png
+			"></a>
+		</div>
+		
+		<div class="navlinks_box">
+			
+			<img class="navmenu-icon" src="../assets/images/menu (3).svg">
+			
+			<ul class="nvb">
+				<a class="li" href="#home">
+					    <li class="ls">
+					        <img class="li-img" src="../assets/images/new_home.svg">
+					        <p>Home</p>
+					    </li>
+					</a>
+
+				    <a class="li" href="../blog/index.html">
+				        <li class="ls">
+				            <img class="li-img reduce" src="../assets/images/new_blog.svg">
+				            <p>Blog</p>
+				        </li>
+				    </a>
+
+				  	<a class="li" href="../about/index.html">
+				        <li class="ls">
+				            <img class="li-img" src="../assets/images/new_about.svg">
+				            <p>About</p>
+				        </li>
+				    </a>
+
+					<a class="li" href="../services/index.html">
+				        <li class="ls">
+				            <img class="li-img" src="../assets/images/new_services.svg">
+				            <p>Services</p>
+				        </li>
+				    </a>
+
+
+				    <a class="li" id="projects">
+				        <li class="ls">
+				           <img class="li-img" src="../assets/images/new_courses.svg">
+				           
+				           <p class="li" href="#">Courses 
+					           	<img class="caret" src="../assets/images/car-d (3).svg">
+				           </p>					
+				        </li>
+				    </a>
+
+			</ul>
+		</div>
+	</div>
+
+
+		<div class="context-menu" id="contextMenu">
+		    <ul>
+		        <li>
+		        	<a href="./index.html" style="display: flex; align-items:center; ">Youtube <img style="margin-left: 10px;" class="li-img" src="../assets/images/youtube-you-tube-video-svgrepo-com.svg"></a>
+		        </li>
+
+		        <li>
+		        	<a href="./index.html"  style="display: flex; align-items:center">Premium <img style="margin-left: 10px;" class="li-img" src="../assets/images/new_premium.svg"></a>
+		        </li>
+
+		        <li>
+		        	<a href="./index.html"  style="display: flex; align-items:center">Mentorship <img style="margin-left: 10px;" class="li-img" src="../assets/images/new_mentor.svg"></a>
+		        </li>
+		        <!-- <li><a href="./projects/index.html">Arch Viz</a></li> -->
+		    </ul>
+		</div>
+</nav>
+
+
+<section class="courses_nav">
+	<h1><img  src="../assets/images/youtube-you-tube-video-svgrepo-com.svg">Youtube Courses</h1>
+	<p>These courses are to make you grow and advance your skills but if they are not good enough , Check other category of courses </p>
+
+	<section class="headerNav">
+		<div class="search">search</div>
+
+		<ul class="selection">
+			<li>All</li>
+			<li>Latest</li>
+		</ul>
+
+		<div class="filter">Filter</div>
+
+	</section>
+</section>
+
 <h1>Projects</h1>
 
+<script>
+	
+	var item3 = document.getElementById("projects");
+var contextMenu = document.getElementById("contextMenu");
+
+item3.addEventListener("mouseenter", function () {
+    showContextMenu();
+});
+
+item3.addEventListener("mouseleave", function () {
+    hideContextMenu();
+});
+
+contextMenu.addEventListener("mouseenter", function () {
+    showContextMenu();
+});
+
+contextMenu.addEventListener("mouseleave", function () {
+    hideContextMenu();
+});
+
+function showContextMenu() {
+    var rect = item3.getBoundingClientRect();
+    contextMenu.style.display = "block";
+    contextMenu.style.left = rect.left + "px";
+    contextMenu.style.top = rect.bottom + "px";
+}
+
+function hideContextMenu() {
+    contextMenu.style.display = "none";
+}
+
+</script>
 </body>
 </html>

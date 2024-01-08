@@ -1,2 +1,337 @@
+/* Montserrat Thin */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat-Thin.ttf");
+    font-weight: 100;
+}
+
+/* Montserrat Extra Light */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat-ExtraLight.ttf");
+    font-weight: 200;
+}
+
+/* Montserrat Light */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat-Light.ttf");
+    font-weight: 300;
+}
+
+/* Montserrat Regular */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+/* Montserrat Medium */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat-Medium.ttf");
+    font-weight: 500;
+}
+
+/* Montserrat Semi-Bold */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat-SemiBold.ttf");
+    font-weight: 600;
+}
+
+/* Montserrat Bold */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+}
+
+/* Montserrat Extra Bold */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+/* Montserrat Black */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat-Black.ttf");
+    font-weight: 900;
+}
+
+
+
+	@font-face { 
+		font-family: 'SoDoSans'; 
+	    src:url("../assets/fonts/SoDoSans-Black.ttf"); 
+		font-weight: 900; 
+	} 
+
+
+	@font-face { 
+		font-family: 'SoDoSans'; 
+	    src:url("../assets/fonts/SoDoSans-Bold.ttf"); 
+		font-weight: 700; 
+	} 
+
+
+	@font-face { 
+		font-family: 'SoDoSans'; 
+	    src:url("../assets/fonts/SoDoSans-Light.ttf"); 
+		font-weight: 300; 
+	} 
+
+
+	@font-face { 
+		font-family: 'SoDoSans'; 
+	    src:url("../assets/fonts/SoDoSans-Regular.ttf"); 
+		font-weight: 400; 
+	} 
+
+	@font-face { 
+		font-family: 'SoDoSans'; 
+	    src:url("../assets/fonts/SoDoSans-SemiBold.ttf"); 
+		font-weight: 600; 
+	} 
+
+	@font-face { 
+		font-family: 'SoDoSans'; 
+	    src:url("../assets/fonts/SoDoSans-Thin.ttf"); 
+		font-weight: 100; 
+	} 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	/* font-family: 'Rubik',sans-serif; */
+	/* font-family: 'Lato', sans-serif;
+	font-family: 'Quicksand', sans-serif; */
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'SoDoSans',"Helvetica Neue", Helvetica, Arial,sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+:root{
+	--yellow:#fbffa7;
+	--red:#ff764d;
+	--lightblue:#b1c5ff;
+	--purple:#d5b3ff;
+	--green:#b6ffc0;
+	--darkblue:#074D85;
+}
+
+body{ 
+	/* user-select: none; */
+	padding: 0;
+	margin: 0;
+	background-color: white; 
+	color: white;
+}
+
+
+/* Header */
+.header{
+	width: 100%;
+	height: calc(100vh + 70px);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+header::before{
+	content: "";
+	z-index: 8;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,.6);
+}
+
+
+/* Navbar */
+.navbar{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	background-color: #fcfcfc;
+	color: black ;
+	position: fixed;
+    top: 0px;
+    z-index: 200;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    /* transition: background-color .4s linear; */   
+}
+
+
+
+.navmenu-icon{
+	width: 45px;
+	height: 45px;
+	display: none;
+}
+
+.navbar_box{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 30px;
+}
+
+.nav_img_box{
+	width: 180px ;
+	/*min-width: 200px;*/
+	height: 35px;
+	margin-top: 15px;
+	display: flex;
+	margin-left: 30px;
+	border-radius: .2rem;
+	justify-content: center;
+	align-items: center;
+	transition: all .5s ease-in-out;
+}
+
+/*  Context */
+ .context-menu {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: .3rem;
+	border: 0px solid #ccc;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	transition: all 4s ease-in-out;
+}
+
+.context-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	}
+
+.context-menu li{
+	padding: 12px 16px;
+	font-weight: 300;
+	cursor: pointer;
+	border-bottom: 1px solid lightgray;
+}
+.context-menu li:last-child{
+	border-bottom: none;
+}
+
+.context-menu li a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 95);
+}
+
+
+.context-menu li:hover {
+	background-color: #f0f0f0;
+}
+
+
+/* Caret */
+.caret{
+	width: 15px;
+	height: 10px;
+}
+
+
+.nav_img_box img{
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+	background-size: cover;
+}
+
+.nvb{
+	display: flex;
+	text-decoration:none;
+	align-items: center;
+	/* padding-right: 10px; */
+	max-height: 400px;
+	transition: all 1s linear,
+}
+
+.navlinks_box li{
+	list-style: none;
+	margin:0 0 0 25px;
+	display: flex;
+	align-items: center;
+	gap: 4.5px;
+	font-size: 15px;	
+}
+
+.li-img{
+	width: 20px;
+	height: 20px;
+}
+
+.reduce {
+	width: 15px;
+	height: 15px;
+}
+
+
+.nvb li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nvb li p {
+	margin-top: 5px;
+	color: black;
+}
+
+.nvb a:-webkit-any-link {
+	text-decoration:none;
+	color: black; 
+}
+
+
+/*  Courses Header */
+
+.courses_header {
+	height: 500px;
+
+	margin-top: 200px;
+	/* width: 100%; */
+	background-color: greenyellow;
+}
+
+h1 img {
+	width: 70px;
+}
+
+
+
+
 
 
