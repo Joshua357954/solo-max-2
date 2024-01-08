@@ -136,6 +136,64 @@ function hideContextMenu() {
     contextMenu.style.display = "none";
 }
 
+
+// Nav Menu
+const nav_icon = document.querySelector('.navmenu-icon') 
+	const mobile_nav1 = document.querySelector('.navlinks_box')
+	const mobile_nav = document.querySelector('.nvb')
+	const navbar =  document.querySelector('.navbar')
+
+	nav_icon.addEventListener('click',() => {	
+		mobile_nav.classList.toggle('active')
+
+		if (mobile_nav.classList.contains('active')){
+			// navbar.style.height = '100vh';
+		    nav_icon.src = '../assets/images/close-svgrepo-com.svg' 
+		    // navbar.style.backgroundColor = 'red';
+		}
+		else{
+			// navbar.style.height = '70px';
+		    nav_icon.src = '../assets/images/menu (3).svg';
+		}
+	} )
+
+	let prevScrollPos = window.pageYOffset;
+	const windowWidth = window.innerWidth
+
+
+	window.onscroll = function() {
+	    const currentScrollPos = window.pageYOffset;
+	    const navbar = document.querySelector(".navbar");
+	    const li = document.querySelectorAll(".li");
+	    const logo = document.querySelector(".logo")
+
+	    
+
+	    if (prevScrollPos > currentScrollPos) {
+	        // Scrolling up
+	    } else {
+	        // Scrolling down
+
+	        if (!mobile_nav.classList.contains('active')){
+	        	 // nav_icon.style.display = 'none'
+	        	 // alert("does not")
+	        }
+
+	           navbar.style.top = "0";
+	        navbar.classList.add('bg-white')
+
+	        // logo.src = "./assets/images/solomax.png"
+
+	        // change text color while scrolling up
+	        li.forEach(el => {
+				el.style.color = 'black'
+	        })
+
+	    }
+
+	    prevScrollPos = currentScrollPos;
+	};
+
 </script>
 </body>
 </html>
