@@ -329,7 +329,7 @@ header h1 {
   height: 2px;
   margin-top: 3px;
   background-color: red;
-  transition: width 0.5s ease;
+  transition: width 0.3s ease;
 }
 
 @keyframes expandAndContract {
@@ -345,7 +345,7 @@ header h1 {
 }
 
 .service_card:hover .line {
-  animation: expandAndContract 2s linear ;
+  animation: expandAndContract 1.3s linear ;
 }
 
 
