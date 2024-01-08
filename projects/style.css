@@ -319,18 +319,64 @@ header::before{
 /*  Courses Header */
 
 .courses_header {
-	height: 500px;
+	/* height: 500px; */
 
-	margin-top: 200px;
+	margin-top: 100px;
 	/* width: 100%; */
-	background-color: greenyellow;
+	/* background-color: greenyellow; */
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	gap: 30px;
+	color: black !important;
+	border-bottom: 1px solid #f9f9f9;
+	/* padding-bottom: 20px; */
+}
+
+h1{
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	font-size: 1.8rem;
+	margin: 0 30px;
 }
 
 h1 img {
 	width: 70px;
 }
 
+.headerNav {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0 20px;
+}
 
+
+
+.headerNav li { 
+	border-bottom: 2px solid transparent;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.headerNav li:first-child {
+	border-bottom: 2px solid red;
+}
+
+.headerNav li:hover, .headerNav li:active { 
+	border-bottom: 2px solid red;
+	transition: all .5s  ease-in-out
+}
+
+.headerNav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+	width: 100%;
+
+}
 
 
 
