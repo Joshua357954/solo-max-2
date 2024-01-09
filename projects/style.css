@@ -311,15 +311,20 @@ body{
 	transition: all .5s ease-in-out;
 }
 
-h1{
+.header_title{
 	display: flex;
 	align-items: center;
-	gap: 30px;
+	gap: 2px;	
+	
+}
+
+.h1 {
+	text-transform: capitalize;
 	font-size: 1.8rem;
 	margin: 0 30px;
 }
 
-h1 img {
+.header_title img {
 	width: 70px;
 }
 
