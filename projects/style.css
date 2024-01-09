@@ -510,18 +510,24 @@ h1 img {
 		/* margin: 0 auto; */
 		
 	} 
+
 	.courses_box {
 		grid-template-columns: repeat(2,1fr);
 	}
 
 	.courses_header {
 		margin-top: 40px;
+		gap: 40px;
 	}
 
 }
 
 
 @media (max-width:550px){
+
+	h1{
+		gap: 10px;
+	}
 	.courses_box {
 		grid-template-columns: repeat(1,1fr);
 	}
