@@ -368,7 +368,7 @@ h1 img {
 
 .yt-card {
 
-	max-width: 250px;
+	max-width: 100%;
 	max-height:320px;
 	/* width: 100%; */
 	background-color: #fcfcfc;
