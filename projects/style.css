@@ -369,7 +369,7 @@ h1 img {
 .yt-card {
 
 	max-width: 250px;
-	max-height:300px;
+	max-height:320px;
 	/* width: 100%; */
 	background-color: #fcfcfc;
 	border-radius: .3rem;
@@ -524,6 +524,11 @@ h1 img {
 @media (max-width:550px){
 	.courses_box {
 		grid-template-columns: repeat(1,1fr);
+	}
+
+	h1 {
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.yt-card{
