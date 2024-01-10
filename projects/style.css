@@ -377,7 +377,7 @@ body{
 
 	max-width: 100%;
 	max-height:360px;
-	/* width: 100%; */
+	height: 350px;
 	background-color: #fcfcfc;
 	border-radius: .3rem;
 	box-shadow: 0 24px 48px 0 rgb(0,0,0,.1);
@@ -405,6 +405,69 @@ body{
 	font-weight: 300;
 	text-size-adjust: auto;
 }
+
+
+
+
+.premium_card {
+	width: 100%;
+	height: 350px;
+	box-shadow: 0 24px 48px 0 rgb(0,0,0,.1);
+	border-radius: .3rem;
+	border-bottom: 1px solid red;
+	margin-top: 10px;
+}
+
+.premium_box1{
+	height: 150px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .9);
+}
+
+.premium_box2 {
+	color: black;
+	padding: 10px ;
+	background-color: #fcfcfc;
+}
+
+.p_price {
+	font-size: 18px;
+	padding: 3px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, .8);
+}
+
+.premium_box2 button{
+	display: block;
+	width: 100%;
+	border-radius: .2rem;
+	background: none;
+	background-color: #fcfcfc;
+	border: 2px solid black;
+	color: black;
+	padding: 10px 5px ;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	justify-content: center;
+	margin: 5px 0; 
+	/* background-color:white;	  */
+}
+
+
+.pbtn:last-child {
+	margin-bottom: 10px;
+	color: white;
+	background-color:#0C5395 !important; 
+	font-size: 1rem; 
+	border: 2px solid white;
+	font-weight: 600;
+
+}
+
+
+
+
 
 @media (max-width: 720px){
 

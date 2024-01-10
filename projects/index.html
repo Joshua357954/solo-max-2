@@ -111,54 +111,7 @@
 <!-- Cards ..... -->
 <main class="courses_box">
 	
-	<div class="yt-card">
-		<div class="yt_video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/zmAy4uH6EEw" frameborder="0" allowfullscreen></iframe>
-</div>
-		<h2>Modelling</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod , tempor incididunt ut labore et dolore magna aliqua.</p>
-	</div>
 
-	<div class="yt-card">
-		<div class="yt_video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/zmAy4uH6EEw" frameborder="0" allowfullscreen></iframe>
-</div>
-		<h2>Modelling</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod , tempor incididunt ut labore et dolore magna aliqua.</p>
-	</div>
-
-	<div class="yt-card">
-		<div class="yt_video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/zmAy4uH6EEw" frameborder="0" allowfullscreen></iframe>
-</div>
-		<h2>Modelling</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod , tempor incididunt ut labore et dolore magna aliqua.</p>
-	</div>
-
-	<div class="yt-card">
-		<div class="yt_video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/zmAy4uH6EEw" frameborder="0" allowfullscreen></iframe>
-</div>
-		<h2>Modelling</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod , tempor incididunt ut labore et dolore magna aliqua.</p>
-	</div>
-
-	<div class="yt-card">
-		<div class="yt_video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/zmAy4uH6EEw" frameborder="0" allowfullscreen></iframe>
-</div>
-		<h2>Modelling</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod , tempor incididunt ut labore et dolore magna aliqua.</p>
-	</div>
-
-	<div class="yt-card">
-		<div class="yt_video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/zmAy4uH6EEw" frameborder="0" allowfullscreen></iframe>
-</div>
-		<h2>Modelling</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod , tempor incididunt ut labore et dolore magna aliqua.</p>
-	</div>
-
-	<div class="yt-card">
-		<div class="yt_video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/zmAy4uH6EEw" frameborder="0" allowfullscreen></iframe>
-</div>
-		<h2>Modelling</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod , tempor incididunt ut labore et dolore magna aliqua.</p>
-	</div>
 </main>
  
 
@@ -330,17 +283,178 @@ const nav_icon = document.querySelector('.navmenu-icon')
 	const pageName = document.querySelector('.h1')
 	const pageImg =  document.querySelector('.csh_img')
 
-	const youtubeCard = ''
-	const premiumContentCard = ''
+
+	
+	const youtubeContent = [
+		  {
+		    title: 'Introduction to Cel Animation',
+		    description: 'Learn the basics of traditional cel animation techniques.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Creating Expressive Characters',
+		    description: 'Explore techniques for giving life and emotion to animated characters.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Animating Dynamic Camera Movements',
+		    description: 'Master the art of creating visually stunning camera movements in animations.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Lip Syncing Tutorial',
+		    description: 'Learn how to synchronize character lip movements with audio in animation.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Walk Cycle Breakdown',
+		    description: 'Breakdown of the steps to create a realistic walk cycle for characters.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Digital Sculpting in Blender',
+		    description: 'Sculpting 3D characters using Blender for animation purposes.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Creating Animated GIFs in Photoshop',
+		    description: 'Step-by-step guide to creating animated GIFs using Photoshop.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Animating Fluid Simulations',
+		    description: 'Introduction to animating fluid simulations for dynamic visual effects.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Introduction to Stop Motion',
+		    description: 'Basics of creating stop motion animations using everyday objects.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Animating Facial Expressions',
+		    description: 'Guide to animating realistic facial expressions for characters.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  }
+		];
 
 
-	const youtubeContent = []
-	const premiumContent = []
+
+	const premiumContent  = [
+		  {
+		    title: 'Animation Fundamentals',
+		    price: '$49.99',
+		    purchaseLink: 'https://example.com/course/animation-fundamentals',
+		    imgUrl: 'https://example.com/images/animation-fundamentals.jpg'
+		  },
+		  {
+		    title: 'Character Design Masterclass',
+		    price: '$79.99',
+		    purchaseLink: 'https://example.com/course/character-design-masterclass',
+		    imgUrl: 'https://example.com/images/character-design-masterclass.jpg'
+		  },
+		  {
+		    title: 'Advanced 3D Modeling',
+		    price: '$99.99',
+		    purchaseLink: 'https://example.com/course/advanced-3d-modeling',
+		    imgUrl: 'https://example.com/images/advanced-3d-modeling.jpg'
+		  },
+		  {
+		    title: 'Storyboarding Techniques',
+		    price: '$59.99',
+		    purchaseLink: 'https://example.com/course/storyboarding-techniques',
+		    imgUrl: 'https://example.com/images/storyboarding-techniques.jpg'
+		  },
+		  {
+		    title: 'Animating Characters in After Effects',
+		    price: '$69.99',
+		    purchaseLink: 'https://example.com/course/animating-in-after-effects',
+		    imgUrl: 'https://example.com/images/animating-in-after-effects.jpg'
+		  },
+		  {
+		    title: 'Motion Graphics for Beginners',
+		    price: '$39.99',
+		    purchaseLink: 'https://example.com/course/motion-graphics-beginners',
+		    imgUrl: 'https://example.com/images/motion-graphics-beginners.jpg'
+		  },
+		  {
+		    title: 'Digital Painting Workshop',
+		    price: '$89.99',
+		    purchaseLink: 'https://example.com/course/digital-painting-workshop',
+		    imgUrl: 'https://example.com/images/digital-painting-workshop.jpg'
+		  },
+		  {
+		    title: 'Introduction to 2D Animation',
+		    price: '$49.99',
+		    purchaseLink: 'https://example.com/course/intro-to-2d-animation',
+		    imgUrl: 'https://example.com/images/intro-to-2d-animation.jpg'
+		  },
+		  {
+		    title: 'Unity Game Animation',
+		    price: '$109.99',
+		    purchaseLink: 'https://example.com/course/unity-game-animation',
+		    imgUrl: 'https://example.com/images/unity-game-animation.jpg'
+		  },
+		  {
+		    title: 'Animating with Spine',
+		    price: '$59.99',
+		    purchaseLink: 'https://example.com/course/animating-with-spine',
+		    imgUrl: 'https://example.com/images/animating-with-spine.jpg'
+		  }
+	];
+
 
 
 	pageName.innerText = paramValue + " Courses"
 	pageImg.src = paramValue == 'youtube' ? youtubeImg : premiumImg
-	
+
+	if (paramValue == 'youtube') {
+
+		const coursesBox = document.querySelector('.courses_box')
+		
+		for (i=0;i< youtubeContent.length; i++){
+			
+			let ytContent = `
+				<div class="yt-card">
+					<div class="yt_video"><iframe width="100%" height="100%" src="${youtubeContent[i].ytLink}" frameborder="0" allowfullscreen></iframe>
+					</div>
+				
+					<h2>${youtubeContent[i].title}</h2>
+					<p>${youtubeContent[i].description}
+					</p>
+				</div>`
+
+		// Append the new content using insertAdjacentHTML
+		coursesBox.insertAdjacentHTML('beforeend', ytContent);
+		}
+	}
+
+	// Eles If
+	else if (paramValue == 'premium') {
+		
+		const coursesBox = document.querySelector('.courses_box')
+		
+		for (i=0;i< premiumContent.length; i++){
+
+		const pmContent = `
+			<div class="premium_card">
+				<div class="premium_box1">
+					
+				</div>
+
+				<div class="premium_box2">
+					<h2>${premiumContent[i].title}</h2>
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod .</p> -->
+					<p class="p_price">${premiumContent[i].price}</p>
+					<button class="pbtn"> <img class="li-img" src="../assets/images/new_courses.svg">Watch Demo</button>
+					<button class="pbtn">Buy Now</button>
+				</div>
+			</div>`
+
+			// Append the new content using insertAdjacentHTML
+			coursesBox.insertAdjacentHTML('beforeend', pmContent);
+		}
+	}
 </script>
 </body>
 </html>
