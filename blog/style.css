@@ -190,7 +190,7 @@ body{
 	display: flex;
 	align-items: center;
 	gap: 4.5px;
-	font-size: 15px;	
+	font-size: 17px;	
 }
 
 .li-img{
@@ -198,14 +198,27 @@ body{
 	height: 20px;
 }
 
-.navlinks_box li a {
-	text-decoration: none;
+.reduce {
+	width: 16.5px;
+	height: 16.5px;
+}
+
+.nvb li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nvb li p {
+	margin-top: 2px;
 	color: black;
-	padding: 10px 2px 5px 2px ;
-	font: bolder;
-	border-bottom: 2px solid rgba(0,0,0,0);
-	transition: border-bottom-color .5s ease-in-out;
-	transition: font-weight 0s ease-in-out;  
+	font-size: 16px;
+}
+
+.nvb a:-webkit-any-link {
+	text-decoration:none;
+	color: black; 
 }
 
 .last_link {
@@ -274,8 +287,7 @@ header h1 {
 header li {
 	padding: 8px 10px;
 	font-weight: bolder;
-	/* border: 2px solid  rgba(17,17,17,.5); */
-	/* border-radius: .2rem; */
+	color: rgba(0, 0, 0, .8)!important; 
 }
 
 
@@ -287,7 +299,7 @@ main {
 	grid-template-columns: 1fr 1fr 1fr;
 	margin:0 auto;
 	max-width: 1300px;
-	padding: 0 50px;
+	padding: 0 70px;
 	gap: 20px;
 	place-items: center;
 }
@@ -309,7 +321,7 @@ main {
 	height: 480px;
 	min-height:350px;
 	margin-bottom: 20px;
-	min-width: 250px;
+	min-width: 210px;
 	max-width: 100%;
 	box-shadow: 0 24px 48px 0 rgb(0,0,0,.1)
 }
@@ -343,7 +355,7 @@ main {
 	font-weight: bolder;
 	gap: 5px;
 	color: #467fbc;
-	padding: 10px 10px ;
+	padding: 15px 10px ;
 }
 
 

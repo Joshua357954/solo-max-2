@@ -184,13 +184,14 @@ body{
 }
 
 
+
 .navlinks_box li{
 	list-style: none;
 	margin:0 14px;
 	display: flex;
 	align-items: center;
 	gap: 4.5px;
-	font-size: 15px;	
+	font-size: 16.5px;	
 }
 
 .li-img{
@@ -198,16 +199,28 @@ body{
 	height: 20px;
 }
 
-.navlinks_box li a {
-	text-decoration: none;
-	color: black;
-	padding: 10px 2px 5px 2px ;
-	font: bolder;
-	border-bottom: 2px solid rgba(0,0,0,0);
-	transition: border-bottom-color .5s ease-in-out;
-	transition: font-weight 0s ease-in-out;  
+.reduce {
+	width: 16.5px;
+	height: 16.5px;
 }
 
+.nvb li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nvb li p {
+	margin-top: 2px;
+	color: black;
+	font-size: 16px;
+}
+
+.nvb a:-webkit-any-link {
+	text-decoration:none;
+	color: black; 
+}
 
 .s-one {
 	padding: 50px 20px;

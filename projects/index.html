@@ -24,7 +24,7 @@
 			<img class="navmenu-icon" src="../assets/images/menu (3).svg">
 			
 			<ul class="nvb">
-				<a class="li" href="#home">
+				<a class="li" href="../index.html">
 					    <li class="ls">
 					        <img class="li-img" src="../assets/images/new_home.svg">
 					        <p>Home</p>
@@ -94,17 +94,7 @@
 	</div>
 	<!-- <p>These courses are to make you grow and advance your skills but if they are not good enough , Check other category of courses </p>
  -->
-	<section class="headerNav">
-		<img  class="li-img" src="../assets/images/search-svgrepo-com.svg">
 
-		<ul class="selection">
-			<li>All</li>
-			<li>Latest</li>
-		</ul>
-
-		<div class="filter" style="display: flex; align-items:center; gap:5px;"><img class="li-img" src="../assets/images/filter-list-svgrepo-com.svg">Filter</div>
-
-	</section>
 </section>
 
 
@@ -275,6 +265,8 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
     const premiumImg = '../assets/images/new_premium.svg'
 
+    const mentorshipImg = '../assets/images/new_mentor.svg'
+
 	// Get the value of a specific parameter, for example, 'param1'
 	const paramValue = queryParams.get(paramName);
 
@@ -404,10 +396,38 @@ const nav_icon = document.querySelector('.navmenu-icon')
 	];
 
 
+	// Inject Header Title
+	const selectionContent = `	
+		<section class="headerNav">
+			<img  class="li-img" src="../assets/images/search-svgrepo-com.svg">
 
-	pageName.innerText = paramValue + " Courses"
-	pageImg.src = paramValue == 'youtube' ? youtubeImg : premiumImg
+			<ul class="selection">
+				<li>All</li>
+				<li>Latest</li>
+			</ul>
 
+			<div class="filter" style="display: flex; align-items:center; gap:5px;"><img class="li-img" src="../assets/images/filter-list-svgrepo-com.svg">Filter</div>
+
+		</section>`
+
+	const selectionBox = document.querySelector('.courses_header')
+	const isMentorship = paramValue != 'youtube' && paramValue != 'premium'
+	
+	if (isMentorship){
+		// const header = document.querySelector('.headerNav')
+		// header.innerHTML = ''
+		selectionBox.style.border = 'none'
+		pageName.innerText = "Mentorship"
+	}else {
+
+		selectionBox.insertAdjacentHTML('beforeend', selectionContent)
+		pageName.innerText = `${paramValue} Courses`
+	}
+	
+	// Inject Header Img
+	pageImg.src = paramValue == 'youtube' ? youtubeImg : paramValue=='premium' ? premiumImg : mentorshipImg
+
+	// Inject Courses Content 
 	if (paramValue == 'youtube') {
 
 		const coursesBox = document.querySelector('.courses_box')
