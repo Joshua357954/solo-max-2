@@ -389,6 +389,8 @@ select:focus {
 	padding:20px 30px;
 	width: 100%;
 	border: 2px solid #fcfcfc;
+	max-width: 1300px;
+	margin: 0 auto;
 }
 
 .mentorship_box h7{
