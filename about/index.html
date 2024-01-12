@@ -60,7 +60,9 @@
 
 		</div>
 	</nav>
- 
+
+
+<main style="max-width: 1300px; margin: 0 auto;"> 
 <section class="s-one">
 	 <h1>SOLO Max.</h1>
 	 <h1>Max DELIVERY.</h1>
@@ -163,12 +165,18 @@
     </footer>
 
 	<footer class="footer-2">
-		&copy;  SoloMax - Studios 2023
+		&copy;  SoloMax - Studios <span style="margin-left: 7px" id="current-year"></span>
 	</footer>
-
+</main>
 
 
 <script >
+
+ const currentYear = new Date().getFullYear();
+
+  // Update the content of the "current-year" span
+  document.getElementById('current-year').innerText = currentYear;
+
 	const nav_icon = document.querySelector('.navmenu-icon') 
 	const mobile_nav1 = document.querySelector('.navlinks_box')
 	const mobile_nav = document.querySelector('.nvb')

@@ -87,6 +87,8 @@
 </nav>
 
 
+
+
 <section class="courses_header">
 	<div class="header_title">
 		<img class="csh_img" src="">
@@ -154,16 +156,21 @@
     </footer>
 	
 
-	<footer class="footer-2">
-		&copy;  SoloMax - Studios 2023
+	<footer class="footer-2" >
+		&copy;  SoloMax - Studios <span style="margin-left: 7px" id="current-year"></span>
 	</footer>
 
 
 
 
 <script>
-	
-	var item3 = document.getElementById("projects");
+
+const currentYear = new Date().getFullYear();
+
+// Update the content of the "current-year" span
+document.getElementById('current-year').innerText = currentYear;
+
+var item3 = document.getElementById("projects");
 var contextMenu = document.getElementById("contextMenu");
 
 item3.addEventListener("mouseenter", function () {
@@ -183,6 +190,7 @@ contextMenu.addEventListener("mouseleave", function () {
 });
 
 function showContextMenu() {
+
     var rect = item3.getBoundingClientRect();
     contextMenu.style.display = "block";
     contextMenu.style.left = rect.left + "px";
@@ -395,7 +403,6 @@ const nav_icon = document.querySelector('.navmenu-icon')
 		  }
 	];
 
-
 	// Inject Header Title
 	const selectionContent = `	
 		<section class="headerNav">
@@ -406,7 +413,17 @@ const nav_icon = document.querySelector('.navmenu-icon')
 				<li>Latest</li>
 			</ul>
 
-			<div class="filter" style="display: flex; align-items:center; gap:5px;"><img class="li-img" src="../assets/images/filter-list-svgrepo-com.svg">Filter</div>
+			<div class="filter">
+			    <img class="li-img" src="../assets/images/filter-list-svgrepo-com.svg" alt="Filter Icon">
+			 
+				<select id="dropdownSelect">
+					<option value="" disabled selected>Filter By:</option>
+					<option value="latest">Latest</option>
+					<option value="popular">Popular</option>
+					<option value="rising">Rising</option>
+					<option value="modeling">Modeling</option>
+				</select>
+			</div>
 
 		</section>`
 
@@ -473,8 +490,49 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
 			// Append the new content using insertAdjacentHTML
 			coursesBox.insertAdjacentHTML('beforeend', pmContent);
-		}
+
+		}		
+	}else {
+		const coursesBox = document.querySelector('.courses_header')
+		coursesBox.insertAdjacentHTML('beforeend',
+			`<section class="mentorship_box">
+				<h7>Unlock Your potential with personalised Mentorship ☃️ !</h7>
+				<p>Our seasoned mentors are ready to guide you on your journey. Whether you're navigating your career, mastering new skills, or pursuing personal growth, our mentorship program provides personalized support🚀. Connect with mentors who share your passions and let's embark on this transformative journey together. Elevate your life—begin your mentorship experience now! 🌟.</p>
+
+				<a href="/">Get In Touch</a>
+		</section>`)
+
 	}
+
+
+
+//  Filter Courses
+const pathToYtCourses = '../content/posts/js-noob.md'
+const pathToPremiumCourses = ''
+
+async function fetchDataFromYtCourses() {
+  try {
+    const response = await fetch(pathToYtCourses);
+    // const data = await response.json();
+    console.log(response)
+     //alert(response); Modify this based on the structure of the response data
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+
+fetchDataFromYtCourses();
+
+
+
+let filterCourses =  document.getElementById('dropdownSelect')
+
+filterCourses.addEventListener('change',function() {
+	
+	var selectedOption = this.value;
+	console.log('Selected Option:', selectedOption);
+	// You can perform additional actions based on the selected option
+});
 </script>
 </body>
 </html>

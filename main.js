@@ -325,7 +325,7 @@ function updateCB(clickedCheckbox) {
 
 
 // Get the current year
-  const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
 
-  // Update the content of the "current-year" span
-  document.getElementById('current-year').innerText = currentYear;
+// Update the content of the "current-year" span
+document.getElementById('current-year').innerText = currentYear;
