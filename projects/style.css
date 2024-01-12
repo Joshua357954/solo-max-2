@@ -263,6 +263,7 @@ body{
 	align-items: center;
 	gap: 4.5px;
 	font-size: 15px;	
+	padding: 9px 0;
 }
 
 .li-img{
@@ -289,7 +290,8 @@ body{
 
 .nvb a:-webkit-any-link {
 	text-decoration:none;
-	color: black; 
+	color: black;
+	padding: 1px; 
 }
 
 
