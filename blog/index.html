@@ -314,6 +314,9 @@
 	<footer class="footer-2">
 		&copy;  SoloMax - Studios <span style="margin-left: 7px" id="current-year"></span>
 	</footer>
+
+
+
 <script >
 	const nav_icon = document.querySelector('.navmenu-icon') 
 	const mobile_nav1 = document.querySelector('.navlinks_box')
@@ -335,9 +338,69 @@
   document.getElementById('current-year').innerText = currentYear;
 
 
-  // Get FileNames From GitHub
+class MdParser {
+  constructor(markdownContent) {
+    this.markdownContent = markdownContent;
+  }
 
-  
+  getFrontmatter() {
+    const frontmatterRegex = /^---([\s\S]*?)---/;
+    const frontmatterMatch = this.markdownContent.match(frontmatterRegex);
+    
+    if (frontmatterMatch && frontmatterMatch[1]) {
+      const frontMatterString = frontmatterMatch[1].trim();
+      const frontMatterLines = frontMatterString.split('\n');
+      const frontMatterObject = {};
+
+      for (const line of frontMatterLines) {
+        const match = line.match(/^\s*([^:]+):\s*(.*)\s*$/);
+        if (match) {
+          const key = match[1].trim();
+          const value = match[2].trim();
+          frontMatterObject[key] = value;
+        }
+      }
+
+      return frontMatterObject;
+    }
+
+    return {};
+  }
+
+  getBody() {
+    const frontmatterRegex = /^---([\s\S]*?)---/;
+    const body = this.markdownContent.replace(frontmatterRegex, '').trim();
+    return body;
+  }
+}
+
+const repositoryOwner = 'Joshua357954';
+const repositoryName = 'solo-max-2';
+const folderPath = 'content/posts';
+
+
+fetch(`https://api.github.com/repos/${repositoryOwner}/${repositoryName}/contents/${folderPath}`)
+	.then(response => response.json())
+	.then(async data => {
+		const fileDetails = await Promise.all(data.map(file => loadContent(file.name)));
+		console.log('Files Details:', fileDetails);
+	})
+	.catch(error => console.error('Error fetching file list:', error));
+
+
+
+async function loadContent(fileInfo) {
+  try {
+    const response = await fetch(`../content/posts/${fileInfo}`);
+    const markdownContent = await response.text();
+    const markDParser = new MdParser(markdownContent);
+    return markDParser.getFrontmatter();
+  } catch (error) {
+    console.error('Error fetching content:', error);
+    return {};
+  }
+}
+
 
 </script>
 
