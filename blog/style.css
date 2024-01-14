@@ -264,8 +264,7 @@ header h1 {
 	text-align: center;
 	padding-top: 10px;
 	border-top: 4px solid red;
-	/* font-family: 'Montserrat' */
-
+	text-transform: capitalize;
 }
 
 .header-categories {
