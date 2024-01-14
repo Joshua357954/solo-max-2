@@ -166,15 +166,12 @@
 
  <footer>
         <div class="footer-content">
-            <!-- <div class="footer-logo">
-                <img src="../assets/images/solo-pix.png" alt="Animation Studio Logo">
-            </div> -->
             <div class="footer-links">
             	<h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="blog/index.html">Blog</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="../services/index.html">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -403,6 +400,7 @@
     
     dropdownSelect.addEventListener('change', function () {
         const selectedOption = dropdownSelect.value;
+        blogTitle.innerText = lower(selectedOption)
         filterPosts(selectedOption);
     });
 
