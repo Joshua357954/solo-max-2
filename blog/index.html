@@ -82,10 +82,10 @@
 			 
 				<select id="dropdownSelect">
 					<option value="" disabled selected>Filter By:</option>
-					<option value="visualeffect">Vis-Effect</option>
+					<!-- <option value="visualeffect">Vis-Effect</option>
 					<option value="motiongraphics">Mo-Graphics</option>
 					<option value="rigging">Rigging</option>
-					<option value="modeling">Modeling</option>
+					<option value="modeling">Modeling</option> -->
 				</select>
 			</div>
 		</ul>
@@ -406,6 +406,7 @@
 	  }
 	}
 
+	let catData;
 
 	async function filterPosts(selectedCategory) {
 	    blogContainer.innerHTML = '';
@@ -416,6 +417,18 @@
 	    const filteredPosts = BlogData.filter(post => {
 		    return lower(selectedCategory) === 'all' || lower(post.frontMatter.category) === lower(selectedCategory);
 			});
+
+	    if (!catData){
+	    	// console.log("CAATA")
+	    	const categoryData = [...new Set(BlogData.map(post => post.frontMatter.category))]
+	    	categoryData.forEach(category => {
+			    const option = document.createElement('option');
+			    option.value = category.trim();
+			    option.innerText = category;
+			    dropdownSelect.appendChild(option);
+			});
+			catData = true
+	    }
 
 	    // console.log(BlogData[0])
 	    // console.log(filteredPosts)
@@ -464,6 +477,14 @@
     filterPosts('all');
 
 
+    // Add options for each category
+    // console.log("Cata Data :", categoryData)
+	// categoryData.forEach(category => {
+	//     const option = document.createElement('option');
+	//     option.value = category.trim();
+	//     option.innerText = category;
+	//     dropdownSelect.appendChild(option);
+	//   });
 </script>
 
 </body>
