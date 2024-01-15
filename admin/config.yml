@@ -19,6 +19,7 @@ collections:
       - {label: "ReadTime", name: "readTime", widget: "string"}
       - {label: "Category", name: "category", widget: "string"}
       - {label: "AvatarUrl", name: "avatarUrl", widget: "string"}
+      - {label: "Table Of Content", name: "tableOfContent", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "youtubeCourses"

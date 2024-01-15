@@ -5,6 +5,7 @@ title: Mastering 3D Modeling: Tips for Creating Realistic Characters
 avatarUrl: '../assets/images/So-max_Mountain.png
 author: Solomax
 readTime: 10mins
+tableOfContent: What is 2D Animation ?,5 Noteworthy 3D Texturing Techniques , Wrapping Up
 date: January 4, 2024
 ---
 

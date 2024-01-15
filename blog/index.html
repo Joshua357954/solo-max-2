@@ -241,98 +241,6 @@
 
 	const blogContainer = document.querySelector('.blog_container')
 
-	const BlogDatas = [
-	  {
-	    imageUrl: 'https://www.tubebuddy.com/wp-content/uploads/2024/01/4-1024x576.jpg',
-	    category: 'Modeling',
-	    title: 'Mastering 3D Modeling: Tips for Creating Realistic Characters',
-	    author: {
-	      avatarUrl: '../assets/images/So-max_Mountain.png',
-	      name: 'Solomax'
-	    },
-	    date: 'January 4, 2024',
-	    link: 'mastering-3d-modeling.md'
-	  },
-	  {
-	    imageUrl: 'https://www.tubebuddy.com/wp-content/uploads/2024/01/4-1024x576.jpg',
-	    category: 'Rigging',
-	    title: 'A Deep Dive into Character Rigging: Techniques for Smooth Animation',
-	    author: {
-	      avatarUrl: '../assets/images/author2.png',
-	      name: 'TechEnthusiast'
-	    },
-	    date: 'February 15, 2024',
-	    link: 'character-rigging.md'
-	  },
-	  {
-	    imageUrl: 'https://www.tubebuddy.com/wp-content/uploads/2024/01/4-1024x576.jpg',
-	    category: 'MotionGraphics',
-	    title: 'Creating Stunning Motion Graphics: From Concept to Final Output',
-	    author: {
-	      avatarUrl: '../assets/images/author3.png',
-	      name: 'Wanderer123'
-	    },
-	    date: 'March 8, 2024',
-	    link: 'motion-graphics.md'
-	  },
-	  {
-	    imageUrl: 'https://www.tubebuddy.com/wp-content/uploads/2024/01/4-1024x576.jpg',
-	    category: 'VisualEffects',
-	    title: 'The Art of Visual Effects: Enhancing Your Animation Projects',
-	    author: {
-	      avatarUrl: '../assets/images/author4.png',
-	      name: 'VFXMaestro'
-	    },
-	    date: 'April 20, 2024',
-	    link: 'visual-effects.md'
-	  },
-	  {
-	    imageUrl: 'https://www.tubebuddy.com/wp-content/uploads/2024/01/4-1024x576.jpg',
-	    category: 'Modeling', // Added #Modeling to make it the same as the first entry
-	    title: 'Animating Stories: Techniques for Effective Storytelling through Animation',
-	    author: {
-	      avatarUrl: '../assets/images/author5.png',
-	      name: 'StoryWeaver'
-	    },
-	    date: 'May 12, 2024',
-	    link: 'animation-storytelling.md'
-	  },
-	  // Additional entries
-	  {
-	    imageUrl: 'https://www.tubebuddy.com/wp-content/uploads/2024/01/4-1024x576.jpg',
-	    category: 'VisualEffects',
-	    title: 'Mastering Visual Effects: From Basics to Advanced Techniques',
-	    author: {
-	      avatarUrl: '../assets/images/author6.png',
-	      name: 'VFXMastermind'
-	    },
-	    date: 'June 28, 2024',
-	    link: 'mastering-visual-effects.md'
-	  },
-	  {
-	    imageUrl: 'https://www.tubebuddy.com/wp-content/uploads/2024/01/4-1024x576.jpg',
-	    category: 'Rigging',
-	    title: 'Advanced Rigging: Pushing the Boundaries of Character Animation',
-	    author: {
-	      avatarUrl: '../assets/images/author7.png',
-	      name: 'RiggingPro'
-	    },
-	    date: 'July 15, 2024',
-	    link: 'advanced-rigging.md'
-	  },
-	  {
-	    imageUrl: 'https://www.tubebuddy.com/wp-content/uploads/2024/01/4-1024x576.jpg',
-	    category: 'MotionGraphics',
-	    title: 'The Artistry of Motion Graphics: Techniques for Expressive Designs',
-	    author: {
-	      avatarUrl: '../assets/images/author8.png',
-	      name: 'MotionArtist'
-	    },
-	    date: 'August 7, 2024',
-	    link: 'artistry-motion-graphics.md'
-	  },
-	  // ... Add more entries as needed
-	];
 
 
 	// Blog Nav Selection 
@@ -460,6 +368,7 @@
 	        // Append the new content using insertAdjacentHTML
 	        blogContainer.insertAdjacentHTML('beforeend', blogPost);
 	    });
+
 	}
 
 
@@ -477,14 +386,7 @@
     filterPosts('all');
 
 
-    // Add options for each category
-    // console.log("Cata Data :", categoryData)
-	// categoryData.forEach(category => {
-	//     const option = document.createElement('option');
-	//     option.value = category.trim();
-	//     option.innerText = category;
-	//     dropdownSelect.appendChild(option);
-	//   });
+
 </script>
 
 </body>

@@ -180,58 +180,61 @@ class MdParser {
   }
 }
 
-// // Define the async function to fetch file details and load content
-// async function fetchAndLoadContent(folder) {
-//   const repositoryOwner = 'Joshua357954';
-//   const repositoryName = 'solo-max-2';
-//   const folderPath = `content/${folder}`;
 
-//   try {
-//     // Fetch file details from the GitHub repository
-//     const response = await fetch(`https://api.github.com/repos/${repositoryOwner}/${repositoryName}/contents/${folderPath}`);
 
-//     // Parse the response as JSON
-//     const data = await response.json();
 
-//     // Use Promise.all to concurrently load content from all files
-//     const fileDetails = await Promise.all(data.map(async file => {
-//       try {
-//         // Fetch the content of the file
-//         const contentResponse = await fetch(`../content/${folder}/${file.name}`);
-//         const markdownContent = await contentResponse.text();
+// Define the async function to fetch file details and load content
+async function fetchAndLoadContent(folder) {
+  const repositoryOwner = 'Joshua357954';
+  const repositoryName = 'solo-max-2';
+  const folderPath = `content/${folder}`;
 
-//         // Parse the markdown content using the MdParser class
-//         const markDParser = new MdParser(markdownContent);
+  try {
+    // Fetch file details from the GitHub repository
+    const response = await fetch(`https://api.github.com/repos/${repositoryOwner}/${repositoryName}/contents/${folderPath}`);
 
-//         // Return an object containing both file details, front matter, and body
-//         return {
-//           fileDetails: file,
-//           frontMatter: markDParser.getFrontmatter(),
-//           body: markDParser.getBody()
-//         };
-//       } catch (contentError) {
-//         console.error('Error fetching content:', contentError);
+    // Parse the response as JSON
+    const data = await response.json();
 
-//         // Return an object with error details in case of an error
-//         return {
-//           fileDetails: file,
-//           frontMatter: {},
-//           body: '',
-//           error: contentError
-//         };
-//       }
-//     }));
+    // Use Promise.all to concurrently load content from all files
+    const fileDetails = await Promise.all(data.map(async file => {
+      try {
+        // Fetch the content of the file
+        const contentResponse = await fetch(`../content/${folder}/${file.name}`);
+        const markdownContent = await contentResponse.text();
 
-//     // Log the details of loaded files
-//     console.log('Files Details:', fileDetails);
-//     return fileDetails;
-//   } catch (error) {
-//     console.error('Error fetching file list:', error);
+        // Parse the markdown content using the MdParser class
+        const markDParser = new MdParser(markdownContent);
 
-//     // Return an empty array in case of an error
-//     return [];
-//   }
-// }
+        // Return an object containing both file details, front matter, and body
+        return {
+          fileDetails: file,
+          frontMatter: markDParser.getFrontmatter(),
+          body: markDParser.getBody()
+        };
+      } catch (contentError) {
+        console.error('Error fetching content:', contentError);
+
+        // Return an object with error details in case of an error
+        return {
+          fileDetails: file,
+          frontMatter: {},
+          body: '',
+          error: contentError
+        };
+      }
+    }));
+
+    // Log the details of loaded files
+    console.log('Files Details:', fileDetails);
+    return fileDetails;
+  } catch (error) {
+    console.error('Error fetching file list:', error);
+
+    // Return an empty array in case of an error
+    return [];
+  }
+}
 
 
 

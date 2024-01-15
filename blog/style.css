@@ -655,8 +655,11 @@ b{
 }
 
 .blog-meta {
+	display: flex;
+	gap: 10px;
 	margin-top: 5px;
 	font-size: 1.3rem;
+	text-align: left;
 }
 
 .toc ul{

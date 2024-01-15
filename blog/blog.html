@@ -64,18 +64,18 @@
     <section class="mainn" style="margin: 0 auto; max-width: 700px;">
     <section class="blog-header" style="width:100%;"> 
         
-        <h1>
-         Why do people think animation is the best paying job in the world.
+        <h1 class="mBlogTitle">
+         
         </h1>
 
-        <img 
-        src="../assets/images/pix (2).jpg"
-        style="width:100%;height: 240px; margin: 0 auto;">
+        <img class="mBlogImg" 
+        src="../assets/images/loading.png"
+        style="width:100%;height: 240px; margin: 0 auto;object-fit: cover;box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
         
         <div class="blog-meta"> 
-            <small>Author : Joshua</small>
-            <small>&nbsp;&nbsp;&nbsp;14<sup>th</sup> Dec, 2023 </small>
-            <small>&nbsp;&nbsp;&nbsp;8mins read</small>
+            <small class="mBlogAuthor">Author : Loading</small>
+            <small class="mBlogDate">&nbsp;&nbsp;&nbsp;Date: Loading</small>
+            <small  class="mBlogRead">&nbsp;&nbsp;&nbsp;0mins read</small>
         </div>
     </section>
 
@@ -84,10 +84,9 @@
     <!--  Table of content -->
     <section class="toc">
         <h2>Table of contents</h2>
-        <ul>
-            <li>What is 3D Texturing ?</li>
-            <li>8 Noteworthy 3D Texturing Techniques</li>
-            <li>Wrapping Up</li>
+        <ul id="tableOfContents">
+            <li>Loading ...</li>
+            <li>Loading ...</li>
         </ul>
     </section>
 
@@ -95,7 +94,7 @@
 
     <!-- Main Blog Post -->
     <p class="blog-p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       <!--  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
          <br><br>
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -119,7 +118,7 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit
          <br><br>
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
     </p>
 
    <div class="newsletter-box">
@@ -182,8 +181,10 @@
         &copy;  SoloMax - Studios <span style="margin-left: 7px" id="current-year"></span>
     </footer>
 
+<script src="../mdParser.js" async></script>
 
 <script>
+
 const nav_icon = document.querySelector('.navmenu-icon') 
     const mobile_nav1 = document.querySelector('.navlinks_box')
     const mobile_nav = document.querySelector('.nvb')
@@ -205,11 +206,85 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
       const currentYear = new Date().getFullYear();
 
-  // Update the content of the "current-year" span
-  document.getElementById('current-year').innerText = currentYear;
+    // Update the content of the "current-year" span
+    document.getElementById('current-year').innerText = currentYear;
+
+
+    // Get Content For Blog Page
+    
+async function getContent(folder, filename) {
+    try {
+        const contentResponse = await fetch(`../content/${folder}/${filename}`);
+        
+        // Check if the request was successful
+        if (!contentResponse.ok) {
+            throw new Error(`Failed to fetch content. Status: ${contentResponse.status}`);
+        }
+
+        // Parse the fetched markdown content
+        const markdownContent = await contentResponse.text();
+
+        // Parse the markdown content using the MdParser class
+        const markDParser = new MdParser(markdownContent);
+
+        // Return an object containing front matter and body
+        return {
+            frontMatter: markDParser.getFrontmatter(),
+            body: markDParser.getBody()
+        };
+    } catch (error) {
+        console.error('Error fetching content:', error);
+
+        // Return an object with error details in case of an error
+        return {
+            frontMatter: {},
+            body: '',
+            error: error
+        };
+    }
+}
+
+    const blogTitle = document.querySelector('.mBlogTitle')
+    const blogImage = document.querySelector('.mBlogImg')
+    const blogAuthor = document.querySelector('.mBlogAuthor')
+    const blogDate = document.querySelector('.mBlogDate')
+    const blogRead = document.querySelector('.mBlogRead')
+ 
+    const blogContainer = document.querySelector('.blog-p')
+
+    const paramName = 'filename';
+    const paramValue = new URL(window.location.href).searchParams.get(paramName);
+
+
+    getContent('posts',paramValue)
+        .then(result => {
+            const { frontMatter, body} = result
+            blogTitle.innerText = frontMatter.title
+            blogImage.src = frontMatter.imageUrl
+            blogAuthor.innerHTML = `<strong>Author:</strong> ${frontMatter.author}`
+            blogRead.innerHTML = `<strong>Read Time:</strong> ${frontMatter.readTime}`
+            blogDate.innerHTML = `<strong>Date:</strong> ${frontMatter.date}`
+            
+            const sectionTitles = frontMatter.tableOfContent.split(',')
+            const tocList = document.getElementById("tableOfContents");
+
+            tocList.innerHTML = "";
+            sectionTitles.forEach((title, index) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = title;
+
+            tocList.appendChild(listItem);
+            });
+
+            // insert blog body
+            blogContainer.innerHTML = body
+        })
+        .catch(error => console.log(error));
+
+
+    console.log("FileName :",paramValue)
 
 </script>
-
 
 </body>
 </html>
