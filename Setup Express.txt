@@ -202,3 +202,123 @@ div {
 	  },
 	  // ... Add more entries as needed
 	];
+
+
+	
+	const youtubeContent = [
+		  {
+		    title: 'Introduction to Cel Animation',
+		    description: 'Learn the basics of traditional cel animation techniques.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Creating Expressive Characters',
+		    description: 'Explore techniques for giving life and emotion to animated characters.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Animating Dynamic Camera Movements',
+		    description: 'Master the art of creating visually stunning camera movements in animations.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Lip Syncing Tutorial',
+		    description: 'Learn how to synchronize character lip movements with audio in animation.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Walk Cycle Breakdown',
+		    description: 'Breakdown of the steps to create a realistic walk cycle for characters.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Digital Sculpting in Blender',
+		    description: 'Sculpting 3D characters using Blender for animation purposes.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Creating Animated GIFs in Photoshop',
+		    description: 'Step-by-step guide to creating animated GIFs using Photoshop.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Animating Fluid Simulations',
+		    description: 'Introduction to animating fluid simulations for dynamic visual effects.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Introduction to Stop Motion',
+		    description: 'Basics of creating stop motion animations using everyday objects.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  },
+		  {
+		    title: 'Animating Facial Expressions',
+		    description: 'Guide to animating realistic facial expressions for characters.',
+		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
+		  }
+		];
+
+
+
+	const premiumContent  = [
+		  {
+		    title: 'Animation Fundamentals',
+		    price: '$49.99',
+		    purchaseLink: 'https://example.com/course/animation-fundamentals',
+		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-2-1024x576.png'
+		  },
+		  {
+		    title: 'Character Design Masterclass',
+		    price: '$79.99',
+		    purchaseLink: 'https://example.com/course/character-design-masterclass',
+		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-2-1024x576.jpg'
+		  },
+		  {
+		    title: 'Advanced 3D Modeling',
+		    price: '$99.99',
+		    purchaseLink: 'https://example.com/course/advanced-3d-modeling',
+		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-17-1024x576.jpg'
+		  },
+		  {
+		    title: 'Storyboarding Techniques',
+		    price: '$59.99',
+		    purchaseLink: 'https://example.com/course/storyboarding-techniques',
+		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-1-1024x576.png'
+		  },
+		  {
+		    title: 'Animating Characters in After Effects',
+		    price: '$69.99',
+		    purchaseLink: 'https://example.com/course/animating-in-after-effects',
+		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-1-1024x576.jpg'
+		  },
+		  {
+		    title: 'Motion Graphics for Beginners',
+		    price: '$39.99',
+		    purchaseLink: 'https://example.com/course/motion-graphics-beginners',
+		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-2-1024x576.png'
+		  },
+		  {
+		    title: 'Digital Painting Workshop',
+		    price: '$89.99',
+		    purchaseLink: 'https://example.com/course/digital-painting-workshop',
+		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-5-1024x576.jpg'
+		  },
+		  {
+		    title: 'Introduction to 2D Animation',
+		    price: '$49.99',
+		    purchaseLink: 'https://example.com/course/intro-to-2d-animation',
+		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-8-1024x576.jpg'
+		  },
+		  {
+		    title: 'Unity Game Animation',
+		    price: '$109.99',
+		    purchaseLink: 'https://example.com/course/unity-game-animation',
+		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-10-1024x576.jpg'
+		  },
+		  {
+		    title: 'Animating with Spine',
+		    price: '$59.99',
+		    purchaseLink: 'https://example.com/course/animating-with-spine',
+		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-13-1024x576.jpg'
+		  }
+	];

@@ -278,131 +278,9 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
 	// Get the value of a specific parameter, for example, 'param1'
 	const paramValue = queryParams.get(paramName);
-
-	// alert(paramValue)
-
 	const pageName = document.querySelector('.h1')
 	const pageImg =  document.querySelector('.csh_img')
 
-
-	
-	const youtubeContent = [
-		  {
-		    title: 'Introduction to Cel Animation',
-		    description: 'Learn the basics of traditional cel animation techniques.',
-		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
-		  },
-		  {
-		    title: 'Creating Expressive Characters',
-		    description: 'Explore techniques for giving life and emotion to animated characters.',
-		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
-		  },
-		  {
-		    title: 'Animating Dynamic Camera Movements',
-		    description: 'Master the art of creating visually stunning camera movements in animations.',
-		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
-		  },
-		  {
-		    title: 'Lip Syncing Tutorial',
-		    description: 'Learn how to synchronize character lip movements with audio in animation.',
-		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
-		  },
-		  {
-		    title: 'Walk Cycle Breakdown',
-		    description: 'Breakdown of the steps to create a realistic walk cycle for characters.',
-		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
-		  },
-		  {
-		    title: 'Digital Sculpting in Blender',
-		    description: 'Sculpting 3D characters using Blender for animation purposes.',
-		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
-		  },
-		  {
-		    title: 'Creating Animated GIFs in Photoshop',
-		    description: 'Step-by-step guide to creating animated GIFs using Photoshop.',
-		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
-		  },
-		  {
-		    title: 'Animating Fluid Simulations',
-		    description: 'Introduction to animating fluid simulations for dynamic visual effects.',
-		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
-		  },
-		  {
-		    title: 'Introduction to Stop Motion',
-		    description: 'Basics of creating stop motion animations using everyday objects.',
-		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
-		  },
-		  {
-		    title: 'Animating Facial Expressions',
-		    description: 'Guide to animating realistic facial expressions for characters.',
-		    ytLink: 'https://www.youtube.com/embed/zmAy4uH6EEw'
-		  }
-		];
-
-
-
-	const premiumContent  = [
-		  {
-		    title: 'Animation Fundamentals',
-		    price: '$49.99',
-		    purchaseLink: 'https://example.com/course/animation-fundamentals',
-		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-2-1024x576.png'
-		  },
-		  {
-		    title: 'Character Design Masterclass',
-		    price: '$79.99',
-		    purchaseLink: 'https://example.com/course/character-design-masterclass',
-		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-2-1024x576.jpg'
-		  },
-		  {
-		    title: 'Advanced 3D Modeling',
-		    price: '$99.99',
-		    purchaseLink: 'https://example.com/course/advanced-3d-modeling',
-		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-17-1024x576.jpg'
-		  },
-		  {
-		    title: 'Storyboarding Techniques',
-		    price: '$59.99',
-		    purchaseLink: 'https://example.com/course/storyboarding-techniques',
-		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-1-1024x576.png'
-		  },
-		  {
-		    title: 'Animating Characters in After Effects',
-		    price: '$69.99',
-		    purchaseLink: 'https://example.com/course/animating-in-after-effects',
-		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-1-1024x576.jpg'
-		  },
-		  {
-		    title: 'Motion Graphics for Beginners',
-		    price: '$39.99',
-		    purchaseLink: 'https://example.com/course/motion-graphics-beginners',
-		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-2-1024x576.png'
-		  },
-		  {
-		    title: 'Digital Painting Workshop',
-		    price: '$89.99',
-		    purchaseLink: 'https://example.com/course/digital-painting-workshop',
-		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-5-1024x576.jpg'
-		  },
-		  {
-		    title: 'Introduction to 2D Animation',
-		    price: '$49.99',
-		    purchaseLink: 'https://example.com/course/intro-to-2d-animation',
-		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-8-1024x576.jpg'
-		  },
-		  {
-		    title: 'Unity Game Animation',
-		    price: '$109.99',
-		    purchaseLink: 'https://example.com/course/unity-game-animation',
-		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-10-1024x576.jpg'
-		  },
-		  {
-		    title: 'Animating with Spine',
-		    price: '$59.99',
-		    purchaseLink: 'https://example.com/course/animating-with-spine',
-		    imgUrl: 'https://www.nsbpictures.com/wp-content/uploads/2021/01/background-for-thumbnail-youtube-13-1024x576.jpg'
-		  }
-	];
 
 	// Inject Header Title
 	const selectionContent = `	
@@ -410,7 +288,7 @@ const nav_icon = document.querySelector('.navmenu-icon')
 			<img  class="li-img" src="../assets/images/search-svgrepo-com.svg">
 
 			<ul class="selection">
-				<li>All</li>
+				<li onClick="filterCourses('all')">All</li>
 				<li>Latest</li>
 			</ul>
 
@@ -419,31 +297,22 @@ const nav_icon = document.querySelector('.navmenu-icon')
 			 
 				<select id="dropdownSelect">
 					<option value="" disabled selected>Filter By:</option>
-					<option value="latest">Latest</option>
-					<option value="popular">Popular</option>
-					<option value="rising">Rising</option>
-					<option value="modeling">Modeling</option>
 				</select>
 			</div>
 
 		</section>`
 
 
-
+	const coursesBox = document.querySelector('.courses_box')
 
 
 // -------------- Work has started here ----------------		
 // -------------- Work has started here ----------------
 // -------------- Work has started here ----------------
 
-    const dropdownSelect = document.getElementById('dropdownSelect');
-    
-    dropdownSelect.addEventListener('change', function () {
-        const selectedOption = dropdownSelect.value;
-        filterPosts(lower(selectedOption));
-    });
-    const lower = (word) => word.toLowerCase()
-
+   
+    // const dropdownSelect = document.getElementById('dropdownSelect');
+   
 
     async function fetchAndLoadContent(folder) {
 	  const repositoryOwner = 'Joshua357954';
@@ -497,46 +366,83 @@ const nav_icon = document.querySelector('.navmenu-icon')
 	}
 
 
+	let catData ;
 
 	//  Filter Categories
-
-
-	async function filterPosts(selectedCategory) {
-	    blogContainer.innerHTML = '';
+	async function filterCourses(selectedCategory) {
+	    coursesBox.innerHTML = '';
 	    
 	    console.log('Filtering Post')
 
-	    const BlogData = await fetchAndLoadContent('posts')
-	    const filteredPosts = BlogData.filter(post => {
+
+	    // ===== Sort Data By Category ======
+	    const coursesData = await fetchAndLoadContent(`${paramValue}Courses`)
+	    const filteredCourses = coursesData.filter(post => {
 		    return lower(selectedCategory) === 'all' || lower(post.frontMatter.category) === lower(selectedCategory);
 			});
 
-	    if (!catData){
-	    	// console.log("CAATA")
-	    	const categoryData = [...new Set(BlogData.map(post => post.frontMatter.category))]
-	    	categoryData.forEach(category => {
-			    const option = document.createElement('option');
-			    option.value = category.trim();
-			    option.innerText = category;
-			    dropdownSelect.appendChild(option);
-			});
-			catData = true
-	    }
+	    console.log(coursesData[0])
+	    console.log(filteredCourses)
 
-	    // console.log(BlogData[0])
-	    // console.log(filteredPosts)
 
-	    filteredPosts.forEach(post => {
-	        const blogPost = `
-	        	Html goes here
-	            `;
+	    // ======= Insert The Course Cards ========
+	    filteredCourses.forEach(course => {
+	        	
+			let courseCard = lower(paramValue) == 'youtube' ?	`
+				<div class="yt-card">
+					<div class="yt_video"><iframe width="100%" height="100%" src="${course.frontMatter.ytLink}" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<strong style="color:black;">${course.frontMatter.category}</strong>
+					<h2>${course.frontMatter.title}</h2>
+					<p>${course.frontMatter.description}
+					</p>
+				</div>` 
+				: 
+				 `
+				<div class="premium_card">
+					<div class="premium_box1">
+						<img src="${course.frontMatter.imgUrl}" width="100%" height="100%" >
+					</div>
 
-	        // Append the new content using insertAdjacentHTML
-	        blogContainer.insertAdjacentHTML('beforeend', blogPost);
+					<div class="premium_box2">
+						<h2>${course.frontMatter.title}</h2>
+						<strong style="color:black;>${course.frontMatter.category}</strong>
+						<p class="p_price">${course.frontMatter.price}</p>
+						<button class="pbtn"> <img class="li-img" src="../assets/images/new_courses.svg">Watch Demo</button>
+						<button class="pbtn">Buy Now</button>
+					</div>
+				</div>`
+
+				
+				//======== Load Dynamic Categories =========
+
+		    if (!catData){
+		    	// dropdownSelect.innerHTML = ""
+		    	const categoryData = [...new Set(coursesData.map(post => post.frontMatter.category))]
+		    	categoryData.forEach(category => {
+				    const option = document.createElement('option');
+				    option.value = category.trim();
+				    option.innerText = category;
+				    console.log(dropdownSelect)
+				    dropdownSelect.appendChild(option);
+				});
+				catData = true
+		    
+				dropdownSelect.addEventListener('change', function () {
+				const selectedOption = dropdownSelect.value;
+					filterCourses(lower(selectedOption));
+				});
+			}
+			// Append the new content using insertAdjacentHTML
+			coursesBox.insertAdjacentHTML('beforeend', courseCard);
+
+
+		
 	    });
 
 	}
 
+		const lower = (word) => word.toLowerCase()
 
 	// -------------- Work has started here ----------------		
 	// -------------- Work has started here ----------------
@@ -548,12 +454,10 @@ const nav_icon = document.querySelector('.navmenu-icon')
 	const isMentorship = paramValue != 'youtube' && paramValue != 'premium'
 	
 	if (isMentorship){
-		// const header = document.querySelector('.headerNav')
-		// header.innerHTML = ''
 		selectionBox.style.border = 'none'
 		pageName.innerText = "Mentorship"
+	
 	}else {
-
 		selectionBox.insertAdjacentHTML('beforeend', selectionContent)
 		pageName.innerText = `${paramValue} Courses`
 	}
@@ -563,68 +467,19 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
 
 
-	//  =================== Youtube  Courses =====================
-	//  =================== Youtube  Courses =====================
-	//  =================== Youtube  Courses======================
+	//  =================== YT/ Premium  Courses =====================
+	//  =================== YT/ Premium   Courses =====================
+	//  =================== YT/ Premium  Courses======================
 	// Inject Courses Content 
-	if (paramValue == 'youtube') {
+	if (!isMentorship) {
 
-		const coursesBox = document.querySelector('.courses_box')
-		
-		for (i=0;i< youtubeContent.length; i++){
-			
-			let ytContent = `
-				<div class="yt-card">
-					<div class="yt_video"><iframe width="100%" height="100%" src="${youtubeContent[i].ytLink}" frameborder="0" allowfullscreen></iframe>
-					</div>
-				
-					<h2>${youtubeContent[i].title}</h2>
-					<p>${youtubeContent[i].description}
-					</p>
-				</div>`
+		filterCourses('all')
 
-		// Append the new content using insertAdjacentHTML
-		coursesBox.insertAdjacentHTML('beforeend', ytContent);
-		}
-	}
-
-
-	//  =================== Premium  Courses =====================
-	//  =================== Premium  Courses =====================
-	//  =================== Premium  Courses =====================
-	// Eles If
-	else if (paramValue == 'premium') {
-		
-		const coursesBox = document.querySelector('.courses_box')
-		
-		for (i=0;i< premiumContent.length; i++){
-
-		const pmContent = `
-			<div class="premium_card">
-				<div class="premium_box1">
-					<img src="${premiumContent[i].imgUrl}" width="100%" height="100%" >
-				</div>
-
-				<div class="premium_box2">
-					<h2>${premiumContent[i].title}</h2>
-					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod .</p> -->
-					<p class="p_price">${premiumContent[i].price}</p>
-					<button class="pbtn"> <img class="li-img" src="../assets/images/new_courses.svg">Watch Demo</button>
-					<button class="pbtn">Buy Now</button>
-				</div>
-			</div>`
-
-			// Append the new content using insertAdjacentHTML
-			coursesBox.insertAdjacentHTML('beforeend', pmContent);
-
-		}
-
-
-	//  =================== Mentorship =====================
-	//  =================== Mentorship =====================		
-	//  =================== Mentorship =====================
 
 	}else {
+		//  =================== Mentorship =====================
+		//  =================== Mentorship =====================
+		//  =================== Mentorship =====================
 		const coursesBox = document.querySelector('.courses_header')
 		coursesBox.insertAdjacentHTML('beforeend',
 			`<section class="mentorship_box">
