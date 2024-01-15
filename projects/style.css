@@ -437,8 +437,8 @@ select:focus {
 .yt-card {
 
 	max-width: 100%;
-	max-height:360px;
-	height: 350px;
+	max-height:400px;
+	height: 370px;
 	background-color: #fcfcfc;
 	border-radius: .3rem;
 	box-shadow: 0 24px 48px 0 rgb(0,0,0,.1);
@@ -451,13 +451,18 @@ select:focus {
 	background-color: black;
 	border-top-left-radius: .3rem;
 	border-top-right-radius: .3rem;
-
+	margin-bottom: 5px;
 }
 
 .yt-card h2 {
 	padding: 5px 10px;
 	color: black;
 	text-size-adjust: auto;
+}
+.yt-card strong {
+	margin-left: 10px;
+	text-transform: capitalize;
+	color: #0C5395 !important;
 }
 
 .yt-card p {
@@ -494,8 +499,14 @@ select:focus {
 .p_price {
 	font-size: 18px;
 	padding: 3px;
-	font-weight: 400;
+	font-weight: 900;
 	color: rgba(0, 0, 0, .8);
+}
+.p_category {
+	font-weight: 400;
+	padding: 3px;
+	font-size: 18px;
+	color: rgba(0, 0, 0, .65);
 }
 
 .premium_box2 button{

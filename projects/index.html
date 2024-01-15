@@ -406,8 +406,11 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
 					<div class="premium_box2">
 						<h2>${course.frontMatter.title}</h2>
-						<strong style="color:black;>${course.frontMatter.category}</strong>
-						<p class="p_price">${course.frontMatter.price}</p>
+						
+						
+						<p class="p_category">${course.frontMatter.category}</p>
+
+						<strong class="p_price">${course.frontMatter.price}</strong>
 						<button class="pbtn"> <img class="li-img" src="../assets/images/new_courses.svg">Watch Demo</button>
 						<button class="pbtn">Buy Now</button>
 					</div>
