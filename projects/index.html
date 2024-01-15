@@ -162,6 +162,7 @@
 
 
 
+<script src="../mdParser.js" async></script>
 
 <script>
 
@@ -427,6 +428,122 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
 		</section>`
 
+
+
+
+
+// -------------- Work has started here ----------------		
+// -------------- Work has started here ----------------
+// -------------- Work has started here ----------------
+
+    const dropdownSelect = document.getElementById('dropdownSelect');
+    
+    dropdownSelect.addEventListener('change', function () {
+        const selectedOption = dropdownSelect.value;
+        filterPosts(lower(selectedOption));
+    });
+    const lower = (word) => word.toLowerCase()
+
+
+    async function fetchAndLoadContent(folder) {
+	  const repositoryOwner = 'Joshua357954';
+	  const repositoryName = 'solo-max-2';
+	  const folderPath = `content/${folder}`;
+
+	  try {
+	    // Fetch file details from the GitHub repository
+	    const response = await fetch(`https://api.github.com/repos/${repositoryOwner}/${repositoryName}/contents/${folderPath}`);
+
+	    // Parse the response as JSON
+	    const data = await response.json();
+
+	    // Use Promise.all to concurrently load content from all files
+	    const fileDetails = await Promise.all(data.map(async file => {
+	      try {
+	        // Fetch the content of the file
+	        const contentResponse = await fetch(`../content/${folder}/${file.name}`);
+	        const markdownContent = await contentResponse.text();
+
+	        // Parse the markdown content using the MdParser class
+	        const markDParser = new MdParser(markdownContent);
+
+	        // Return an object containing both file details, front matter, and body
+	        return {
+	          fileName: file.name,
+	          frontMatter: markDParser.getFrontmatter()
+	        };
+	      } catch (contentError) {
+	        console.error('Error fetching content:', contentError);
+
+	        // Return an object with error details in case of an error
+	        return {
+	          fileDetails: file,
+	          frontMatter: {},
+	          body: '',
+	          error: contentError
+	        };
+	      }
+	    }));
+
+	    // Log the details of loaded files
+	    // console.log('Files Details:', fileDetails);
+	    return fileDetails;
+	  } catch (error) {
+	    console.error('Error fetching file list:', error);
+
+	    // Return an empty array in case of an error
+	    return [];
+	  }
+	}
+
+
+
+	//  Filter Categories
+
+
+	async function filterPosts(selectedCategory) {
+	    blogContainer.innerHTML = '';
+	    
+	    console.log('Filtering Post')
+
+	    const BlogData = await fetchAndLoadContent('posts')
+	    const filteredPosts = BlogData.filter(post => {
+		    return lower(selectedCategory) === 'all' || lower(post.frontMatter.category) === lower(selectedCategory);
+			});
+
+	    if (!catData){
+	    	// console.log("CAATA")
+	    	const categoryData = [...new Set(BlogData.map(post => post.frontMatter.category))]
+	    	categoryData.forEach(category => {
+			    const option = document.createElement('option');
+			    option.value = category.trim();
+			    option.innerText = category;
+			    dropdownSelect.appendChild(option);
+			});
+			catData = true
+	    }
+
+	    // console.log(BlogData[0])
+	    // console.log(filteredPosts)
+
+	    filteredPosts.forEach(post => {
+	        const blogPost = `
+	        	Html goes here
+	            `;
+
+	        // Append the new content using insertAdjacentHTML
+	        blogContainer.insertAdjacentHTML('beforeend', blogPost);
+	    });
+
+	}
+
+
+	// -------------- Work has started here ----------------		
+	// -------------- Work has started here ----------------
+	// -------------- Work has started here ----------------
+
+
+
 	const selectionBox = document.querySelector('.courses_header')
 	const isMentorship = paramValue != 'youtube' && paramValue != 'premium'
 	
@@ -444,6 +561,11 @@ const nav_icon = document.querySelector('.navmenu-icon')
 	// Inject Header Img
 	pageImg.src = paramValue == 'youtube' ? youtubeImg : paramValue=='premium' ? premiumImg : mentorshipImg
 
+
+
+	//  =================== Youtube  Courses =====================
+	//  =================== Youtube  Courses =====================
+	//  =================== Youtube  Courses======================
 	// Inject Courses Content 
 	if (paramValue == 'youtube') {
 
@@ -466,6 +588,10 @@ const nav_icon = document.querySelector('.navmenu-icon')
 		}
 	}
 
+
+	//  =================== Premium  Courses =====================
+	//  =================== Premium  Courses =====================
+	//  =================== Premium  Courses =====================
 	// Eles If
 	else if (paramValue == 'premium') {
 		
@@ -491,7 +617,13 @@ const nav_icon = document.querySelector('.navmenu-icon')
 			// Append the new content using insertAdjacentHTML
 			coursesBox.insertAdjacentHTML('beforeend', pmContent);
 
-		}		
+		}
+
+
+	//  =================== Mentorship =====================
+	//  =================== Mentorship =====================		
+	//  =================== Mentorship =====================
+
 	}else {
 		const coursesBox = document.querySelector('.courses_header')
 		coursesBox.insertAdjacentHTML('beforeend',
@@ -506,33 +638,6 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
 
 
-//  Filter Courses
-const pathToYtCourses = '../content/posts/js-noob.md'
-const pathToPremiumCourses = ''
-
-async function fetchDataFromYtCourses() {
-  try {
-    const response = await fetch(pathToYtCourses);
-    // const data = await response.json();
-    console.log(response)
-     //alert(response); Modify this based on the structure of the response data
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  }
-}
-
-fetchDataFromYtCourses();
-
-
-
-let filterCourses =  document.getElementById('dropdownSelect')
-
-filterCourses.addEventListener('change',function() {
-	
-	var selectedOption = this.value;
-	console.log('Selected Option:', selectedOption);
-	// You can perform additional actions based on the selected option
-});
 </script>
 </body>
 </html>
