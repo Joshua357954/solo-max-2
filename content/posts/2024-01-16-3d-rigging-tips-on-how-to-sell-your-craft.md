@@ -1,5 +1,5 @@
 ---
-imageUrl: /uploads/tubebuddy-blog-banner-4-1568x882.jpg
+imageUrl: https://www.tubebuddy.com/wp-content/uploads/2023/12/TubeBuddy-Blog-Banner-4-1568x882.jpg
 category: rigging
 title: "3D Rigging: Tips on How to Sell your Craft"
 avatarUrl: ../assets/images/So-max_Mountain.png
