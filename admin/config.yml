@@ -13,7 +13,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image URL", name: "imgURL", widget: 'image'}
+      - {label: "Image URL", name: "imgUrl", widget: 'image'}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "ReadTime", name: "readTime", widget: "string"}

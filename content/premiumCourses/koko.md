@@ -1,5 +1,4 @@
 ---
-
 title: Character Design Masterclass
 price: $79.99
 purchaseLink: https://example.com/course/character-design-masterclass
