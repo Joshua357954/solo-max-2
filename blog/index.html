@@ -342,6 +342,8 @@
 	    // console.log(filteredPosts)
 
 	    filteredPosts.forEach(post => {
+	    	const formattedDate = new Date(post.frontMatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
 	        const blogPost = `
 	            <div class="blog-card"> 
 	                <a href="blog.html?filename=${post.fileName}" class="between">
@@ -359,7 +361,7 @@
 	                        <img class="img" src="../assets/images/So-max_Mountain.png"> 
 	                        <div class="data">    
 	                            <p>${post.frontMatter.author}</p>
-	                            <p>${post.frontMatter.date}</p> <!-- Assuming 'data' should be 'date' -->
+	                            <p>${post.formattedDate}</p> <!-- Assuming 'data' should be 'date' -->
 	                        </div>
 	                    </div>  
 	                </a>
