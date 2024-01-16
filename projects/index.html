@@ -366,6 +366,8 @@ const nav_icon = document.querySelector('.navmenu-icon')
 	}
 
 
+	const capitalize = (word) => word.charAt(0).toUpperCase() + word.slice(1);
+
 	let catData ;
 
 	//  Filter Categories
@@ -376,7 +378,7 @@ const nav_icon = document.querySelector('.navmenu-icon')
 
 
 	    // ===== Sort Data By Category ======
-	    const coursesData = await fetchAndLoadContent(`${paramValue}Courses`)
+	    const coursesData = await fetchAndLoadContent(`${capitalize(paramValue)}Courses`)
 	    const filteredCourses = coursesData.filter(post => {
 		    return lower(selectedCategory) === 'all' || lower(post.frontMatter.category) === lower(selectedCategory);
 			});
