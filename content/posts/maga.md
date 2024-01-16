@@ -1,5 +1,6 @@
+---
 imageUrl: https://www.tubebuddy.com/wp-content/uploads/2024/01/4-1024x576.jpg
-category: Modeling---
+category: Modeling
 imageUrl: https://www.tubebuddy.com/wp-content/uploads/2024/01/4-1024x576.jpg
 category: Modeling
 title: Mastering 3D Modeling: Tips for Creating Realistic Characters
