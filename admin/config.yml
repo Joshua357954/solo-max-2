@@ -12,7 +12,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Image URL", name: "imgUrl", widget: 'image'}
+      - {label: "Image URL", name: "imageUrl", widget: 'image'}
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "AvatarUrl", name: "avatarUrl", widget: "string"}
