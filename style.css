@@ -808,7 +808,8 @@ input[type="radio"]:checked::before {
 footer {
 	width: 100%;
     background-color: white;
-    color: black;
+    color: white!important;
+    background-color: rgba(0, 0, 0, .85);
     padding: 30px 0;
 }
 
@@ -840,7 +841,7 @@ footer {
 }
 .footer-links a {
     text-decoration: none;
-    color: #000;
+    color: lightgray;
     font-size: 14px;
     margin-bottom: 10px;
     display: block;
@@ -858,13 +859,13 @@ footer {
 }
 
 .code{
-	color: black;
+	color: lightgray;
 	text-decoration: none;
 }
 
 b{
 	font-weight: bold;
-	color: rgba(0, 0, 0, .7);
+	color: #fcfcfc;
 }
 
 .footer-info p {
@@ -902,9 +903,9 @@ b{
 	align-items: center;
 	height: 70px;
 	font-size: 1.1rem;
-	background-color:white;
-	color: black; 
-	border-top: 2px solid rgba(0, 0, 0, 0.02);
+	background-color:rgba(0, 0, 0, 0.85);
+	color: white; 
+	border-top: 2px solid rgba(0, 0, 0, 0.1);
 	text-align: center;
 }
 
