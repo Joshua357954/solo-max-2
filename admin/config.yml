@@ -12,14 +12,14 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
       - {label: "Image URL", name: "imgUrl", widget: 'image'}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "ReadTime", name: "readTime", widget: "string"}
       - {label: "Category", name: "category", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "AvatarUrl", name: "avatarUrl", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "ReadTime", name: "readTime", widget: "string"}
       - {label: "Table Of Content", name: "tableOfContent", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "youtubeCourses"
@@ -29,8 +29,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "YoutubeVideoLink", name: "youtubeVideoLink", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "YoutubeVideoLink", name: "ytLink", widget: "string"}
       - {label: "Category", name: "category", widget: "string"}
 
   - name: "premiumCourses"
@@ -41,7 +41,9 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Price", name: "price", widget: "string"}
-      - {label: "ImageURL", name: "imgURL", widget: "string"}
-      - {label: "DemoURL", name: "demoURL", widget: "string"}
-      - {label: "Category", name: "category", widget: "string"}
       - {label: "PurchaseLink", name: "purchaseLink", widget: "string"}
+      - {label: "ImageURL", name: "imgURL", widget: "string"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "DemoURL", name: "demoURL", widget: "string"}
+      
+      
