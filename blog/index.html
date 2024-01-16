@@ -331,7 +331,7 @@
 	    	const categoryData = [...new Set(BlogData.map(post => post.frontMatter.category))]
 	    	categoryData.forEach(category => {
 			    const option = document.createElement('option');
-			    option.value = category.trim();
+			    option.value = category;
 			    option.innerText = category;
 			    dropdownSelect.appendChild(option);
 			});
