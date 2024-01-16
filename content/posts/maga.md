@@ -1,5 +1,5 @@
 ---
-imgUrl: /uploads/screenshot_20240114-202036.jpg
+imgUrl: ../uploads/screenshot_20240114-202036.jpg
 category: News
 title: Top 2 Tech Twitter In 2022
 avatarUrl: /
