@@ -325,8 +325,9 @@ main {
 
 .network-loader{
 	transition: all .5s ease-in-out;
-	height: 20%;
-	width: 30%;
+	height: 100px;
+	width: 100px;
+	margin: auto auto;
 }
 
 .hide-loader{
