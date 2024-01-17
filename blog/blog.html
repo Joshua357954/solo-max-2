@@ -239,11 +239,13 @@ async function getContent(folder, filename) {
     getContent('posts',paramValue)
         .then(result => {
             const { frontMatter, body} = result
+            const formattedDate = new Date(frontMatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
             blogTitle.innerText = frontMatter.title
             blogImage.src = frontMatter.imageUrl
             blogAuthor.innerHTML = `<strong>Author:</strong> ${frontMatter.author}`
             blogRead.innerHTML = `<strong>Read Time:</strong> ${frontMatter.readTime}`
-            blogDate.innerHTML = `<strong>Date:</strong> ${frontMatter.date}`
+            blogDate.innerHTML = `<strong>Date:</strong> ${formattedDate}`
             
             const sectionTitles = frontMatter.tableOfContent.split(',')
             const tocList = document.getElementById("tableOfContents");
