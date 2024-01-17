@@ -84,46 +84,41 @@
 		        <!-- <li><a href="./projects/index.html">Arch Viz</a></li> -->
 		    </ul>
 		</div>
-</nav>
+	</nav>
 
 
+	<section class="courses_header">
+		
+		<div class="header_title">
+			<img class="csh_img" src="">
+			<h1 class="h1">&nbsp;</h1>
+		</div>
+
+	</section>
 
 
-<section class="courses_header">
-	<div class="header_title">
-		<img class="csh_img" src="">
-		<h1 class="h1">&nbsp;</h1>
-	</div>
-	<!-- <p>These courses are to make you grow and advance your skills but if they are not good enough , Check other category of courses </p>
- -->
+	<!-- Cards ..... -->
+	<main class="courses_box">
+		
 
-</section>
+	</main>
+	 
 
 
-<!-- Cards ..... -->
-<main class="courses_box">
-	
-
-</main>
- 
-
-
-<!-- Footer -->
+	<!-- Footer -->
      <footer>
         <div class="footer-content">
-            <!-- <div class="footer-logo">
-                <img src="../assets/images/solo-pix.png" alt="Animation Studio Logo">
-            </div> -->
             <div class="footer-links">
             	<h3>Quick Links</h3>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
                     <li><a href="../services/index.html">Services</a></li>
                     <li><a href="#contact-info">Contact</a></li>
                 </ul>
             </div>
-            <div id="contact-info" class="footer-info">
+			
+			<div id="contact-info" class="footer-info">
                 <h3>Contact Us</h3>
                 <p>
                    124 Chief Worlu Street<br>Portharcourt City, PH 9858<br>
@@ -132,6 +127,7 @@
                     <b>Phone:</b> <a class="code" href="tel:09034533840">(+234) 903 4533 840</a>
                 </p>
             </div>
+
             <div class="footer-social">
                 <h3>Follow Us</h3>
                 <ul>
@@ -153,12 +149,14 @@
                 </ul>
             </div>
         </div>
-    </footer>
-	
 
-	<footer class="footer-2" >
-		&copy;  SoloMax - Studios <span style="margin-left: 7px" id="current-year"></span>
+    </footer>
+
+	<footer class="footer-2">
+		&copy;  Solomaxstudios 
+        <span id="current-year" style="margin-left: 7px"></span>
 	</footer>
+
 
 
 
@@ -166,45 +164,45 @@
 
 <script>
 
-const currentYear = new Date().getFullYear();
+	const currentYear = new Date().getFullYear();
 
-// Update the content of the "current-year" span
-document.getElementById('current-year').innerText = currentYear;
+	// Update the content of the "current-year" span
+	document.getElementById('current-year').innerText = currentYear;
 
-var item3 = document.getElementById("projects");
-var contextMenu = document.getElementById("contextMenu");
+	var item3 = document.getElementById("projects");
+	var contextMenu = document.getElementById("contextMenu");
 
-item3.addEventListener("mouseenter", function () {
-    showContextMenu();
-});
+	item3.addEventListener("mouseenter", function () {
+	    showContextMenu();
+	});
 
-item3.addEventListener("mouseleave", function () {
-    hideContextMenu();
-});
+	item3.addEventListener("mouseleave", function () {
+	    hideContextMenu();
+	});
 
-contextMenu.addEventListener("mouseenter", function () {
-    showContextMenu();
-});
+	contextMenu.addEventListener("mouseenter", function () {
+	    showContextMenu();
+	});
 
-contextMenu.addEventListener("mouseleave", function () {
-    hideContextMenu();
-});
+	contextMenu.addEventListener("mouseleave", function () {
+	    hideContextMenu();
+	});
 
-function showContextMenu() {
+	function showContextMenu() {
 
-    var rect = item3.getBoundingClientRect();
-    contextMenu.style.display = "block";
-    contextMenu.style.left = rect.left + "px";
-    contextMenu.style.top = rect.bottom + "px";
-}
+	    var rect = item3.getBoundingClientRect();
+	    contextMenu.style.display = "block";
+	    contextMenu.style.left = rect.left + "px";
+	    contextMenu.style.top = rect.bottom + "px";
+	}
 
-function hideContextMenu() {
-    contextMenu.style.display = "none";
-}
+	function hideContextMenu() {
+	    contextMenu.style.display = "none";
+	}
 
 
-// Nav Menu
-const nav_icon = document.querySelector('.navmenu-icon') 
+	// Nav Menu
+	const nav_icon = document.querySelector('.navmenu-icon') 
 	const mobile_nav1 = document.querySelector('.navlinks_box')
 	const mobile_nav = document.querySelector('.nvb')
 	const navbar =  document.querySelector('.navbar')
@@ -306,13 +304,9 @@ const nav_icon = document.querySelector('.navmenu-icon')
 	const coursesBox = document.querySelector('.courses_box')
 
 
-// -------------- Work has started here ----------------		
-// -------------- Work has started here ----------------
-// -------------- Work has started here ----------------
-
-   
-    // const dropdownSelect = document.getElementById('dropdownSelect');
-   
+	// -------------- Work has started here ----------------		
+	// -------------- Work has started here ----------------
+	// -------------- Work has started here ----------------
 
     async function fetchAndLoadContent(folder) {
 	  const repositoryOwner = 'Joshua357954';
