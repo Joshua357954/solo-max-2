@@ -318,8 +318,10 @@ main {
 	grid-template-columns: 1fr 1fr 1fr;
 	margin:0 auto;
 	max-width: 1300px;
-	padding: 0 50px;
-	gap: 30px;
+	/* padding: 0 50px; */
+	max-width: 900px;
+	row-gap: 13px;
+	column-gap: 30px;
 	place-items: center;
 }
 
@@ -327,7 +329,7 @@ main {
 	transition: all .5s ease-in-out;
 	height: 100px;
 	width: 100px;
-	margin: auto auto;
+	margin: 0 auto;
 }
 
 .hide-loader{
