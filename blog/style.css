@@ -319,7 +319,7 @@ main {
 	margin:0 auto;
 	max-width: 1300px;
 	row-gap: 13px;
-	padding: 0 50px;
+	padding: 0 25px;
 	column-gap: 20px;
 	place-items: center;
 }
