@@ -1,5 +1,5 @@
 ---
-imageUrl: /uploads/my-top-5-animation-schools-thumbnail_modified.png
+imageUrl: /uploads/tubebuddy-blog-banner-4-1568x882.jpg
 category: 3D Animation
 title: Top 5 Animation Schools in 2024
 avatarUrl: ../assets/images/So-max_Mountain.png
